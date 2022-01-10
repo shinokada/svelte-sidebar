@@ -1,20 +1,29 @@
 {
   "name": "svelte-sidebar",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Sidebar moudle for Svelte/SvelteKit with TailwindCSS.",
+  "main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"svelte":"src/index.js",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview"
+		"build": "rollup -c",
+		"dev": "rollup -c -w"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinokada/svelte-sidebar.git"
+  },
+  "keywords": ["svelte", "sveltekit", "sidebar", "tailwindcss"],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shinokada/svelte-sidebar/issues"
+  },
+  "homepage": "https://github.com/shinokada/svelte-sidebar#readme",
   "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
-    "svelte": "^3.44.0",
-    "svelte-preprocess": "^4.10.1",
-    "postcss": "^8.4.5",
-    "autoprefixer": "^10.4.2",
-    "tailwindcss": "^3.0.12"
-  },
-  "type": "module"
+    "rollup": "^2.63.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "svelte": "^3.45.0"
+  }
 }
