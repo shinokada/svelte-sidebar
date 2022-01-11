@@ -1,6 +1,5 @@
 # Svelte-sidebar
 
-
 ## Installation
 
 ```bash
@@ -9,8 +8,7 @@ npm install -D @codewithshin/svelte-sidebar
 
 ## How to use it
 
-
-```bash
+```svelte
 <script>
   import Sidebar from "$lib/Sidebar.svelte";
 </script>
@@ -22,9 +20,11 @@ npm install -D @codewithshin/svelte-sidebar
 
 Use the Sidebar package for single menu.
 
-
+<img width="500" src="https://raw.githubusercontent.com/shinokada/svelte-sidebar/main/static/images/single-menu.png" />
 
 You can set `headClass`, `barClass`, `asideClass`, `lists` and `sideName`.
+
+See the demo1.
 
 The default values are:
 
@@ -43,12 +43,20 @@ lists=[
 siteName="Demo"
 ```
 
+## For mulitple-menu
 
-## Aside module
+<img width="500" src="https://raw.githubusercontent.com/shinokada/svelte-sidebar/main/static/images/multiple-menu.png" />
 
+If you want to add multiple menus, then use `Aside`, `Navbar`, `SidebarList`, and `Nav` packages. 
+
+See the demo2.
+
+### Aside module
+
+You can set `asideClass` in the `Aside` module. The default values is:
 
 ```js
-asideClass (default: "absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg")
+asideClass="absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg"
 ```
 
 ## Navbar
@@ -61,6 +69,3 @@ barClass (default: "text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border
 headerClass (default: "bg-gray-200 py-3 px-10 items-center text-gray-600 border-b-2")
 ```
 
-```js
-
-```
