@@ -1,12 +1,12 @@
 <script>
   import { open } from "./store";
-  export let lists;
+  // export let lists;
   export let asideClass =
     "absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg";
 </script>
 
 <aside class={asideClass} class:open={$open}>
-  <slot {lists} />
+  <slot />
 </aside>
 
 <style>

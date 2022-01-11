@@ -3,10 +3,10 @@
   function toggleSide() {
     open.update((n) => (n = !n));
   }
-  export let barClass;
+  export let hamburgerClass;
 </script>
 
-<button class={barClass} class:open={$open} on:click={toggleSide}>
+<button class={hamburgerClass} class:open={$open} on:click={toggleSide}>
   <svg width="32" height="24">
     <line id="top" x1="0" y1="2" x2="32" y2="2" />
     <line id="middle" x1="0" y1="12" x2="24" y2="12" />

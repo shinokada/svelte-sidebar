@@ -10,13 +10,13 @@
   export let headerClass =
     "bg-gray-200 py-3 px-10 items-center text-gray-600 border-b-2";
   export let navClass = "p-12 text-xl";
-  export let barClass =
+  export let hamburgerClass =
     "text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none";
   export let asideClass =
     "absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg";
 </script>
 
-<Navbar {siteName} {headerClass} {barClass} />
+<Navbar {siteName} {headerClass} {hamburgerClass} />
 <aside class={asideClass} class:open={$open}>
   <nav class={navClass}>
     <div class="pb-10">
