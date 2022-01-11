@@ -1,5 +1,4 @@
 <script>
-  // import { open } from "./store";
   import Aside from "$lib/Aside.svelte";
   import Nav from "$lib/Nav.svelte";
   import SidebarList from "$lib/SidebarList.svelte";

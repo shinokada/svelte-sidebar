@@ -1,5 +1,5 @@
 {
-  "name": "svelte-sidebar",
+  "name": "@codewithshin/svelte-sidebar",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
