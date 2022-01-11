@@ -9,6 +9,7 @@
   ];
   export let headerClass =
     "bg-gray-200 py-3 px-10 items-center text-gray-600 border-b-2";
+  export let navClass = "p-12 text-xl";
   export let barClass =
     "text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none";
   export let asideClass =
@@ -17,7 +18,7 @@
 
 <Navbar {siteName} {headerClass} {barClass} />
 <aside class={asideClass} class:open={$open}>
-  <nav class="p-12 text-xl">
+  <nav class={navClass}>
     <div class="pb-10">
       {#each lists as list}
         <SidebarList url={list.url} name={list.name} />

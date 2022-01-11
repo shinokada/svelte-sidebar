@@ -37,10 +37,29 @@ siteName="Demo"
 
 ```js
 <script>
-  import Aside from "$lib/Aside.svelte";
-  import Nav from "$lib/Nav.svelte";
-  import SidebarList from "$lib/SidebarList.svelte";
-  import Navbar from "$lib/Navbar.svelte";
+  import { Sidebar } from "@codesithshin/svelt-sidebar";
+  let lists = [
+    { url: "sidebar-module/item1", name: "Item 1" },
+    { url: "sidebar-module/item2", name: "Item 2" },
+    { url: "sidebar-module/item3", name: "Item 3" },
+  ];
+  let siteName = "Svelte-Sidebar";
+  let headerClass =
+    "bg-red-200 py-3 px-10 items-center text-yellow-600 border-b-2";
+  let asideClass = "absolute w-auto h-full bg-purple-200 border-r-2 shadow-lg";
+</script>
+
+<Sidebar {lists} {siteName} {headerClass} {asideClass} />
+<div class="container mx-auto">
+  <main class="p-8">
+    <slot />
+  </main>
+</div>
+```
+
+```js
+<script>
+  import { Aside, Nav, SidebarList, Navbar } from "@codewithshin/svelte-sidebar";
   let siteName = "Multiple menu items";
   export let lists = [
     { url: "item1", name: "Item 1" },
@@ -97,25 +116,3 @@ headerClass (default: "bg-gray-200 py-3 px-10 items-center text-gray-600 border-
 
 ### Example
 
-```js
-<script>
-  import Sidebar from "$lib/Sidebar.svelte";
-  let lists = [
-    { url: "sidebar-module/item1", name: "Item 1" },
-    { url: "sidebar-module/item2", name: "Item 2" },
-    { url: "sidebar-module/item3", name: "Item 3" },
-  ];
-  let siteName = "Svelte-Sidebar";
-  let headerClass =
-    "bg-red-200 py-3 px-10 items-center text-yellow-600 border-b-2";
-  let asideClass = "absolute w-auto h-full bg-purple-200 border-r-2 shadow-lg";
-</script>
-
-<Sidebar {lists} {siteName} {headerClass} {asideClass} />
-<div class="container mx-auto">
-  <main class="p-8">
-    <slot />
-  </main>
-</div>
-
-```

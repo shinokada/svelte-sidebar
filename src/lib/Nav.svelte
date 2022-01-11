@@ -1,4 +1,8 @@
-<nav class="p-12 text-xl">
+<script>
+  export let navClass;
+</script>
+
+<nav class={navClass}>
   <div class="pb-10">
     <slot />
   </div>
