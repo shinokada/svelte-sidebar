@@ -1,5 +1,5 @@
 <script>
-  import { open } from "./src/store";
+  import { open } from "../store";
   function toggleSide() {
     open.update((n) => (n = !n));
   }
