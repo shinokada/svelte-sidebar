@@ -7,7 +7,7 @@
     "package": "svelte-kit package",
     "preview": "svelte-kit preview"
   },
-	"export":{
+	"exports":{
     ".":"./index.js"
 	},
   "devDependencies": {
