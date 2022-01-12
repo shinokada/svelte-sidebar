@@ -7,12 +7,11 @@
     { url: "sidebar-multi-default", name: "Multi-menu Default" },
     { url: "sidebar-multi-custom", name: "Multip-menu Custom Style" },
   ];
-  let siteName = "Svelte-sidebar Demo";
+  let siteName = "Svelte-Sidebar Default";
 </script>
 
 <Sidebar {lists} {siteName} />
-<main class="container mx-auto">
-  <h1>
-    {siteName}
-  </h1>
+
+<main class="container mx-auto p-8">
+  <h1>{siteName}</h1>
 </main>
