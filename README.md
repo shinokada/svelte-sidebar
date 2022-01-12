@@ -14,7 +14,7 @@ Use the `Sidebar` component for single menu.
 
 <img width="500" src="https://raw.githubusercontent.com/shinokada/svelte-sidebar/main/static/images/single-menu.png" />
 
-You can set `siteName`, `headClass`, `hamburgerClass`, `asideClass`, `navClass`, `navDivClass` and `lists`.
+You can set `siteName`, `headClass`, `hamburgerClass`, `asideClass`, `navClass`, `navDivClass`, `sideBarListClass`, and `lists`.
 
 See the demo1.
 
@@ -26,6 +26,7 @@ headerClass="text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none f
 hamburgerClass="text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none"
 asideClass="absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg"
 navClass="p-12 text-xl"
+sideBarListClass = "border-b border-gray-100 mb-2 px-4";
 lists=[
     { url: "item1", name: "Item 1" },
     { url: "item2", name: "Item 2" },
@@ -73,6 +74,7 @@ lists=[
   let asideClass = "absolute w-auto h-full bg-purple-200 border-r-2 shadow-lg";
   let navClass = "p-5 text-xl";
   let navDivClass = "pb-10";
+  let sideBarListClass = "border-b border-gray-500 mb-2 px-4";
 </script>
 
 <Sidebar {lists} {siteName} {headerClass} {asideClass} {navClass} {navDivClass}{hamburgerClass}/>
@@ -116,6 +118,14 @@ In the `Nav`, you can set `navClass` and `navDivClass`. The default values are:
 ```js
 navClass = "pt-2 px-12 text-xl";
 navDivClass = "pb-10";
+```
+
+### sideBarList
+
+The `sideBarList` has `sideBarListClass`. The default value is:
+
+```js
+sideBarListClass = "border-b border-gray-400 mb-2 px-4";
 ```
 
 ### Example
@@ -174,6 +184,7 @@ navDivClass = "pb-10";
   let asideClass = 'absolute w-auto h-full bg-purple-200 border-r-2 shadow-lg';
   let navClass = 'pt-6 px-12 text-xl';
   let navDivClass = 'pb-7';
+  let sideBarListClass = "border-b border-gray-600 mb-2 px-4";
 </script>
 
 <Navbar {siteName} {headerClass} {hamburgerClass} />

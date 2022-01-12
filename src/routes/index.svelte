@@ -11,7 +11,7 @@
 </script>
 
 <Sidebar {lists} {siteName} />
-<main class="container mx-auto">
+<main class="container mx-auto p-8">
   <h1>
     {siteName}
   </h1>
