@@ -2,6 +2,8 @@
 
 A simple sidebar implemented in Svelte and TailwindCSS.
 
+[Article](https://medium.com/mkdir-awesome/a-svelte-sidebar-menu-component-implemented-with-tailwind-css-c039b23010e)
+
 ## Installation
 
 ```bash
