@@ -16,8 +16,6 @@ Use the `Sidebar` component for single menu.
 
 You can set `siteName`, `headClass`, `hamburgerClass`, `asideClass`, `navClass`, `navDivClass`, `sideBarListClass`, and `lists`.
 
-See the demo1.
-
 The default values are:
 
 ```js
@@ -56,6 +54,8 @@ lists=[
 </div>
 ```
 
+[Demo](https://sveltekit-demo-cws.vercel.app/svelte-sidebar-single)
+
 #### Custom styles
 
 ```js
@@ -84,6 +84,8 @@ lists=[
   </main>
 </div>
 ```
+
+[Demo](https://sveltekit-demo-cws.vercel.app/svelte-sidebar-single2)
 
 ## For mulitple-menu
 
@@ -120,9 +122,9 @@ navClass = "pt-2 px-12 text-xl";
 navDivClass = "pb-10";
 ```
 
-### sideBarList
+### SideBarList
 
-The `sideBarList` has `sideBarListClass`. The default value is:
+The `SideBarList` has `sideBarListClass`. The default value is:
 
 ```js
 sideBarListClass = "border-b border-gray-400 mb-2 px-4";
@@ -162,6 +164,8 @@ sideBarListClass = "border-b border-gray-400 mb-2 px-4";
   </Nav>
 </Aside>
 ```
+
+[Demo](https://sveltekit-demo-cws.vercel.app/svelte-sidebar-multiple)
 
 #### Custom styles
 
@@ -203,3 +207,5 @@ sideBarListClass = "border-b border-gray-400 mb-2 px-4";
   </Nav>
 </Aside>
 ```
+
+[Demo](https://sveltekit-demo-cws.vercel.app/svelte-sidebar-multiple2)
