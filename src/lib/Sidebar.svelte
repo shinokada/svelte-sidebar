@@ -13,7 +13,7 @@
   export let hamburgerClass =
     "text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none";
   export let asideClass =
-    "absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg";
+    "absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg z-50";
   export let navDivClass = "pb-10";
 </script>
 
