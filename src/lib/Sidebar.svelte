@@ -4,7 +4,7 @@
   import Navbar from "./Navbar.svelte";
   export let siteName = "Demo";
   export let lists = [
-    { url: "item1", name: "Item 1" },
+    { url: "item1", name: "Item 1", rel: "external" },
     { url: "item2", name: "Item 2" },
   ];
   export let headerClass =
@@ -15,15 +15,14 @@
   export let asideClass =
     "absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg";
   export let navDivClass = "pb-10";
-  export let sideBarListClass = "border-b border-gray-400 mb-2 px-4";
 </script>
 
 <Navbar {siteName} {headerClass} {hamburgerClass} />
 <aside class={asideClass} class:open={$open}>
   <nav class={navClass}>
     <div class={navDivClass}>
-      {#each lists as list}
-        <SidebarList url={list.url} name={list.name} {sideBarListClass} />
+      {#each lists as { url, name, rel }}
+        <SidebarList {url} {name} {rel} />
       {/each}
     </div>
   </nav>
