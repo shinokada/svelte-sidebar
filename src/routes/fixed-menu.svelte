@@ -4,7 +4,7 @@
   import SidebarList from "$lib/SidebarList.svelte";
   import Navbar from "$lib/Navbar.svelte";
   import { menuList, lorem, topMenus } from "./menus";
-  let siteName = "Svelte-sidebar";
+  let siteName = "Svelte sidebar";
   let asideClass =
     "absolute w-auto bg-white pt-8 shadow-lg z-50 px-4 min-h-screen";
   let headerClass =
@@ -13,23 +13,25 @@
   let navDivClass = "pb-10";
 </script>
 
-<Navbar {siteName} {headerClass} {topMenus} />
-<Aside {asideClass}>
-  <Nav {navClass} {navDivClass}>
-    <h3>Menu 1</h3>
-    {#each menuList as { url, name, rel }}
-      <SidebarList {url} {name} {rel} />
-    {/each}
-  </Nav>
-  <Nav>
-    <h3>Menu 2</h3>
-    {#each menuList as { url, name, rel }}
-      <SidebarList {url} {name} {rel} />
-    {/each}
-  </Nav>
-</Aside>
+<div class="fixed z-50 top-0 left-0 w-full">
+  <Navbar {siteName} {headerClass} {topMenus} />
+  <Aside {asideClass}>
+    <Nav {navClass} {navDivClass}>
+      <h3>Menu 1</h3>
+      {#each menuList as { url, name, rel }}
+        <SidebarList {url} {name} {rel} />
+      {/each}
+    </Nav>
+    <Nav>
+      <h3>Menu 2</h3>
+      {#each menuList as { url, name, rel }}
+        <SidebarList {url} {name} {rel} />
+      {/each}
+    </Nav>
+  </Aside>
+</div>
 
-<main class="container mx-auto p-24">
+<main class="container mx-auto p-24 pt-40">
   <h1 class="text-3xl">
     {siteName}
   </h1>
