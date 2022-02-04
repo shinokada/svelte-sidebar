@@ -4,8 +4,8 @@
   import Navbar from "./Navbar.svelte";
   export let siteName = "Demo";
   export let lists = [
-    { url: "item1", name: "Item 1", relext: "external" },
-    { url: "item2", name: "Item 2", relext: "external" },
+    { url: "item1", name: "Item 1", rel: "external" },
+    { url: "item2", name: "Item 2", rel: "external" },
   ];
   export let headerClass =
     "bg-gray-200 py-3 px-10 items-center text-gray-600 border-b-2";
@@ -16,7 +16,8 @@
     "absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg z-50";
   export let navDivClass = "pb-10";
   export let topMenus;
-  export let topul;
+  export let topul =
+    "flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium";
   export let topli;
 </script>
 
@@ -24,8 +25,8 @@
 <aside class={asideClass} class:open={$open}>
   <nav class={navClass}>
     <div class={navDivClass}>
-      {#each lists as { url, name, relext }}
-        <SidebarList {url} {name} {relext} />
+      {#each lists as { url, name, rel }}
+        <SidebarList {url} {name} {rel} />
       {/each}
     </div>
   </nav>

@@ -3,46 +3,47 @@
   import Nav from "$lib/Nav.svelte";
   import SidebarList from "$lib/SidebarList.svelte";
   import Navbar from "$lib/Navbar.svelte";
-  let siteName = "Svelte-sidebar Multiple-menu Default";
-  let lists = [
-    { url: "", name: "Home", rel="external" },
-    { url: "sidebar-default", name: "Sidebar Default", rel="external" },
-    { url: "sidebar-custom", name: "Sidebar Custom Style", rel="external" },
-    { url: "sidebar-multi-default", name: "Multi-menu Default", rel="external" },
-    { url: "sidebar-multi-custom", name: "Multip-menu Custom Style", rel="external" },
+  let svelteflows = [
+    { url: "/getting-started", name: "Getting Started", rel: "external" },
+    { url: "about", name: "About", rel: "external" },
   ];
-  let lists2 = [
-    { url: "", name: "Home", rel="external" },
-    { url: "sidebar-default", name: "Sidebar Default" , rel="external"},
-    { url: "sidebar-custom", name: "Sidebar Custom Style" , rel="external"},
-    { url: "sidebar-multi-default", name: "Multi-menu Default", rel="external" },
-    { url: "sidebar-multi-custom", name: "Multip-menu Custom Style", rel="external" },
+  let siteName = "Svelte Flow";
+  let asideClass = "absolute w-auto bg-white pt-8 shadow-lg z-50 px-8";
+  let headerClass =
+    "bg-white py-3 px-10 items-center text-gray-600 border-b-2 pl-8";
+  let navClass = "px-4 text-xl";
+  let components = [
+    { url: "alerts", name: "Alerts", rel: "external" },
+    { url: "buttons", name: "Buttons", rel: "external" },
+    { url: "cards", name: "Cards", rel: "external" },
+    { url: "list-group", name: "List Group", rel: "external" },
+    { url: "modals", name: "Modals", rel: "external" },
+    { url: "tabs", name: "Tabs", rel: "external" },
   ];
   let topMenus = [
     { route: "", name: "Home", rel: "external" },
     { route: "about", name: "About", rel: "external" },
-    { route: "profile", name: "Profile", rel: "external" },
+    { route: "github", name: "GitHub", rel: "external" },
   ];
-  let topul =
-    "flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium pt-1 pr-16 tp-2";
-  let topli = "text-red-900 text-lg";
 </script>
 
-<Navbar {siteName} {topMenus} {topul} {topli} />
-<Aside>
-  <Nav>
-    <h3>Menu 1</h3>
-    {#each lists as { url, name, rel }}
-      <SidebarList {url} {name} {rel} />
-    {/each}
-  </Nav>
-  <Nav>
-    <h3>Menu 2</h3>
-    {#each lists2 as { url, name, rel }}
-      <SidebarList {url} {name} {rel} />
-    {/each}
-  </Nav>
-</Aside>
+<div class="fixed z-50 top-0 left-0 w-full">
+  <Navbar {siteName} {asideClass} {headerClass} {navClass} {topMenus} />
+  <Aside>
+    <Nav>
+      <h3>Svelte-Flow</h3>
+      {#each svelteflows as { url, name, rel }}
+        <SidebarList {url} {name} {rel} />
+      {/each}
+    </Nav>
+    <Nav>
+      <h3>Components</h3>
+      {#each components as { url, name, rel }}
+        <SidebarList {url} {name} {rel} />
+      {/each}
+    </Nav>
+  </Aside>
+</div>
 
 <main class="container mx-auto p-8">
   <h1>{siteName}</h1>

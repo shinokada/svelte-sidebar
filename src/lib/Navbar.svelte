@@ -20,9 +20,9 @@
     <slot>
       {#if topMenus}
         <ul class={topul}>
-          {#each topMenus as { route, name, relext }}
+          {#each topMenus as { route, name, rel }}
             <li class={topli}>
-              <a href={route} rel={relext}>{name}</a>
+              <a href={route} {rel}>{name}</a>
             </li>
           {/each}
         </ul>
