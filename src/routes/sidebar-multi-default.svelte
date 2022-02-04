@@ -5,18 +5,34 @@
   import Navbar from "$lib/Navbar.svelte";
   let siteName = "Svelte-sidebar Multiple-menu Default";
   let lists = [
-    { url: "", name: "Home", rel="external" },
-    { url: "sidebar-default", name: "Sidebar Default", rel="external" },
-    { url: "sidebar-custom", name: "Sidebar Custom Style", rel="external" },
-    { url: "sidebar-multi-default", name: "Multi-menu Default", rel="external" },
-    { url: "sidebar-multi-custom", name: "Multip-menu Custom Style", rel="external" },
+    { url: "", name: "Home", rel: "external" },
+    { url: "sidebar-default", name: "Sidebar Default", rel: "external" },
+    { url: "sidebar-custom", name: "Sidebar Custom Style", rel: "external" },
+    {
+      url: "sidebar-multi-default",
+      name: "Multi-menu Default",
+      rel: "external",
+    },
+    {
+      url: "sidebar-multi-custom",
+      name: "Multip-menu Custom Style",
+      rel: "external",
+    },
   ];
   let lists2 = [
-    { url: "", name: "Home", rel="external" },
-    { url: "sidebar-default", name: "Sidebar Default" , rel="external"},
-    { url: "sidebar-custom", name: "Sidebar Custom Style" , rel="external"},
-    { url: "sidebar-multi-default", name: "Multi-menu Default", rel="external" },
-    { url: "sidebar-multi-custom", name: "Multip-menu Custom Style", rel="external" },
+    { url: "", name: "Home", rel: "external" },
+    { url: "sidebar-default", name: "Sidebar Default", rel: "external" },
+    { url: "sidebar-custom", name: "Sidebar Custom Style", rel: "external" },
+    {
+      url: "sidebar-multi-default",
+      name: "Multi-menu Default",
+      rel: "external",
+    },
+    {
+      url: "sidebar-multi-custom",
+      name: "Multip-menu Custom Style",
+      rel: "external",
+    },
   ];
   let topMenus = [
     { route: "", name: "Home", rel: "external" },

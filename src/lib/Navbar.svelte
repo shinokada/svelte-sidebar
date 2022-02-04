@@ -6,17 +6,19 @@
   export let hamburgerClass =
     "text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none";
   export let topMenus;
+  export let svgClass = "w-4/5 h-9 text-lg pt-1 pl-8";
+  export let svgText;
   export let topul =
-    "flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium";
-  export let topli;
+    "flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium pt-1";
+  export let topli = "text-lg";
 </script>
 
 <header class={headerClass}>
   <nav class="flex">
-    <Hamburger {hamburgerClass} />
-    <svg width="100%" height="30">
-      <text x="0" y="20">{siteName}</text>
-    </svg>
+    <Hamburger class={hamburgerClass} />
+    <div class={svgClass}>
+      <div class={svgText}>{siteName}</div>
+    </div>
     <slot>
       {#if topMenus}
         <ul class={topul}>
@@ -30,9 +32,3 @@
     </slot>
   </nav>
 </header>
-
-<style>
-  text {
-    fill: currentColor;
-  }
-</style>

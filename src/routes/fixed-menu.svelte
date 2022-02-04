@@ -8,10 +8,12 @@
     { url: "about", name: "About", rel: "external" },
   ];
   let siteName = "Svelte Flow";
-  let asideClass = "absolute w-auto bg-white pt-8 shadow-lg z-50 px-8";
+  let asideClass =
+    "absolute w-auto bg-white pt-8 shadow-lg z-50 px-4 min-h-screen";
   let headerClass =
-    "bg-white py-3 px-10 items-center text-gray-600 border-b-2 pl-8";
-  let navClass = "px-4 text-xl";
+    "bg-white py-3 px-20 items-center text-gray-600 border-b-2 p-8";
+  let navClass = "p-8 bg-white text-xl ";
+
   let components = [
     { url: "alerts", name: "Alerts", rel: "external" },
     { url: "buttons", name: "Buttons", rel: "external" },
@@ -28,15 +30,15 @@
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
-  <Navbar {siteName} {asideClass} {headerClass} {navClass} {topMenus} />
-  <Aside>
-    <Nav>
+  <Navbar {siteName} {headerClass} {topMenus} />
+  <Aside {asideClass}>
+    <Nav {navClass}>
       <h3>Svelte-Flow</h3>
       {#each svelteflows as { url, name, rel }}
         <SidebarList {url} {name} {rel} />
       {/each}
     </Nav>
-    <Nav>
+    <Nav {navClass}>
       <h3>Components</h3>
       {#each components as { url, name, rel }}
         <SidebarList {url} {name} {rel} />
@@ -45,7 +47,7 @@
   </Aside>
 </div>
 
-<main class="container mx-auto p-8">
+<main class="container mx-auto p-24">
   <h1>{siteName}</h1>
 
   <p>
