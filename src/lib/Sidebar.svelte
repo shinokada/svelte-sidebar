@@ -15,9 +15,12 @@
   export let asideClass =
     "absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg z-50";
   export let navDivClass = "pb-10";
+  export let topMenus;
+  export let topul;
+  export let topli;
 </script>
 
-<Navbar {siteName} {headerClass} {hamburgerClass} />
+<Navbar {siteName} {headerClass} {hamburgerClass} {topMenus} {topul} {topli} />
 <aside class={asideClass} class:open={$open}>
   <nav class={navClass}>
     <div class={navDivClass}>
