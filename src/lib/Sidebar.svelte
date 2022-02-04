@@ -4,8 +4,8 @@
   import Navbar from "./Navbar.svelte";
   export let siteName = "Demo";
   export let lists = [
-    { url: "item1", name: "Item 1", rel: "external" },
-    { url: "item2", name: "Item 2" },
+    { url: "item1", name: "Item 1", relext: "external" },
+    { url: "item2", name: "Item 2", relext: "external" },
   ];
   export let headerClass =
     "bg-gray-200 py-3 px-10 items-center text-gray-600 border-b-2";
@@ -21,8 +21,8 @@
 <aside class={asideClass} class:open={$open}>
   <nav class={navClass}>
     <div class={navDivClass}>
-      {#each lists as { url, name, rel }}
-        <SidebarList {url} {name} {rel} />
+      {#each lists as { url, name, relext }}
+        <SidebarList {url} {name} {relext} />
       {/each}
     </div>
   </nav>
