@@ -28,7 +28,7 @@
   {sideBarListClass}
 />
 <div class="container mx-auto">
-  <main class="p-8">
+  <main class="p-24">
     <slot />
   </main>
 </div>

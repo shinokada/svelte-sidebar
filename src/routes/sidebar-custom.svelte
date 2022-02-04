@@ -1,20 +1,34 @@
 <script>
   import Sidebar from "$lib/Sidebar.svelte";
-  let lists = [
-    { url: "", name: "Home" },
-    { url: "sidebar-default", name: "Sidebar Default" },
-    { url: "sidebar-custom", name: "Sidebar Custom Style" },
-    { url: "sidebar-multi-default", name: "Multi-menu Default" },
-    { url: "sidebar-multi-custom", name: "Multip-menu Custom Style" },
-  ];
-  let siteName = "Svelte-sidebar Custom Style";
-  let headerClass =
-    "bg-red-200 py-3 px-10 items-center text-yellow-600 border-b-2";
-  let asideClass = "absolute w-auto h-full bg-purple-200 border-r-2 shadow-lg";
-  let navClass = "p-5 text-xl";
+  import { menuList, lorem, topMenus } from "./menus";
+  let siteName = "Svelte-sidebar";
+  let headerClass = "bg-pink-700 py-3 px-10 items-center text-white border-b-2";
+  let asideClass = "absolute w-auto h-full bg-red-50 pt-8 border-r-2 shadow-lg";
+  let navClass = "p-5 text-base";
 </script>
 
-<Sidebar {lists} {siteName} {headerClass} {asideClass} {navClass} />
-<main class="container mx-auto p-8">
-  <h1>{siteName}</h1>
+<Sidebar
+  lists={menuList}
+  {siteName}
+  {headerClass}
+  {asideClass}
+  {navClass}
+  {topMenus}
+/>
+<main class="container mx-auto p-24">
+  <h1 class="text-3xl">
+    {siteName}
+  </h1>
+  <p class="pt-4">
+    {lorem}
+  </p>
+  <p class="pt-4">
+    {lorem}
+  </p>
+  <p class="pt-4">
+    {lorem}
+  </p>
+  <p class="pt-4">
+    {lorem}
+  </p>
 </main>

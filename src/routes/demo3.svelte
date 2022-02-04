@@ -35,5 +35,5 @@
 </Aside>
 
 <main class="container mx-auto p-8">
-  <h1>{siteName}</h1>
+  <h1 class="text-3xl">{siteName}</h1>
 </main>

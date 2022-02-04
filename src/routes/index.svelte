@@ -1,18 +1,24 @@
 <script>
   import Sidebar from "$lib/Sidebar.svelte";
-  let lists = [
-    { url: "", name: "Home" },
-    { url: "sidebar-default", name: "Sidebar Default" },
-    { url: "sidebar-custom", name: "Sidebar Custom Style" },
-    { url: "sidebar-multi-default", name: "Multi-menu Default" },
-    { url: "sidebar-multi-custom", name: "Multip-menu Custom Style" },
-  ];
-  let siteName = "Svelte-sidebar Demo";
+  import { menuList, lorem, topMenus } from "./menus";
+  let siteName = "Svelte-sidebar";
 </script>
 
-<Sidebar {lists} {siteName} />
-<main class="container mx-auto p-8">
-  <h1>
+<Sidebar lists={menuList} {siteName} {topMenus} />
+<main class="container mx-auto p-24">
+  <h1 class="text-3xl">
     {siteName}
   </h1>
+  <p class="pt-4">
+    {lorem}
+  </p>
+  <p class="pt-4">
+    {lorem}
+  </p>
+  <p class="pt-4">
+    {lorem}
+  </p>
+  <p class="pt-4">
+    {lorem}
+  </p>
 </main>

@@ -1,13 +1,13 @@
 <script>
   import Sidebar from "$lib/Sidebar.svelte";
-  let lists = [
-    { url: "demo1", name: "Home" },
-    { url: "about", name: "About" },
-  ];
-  let siteName = "My demo";
+  import { menuList, lorem, topMenus } from "./menus";
+  let siteName = "Svelte-sidebar Demo";
 </script>
 
-<Sidebar {lists} {siteName} />
-<main class="container mx-auto p-8">
-  <h1>About page</h1>
+<Sidebar lists={menuList} {siteName} {topMenus} />
+<main class="container mx-auto p-24">
+  <h1 class="text-3xl">About page</h1>
+  <p class="pt-4">
+    {lorem}
+  </p>
 </main>
