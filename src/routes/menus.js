@@ -8,10 +8,15 @@ export let menuList = [
 ];
 
 export let topMenus = [
-  { route: "/", name: "Home", rel: "external" },
+  { route: "", name: "Home", rel: "external" },
   { route: "about", name: "About", rel: "external" },
-  { route: "https://github.com/shinokada/svelte-sidebar", name: "GitHub", rel: "external" },
+  {
+    route: "https://github.com/shinokada/svelte-flow",
+    name: "GitHub",
+    rel: "",
+  },
 ];
+
 
 export let lorem =`Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio
 autem aperiam hic quis animi magnam alias voluptas voluptatibus doloremque

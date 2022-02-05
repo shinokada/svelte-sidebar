@@ -17,7 +17,7 @@
   <nav class="flex">
     <Hamburger class={hamburgerClass} />
     <div class={siteClass}>
-      <div class={siteText}>{siteName}</div>
+      <div class={siteText}><a href="/">{siteName}</a></div>
     </div>
     <slot>
       {#if topMenus}

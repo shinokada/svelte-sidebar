@@ -22,7 +22,7 @@
         <SidebarList {url} {name} {rel} />
       {/each}
     </Nav>
-    <Nav>
+    <Nav {navClass} {navDivClass}>
       <h3>Menu 2</h3>
       {#each menuList as { url, name, rel }}
         <SidebarList {url} {name} {rel} />
