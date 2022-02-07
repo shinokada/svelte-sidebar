@@ -1,16 +1,18 @@
 <script>
   import Hamburger from "./components/Hamburger.svelte";
+  import TopMenu from "./TopMenu.svelte";
   export let headerClass =
     "bg-gray-200 py-3 px-10 items-center text-gray-600 border-b-2";
   export let siteName = "Demo";
   export let hamburgerClass =
     "text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none";
   export let topMenus;
-  export let siteClass = "w-8/12 h-9 text-lg pt-1 p-8";
+  export let siteClass = "w-6/12 h-9 text-lg pt-1 p-8";
   export let siteText;
   export let topul =
-    "flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium pt-1";
-  export let topli = "text-lg";
+    "flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1";
+  export let topli =
+    "block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
 </script>
 
 <header class={headerClass}>
@@ -21,13 +23,7 @@
     </div>
     <slot>
       {#if topMenus}
-        <ul class={topul}>
-          {#each topMenus as { route, name, rel }}
-            <li class={topli}>
-              <a href={route} {rel}>{name}</a>
-            </li>
-          {/each}
-        </ul>
+        <TopMenu {topMenus} {topul} {topli} />
       {/if}
     </slot>
   </nav>

@@ -3,7 +3,7 @@
   import Nav from "$lib/Nav.svelte";
   import SidebarList from "$lib/SidebarList.svelte";
   import Navbar from "$lib/Navbar.svelte";
-  import { menuList, lorem, topMenus } from "./menus";
+  import { menuList, lorem } from "./menus";
   let siteName = "Svelte-sidebar";
   let navClass = "p-5 text-lg";
   let navDivClass = "pb-10";
@@ -15,7 +15,7 @@
   let headerClass = "bg-gray-700 py-3 px-10 items-center text-white border-b-2";
 </script>
 
-<Navbar {siteName} {hamburgerClass} {headerClass} {topMenus} />
+<Navbar {siteName} {hamburgerClass} {headerClass} />
 <Aside {asideClass}>
   <Nav {navClass} {navDivClass}>
     <h3>Menu 1</h3>

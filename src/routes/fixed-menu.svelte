@@ -3,7 +3,7 @@
   import Nav from "$lib/Nav.svelte";
   import SidebarList from "$lib/SidebarList.svelte";
   import Navbar from "$lib/Navbar.svelte";
-  import { menuList, lorem, topMenus } from "./menus";
+  import { menuList, lorem } from "./menus";
   let siteName = "Svelte sidebar";
   let asideClass =
     "absolute w-auto bg-white pt-8 shadow-lg z-50 px-4 min-h-screen";
@@ -14,7 +14,7 @@
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
-  <Navbar {siteName} {headerClass} {topMenus} />
+  <Navbar {siteName} {headerClass} />
   <Aside {asideClass}>
     <Nav {navClass} {navDivClass}>
       <h3>Menu 1</h3>

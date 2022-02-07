@@ -3,11 +3,11 @@
   import Nav from "$lib/Nav.svelte";
   import SidebarList from "$lib/SidebarList.svelte";
   import Navbar from "$lib/Navbar.svelte";
-  import { menuList, lorem } from "./menus";
+  import { menuList, lorem, topMenus } from "../menus";
   let siteName = "Svelte-sidebar";
 </script>
 
-<Navbar {siteName} />
+<Navbar {siteName} {topMenus} />
 <Aside>
   <Nav>
     <h3>Menu 1</h3>
