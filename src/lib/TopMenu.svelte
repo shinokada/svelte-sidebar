@@ -1,12 +1,11 @@
 <script>
-  export let topMenus;
-  export let topul;
-  export let topli;
+  export let topMenus = undefined;
+  export let topul = undefined;
+  export let topli = undefined;
+  export let topMenuDiv = undefined;
 </script>
 
-<div
-  class="container flex flex-wrap flex-end justify-between items-center mx-auto"
->
+<div class={topMenuDiv}>
   <button
     data-collapse-toggle="mobile-menu"
     type="button"

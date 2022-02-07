@@ -1,10 +1,10 @@
 <script>
   import Sidebar from "$lib/Sidebar.svelte";
-  import { menuList, lorem, topMenus } from "./menus";
+  import { menuList, lorem } from "./menus";
   let siteName = "Svelte-sidebar";
 </script>
 
-<Sidebar lists={menuList} {siteName} {topMenus} />
+<Sidebar lists={menuList} {siteName} />
 <main class="container mx-auto p-24">
   <h1 class="text-3xl">
     {siteName}
