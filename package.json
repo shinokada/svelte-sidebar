@@ -1,6 +1,6 @@
 {
   "name": "@codewithshin/svelte-sidebar",
-  "version": "0.1.1",
+  "version": "0.1.2",
 	"description": "A Svelte package for sidebar",
 	"author": {
     "name": "Shinichi Okada",

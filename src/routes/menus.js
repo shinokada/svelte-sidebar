@@ -5,7 +5,7 @@ export let menuList = [
   { url: "sidebar-multi-default", name: "Multi-menu Default" },
   { url: "sidebar-multi-custom", name: "Multip-menu Custom Style" },
   { url: "fixed-menu", name: "Fixed Menu" },
-  { url: "topmenu", name: "Adding Top Menu" },
+  { url: "topmenu", name: "Adding Top Menu", rel: "external"},
 ];
 
 export let topMenus = [

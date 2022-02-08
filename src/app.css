@@ -2,3 +2,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#hamburgerBtn{
+    position: fixed;
+    top: 22px;
+    left: 22px;
+}
