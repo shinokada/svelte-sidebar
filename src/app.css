@@ -5,7 +5,7 @@
 
 
 #hamburgerBtn{
-    position: fixed;
-    top: 22px;
-    left: 22px;
+    position: absolute;
+    top: 6px;
+    left: 0px;
 }
