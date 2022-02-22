@@ -1,18 +1,16 @@
 <script>
   import { page } from "$app/stores";
-  export let topMenus = undefined;
-  export let topul = undefined;
-  export let topli = undefined;
-  export let buttonClass =
-    "inline-flex items-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200";
-  export let dropdownLi =
-    "flex justify-between items-center py-2 pr-4 pl-3 w-full text-sm font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto";
-  export let activeDropdownDiv =
-    "z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow";
-  export let activeChildLi =
-    "block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100";
-  export let childLi =
-    "block py-2 pr-4 pl-3  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-sm";
+
+  export let activeDropdownDiv;
+  export let activeChildLi;
+  export let buttonClass;
+  export let childLi;
+  export let dropdownLi;
+  export let topMenus;
+  export let topMenuDiv;
+  export let topul;
+  export let topli;
+
   let hidden = true;
   let block = false;
   let activeDropdown = undefined;
@@ -24,7 +22,6 @@
     console.log("activeDropdown: ", activeDropdown);
   };
 
-  export let topMenuDiv = undefined;
   let barHidden = true;
   const handleClickbtn = () => {
     barHidden = !barHidden;
