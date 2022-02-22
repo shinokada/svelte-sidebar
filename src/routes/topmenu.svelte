@@ -3,7 +3,7 @@
   import Nav from "$lib/Nav.svelte";
   import SidebarList from "$lib/SidebarList.svelte";
   import Navbar from "$lib/Navbar.svelte";
-  import { menuList, lorem, topMenus } from "../menus";
+  import { menuList, lorem, topMenus } from "./menus";
   let siteName = "Svelte-sidebar";
 </script>
 

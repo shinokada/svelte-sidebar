@@ -2,10 +2,11 @@ export let menuList = [
   { url: "", name: "Home" },
   { url: "sidebar-default", name: "Sidebar Default" },
   { url: "sidebar-custom", name: "Sidebar Custom Style" },
-  { url: "sidebar-multi-default", name: "Multi-menu Default" },
-  { url: "sidebar-multi-custom", name: "Multip-menu Custom Style" },
+  { url: "sidebar-multi-default", name: "Multiple-menu Default" },
+  { url: "sidebar-multi-custom", name: "Multiple-menu Custom Style" },
   { url: "fixed-menu", name: "Fixed Menu" },
-  { url: "topmenu", name: "Adding Top Menu", rel: "external"},
+  { url: "topmenu", name: "Top Menu" },
+  { url: "scroll-sidebar", name: "Scroll Sidebar"},
 ];
 
 export let topMenus = [
@@ -23,7 +24,7 @@ export let topMenus = [
   },
   {
     id: 3,
-    name: "Dropdown 1",
+    name: "Dropdown",
     link: "/",
     rel: undefined,
     child: [
@@ -49,7 +50,7 @@ export let topMenus = [
   },
   {
     id: 7,
-    name: "Dropdown 2",
+    name: "Dropdown",
     link: "/",
     rel: undefined,
     child: [

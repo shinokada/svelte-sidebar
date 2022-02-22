@@ -3,6 +3,16 @@
   export let topMenus = undefined;
   export let topul = undefined;
   export let topli = undefined;
+  export let buttonClass =
+    "inline-flex items-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200";
+  export let dropdownLi =
+    "flex justify-between items-center py-2 pr-4 pl-3 w-full text-sm font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto";
+  export let activeDropdownDiv =
+    "z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow";
+  export let activeChildLi =
+    "block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100";
+  export let childLi =
+    "block py-2 pr-4 pl-3  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-sm";
   let hidden = true;
   let block = false;
   let activeDropdown = undefined;
@@ -13,7 +23,6 @@
     activeDropdown = dropdown.id;
     console.log("activeDropdown: ", activeDropdown);
   };
-  export let textSize = "text-sm";
 
   export let topMenuDiv = undefined;
   let barHidden = true;
@@ -27,7 +36,7 @@
     on:click={handleClickbtn}
     data-collapse-toggle="mobile-menu"
     type="button"
-    class="inline-flex items-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    class={buttonClass}
     aria-controls="mobile-menu-2"
     aria-expanded="false"
   >
@@ -64,9 +73,7 @@
       {#each topMenus as { id, name, link, rel, child }}
         {#if child}
           <li>
-            <button
-              on:click={handleDropdown({ id })}
-              class="flex justify-between items-center py-2 pr-4 pl-3 w-full {textSize} font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+            <button on:click={handleDropdown({ id })} class={dropdownLi}
               >{name}
               <svg
                 class="ml-1 w-4 h-4"
@@ -85,16 +92,13 @@
               <div
                 class:hidden
                 class:block
-                class="z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+                class={activeDropdownDiv}
                 style="position: absolute; margin: 0px;"
               >
                 <ul class="py-1" aria-labelledby="dropdownLargeButton">
                   {#each child as item}
                     <li>
-                      <a
-                        href={item.link}
-                        {rel}
-                        class="block py-2 px-4 text-{textSize} text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+                      <a href={item.link} {rel} class={activeChildLi}
                         >{item.name}</a
                       >
                     </li>
@@ -109,8 +113,7 @@
               class:active={$page.url.pathname === link}
               href={link}
               {rel}
-              class="block py-2 pr-4 pl-3  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 dark:hover:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent {textSize}"
-              >{name}</a
+              class={childLi}>{name}</a
             >
           </li>
         {/if}
