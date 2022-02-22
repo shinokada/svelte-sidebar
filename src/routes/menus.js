@@ -9,14 +9,71 @@ export let menuList = [
 ];
 
 export let topMenus = [
-  { route: "", name: "Home", rel: "external" },
-  { route: "about", name: "About", rel: "external" },
   {
-    route: "https://github.com/shinokada/svelte-flow",
-    name: "GitHub",
-    rel: "",
+    id: 1,
+    name: "Home",
+    link: "/",
+    rel: undefined,
   },
-];
+  {
+    id: 2,
+    name: "Menu",
+    link: "/alerts",
+    rel: undefined,
+  },
+  {
+    id: 3,
+    name: "Dropdown 1",
+    link: "/",
+    rel: undefined,
+    child: [
+      {
+        id: 4,
+        name: "Dropdown 1-1",
+        link: "/",
+        rel: undefined,
+      },
+      {
+        id: 5,
+        name: "Dropdown 1-2",
+        link: "/",
+        rel: undefined,
+      },
+      {
+        id: 6,
+        name: "Dropdown 1-3",
+        link: "/",
+        rel: undefined,
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "Dropdown 2",
+    link: "/",
+    rel: undefined,
+    child: [
+      {
+        id: 8,
+        name: "Dropdown 2-1",
+        link: "/",
+        rel: undefined,
+      },
+      {
+        id: 9,
+        name: "Dropdown 2-2",
+        link: "/",
+        rel: undefined,
+      },
+      {
+        id: 10,
+        name: "Dropdown 2-3",
+        link: "/",
+        rel: undefined,
+      },
+    ],
+  }
+];;
 
 
 export let lorem =`Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio

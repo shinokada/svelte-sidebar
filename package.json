@@ -1,15 +1,15 @@
 {
   "name": "@codewithshin/svelte-sidebar",
-  "version": "0.1.5",
-	"description": "A Svelte package for sidebar",
-	"author": {
+  "version": "0.2.0",
+  "description": "A Svelte package for sidebar",
+  "author": {
     "name": "Shinichi Okada",
     "email": "connect@codewithshin.com",
     "url": "https://blog.codewithshin.com"
   },
-	"bugs": "https://github.com/shinokada/svelte-sidebar/issues",
-	"homepage": "https://github.com/shinokada/svelte-sidebar",
-	"license": "MIT",
+  "bugs": "https://github.com/shinokada/svelte-sidebar/issues",
+  "homepage": "https://github.com/shinokada/svelte-sidebar",
+  "license": "MIT",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -19,23 +19,25 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
-    "svelte": "^3.44.0",
-    "svelte2tsx": "^0.4.13",
-    "svelte-preprocess": "^4.10.1",
-    "postcss": "^8.4.5",
     "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "svelte": "^3.44.0",
+    "svelte-preprocess": "^4.10.1",
+    "svelte2tsx": "^0.4.13",
     "tailwindcss": "^3.0.12"
   },
   "type": "module",
-	"keywords": [
-		"svelte",
-		"sveltekit",
-		"sidebar"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/shinokada/svelte-sidebar"
-	}
-	
-	
+  "keywords": [
+    "svelte",
+    "sveltekit",
+    "sidebar"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinokada/svelte-sidebar"
+  },
+  "dependencies": {
+    "@woden/svelte-simplebar": "^1.0.0",
+    "simplebar": "^5.3.6"
+  }
 }
