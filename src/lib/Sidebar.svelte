@@ -11,7 +11,7 @@
   export let navClass = "p-8 text-xl";
   export let hamburgerClass;
   export let asideClass =
-    "absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg z-50";
+    "absolute w-auto bg-gray-200 border-r-2 shadow-lg z-50";
   export let navDivClass = "pb-10";
   export let topMenus;
   export let topul;

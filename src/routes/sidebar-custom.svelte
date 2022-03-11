@@ -3,7 +3,7 @@
   import { menuList, lorem } from "./menus";
   let siteName = "Svelte-sidebar";
   let headerClass = "bg-pink-700 py-3 px-10 items-center text-white border-b-2";
-  let asideClass = "absolute w-auto h-full bg-red-50 pt-8 border-r-2 shadow-lg";
+  let asideClass = "absolute w-auto bg-red-50 pt-8 border-r-2 shadow-lg";
   let navClass = "p-5 text-base";
 </script>
 

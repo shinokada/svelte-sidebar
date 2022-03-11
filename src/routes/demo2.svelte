@@ -10,7 +10,7 @@
     "text-white hover:text-gray-500 cursor-pointer mr-4 border-none focus:outline-none";
   let headerClass = "bg-gray-700 py-3 px-10 items-center text-white border-b-2";
   let asideClass =
-    "absolute w-auto h-full bg-gray-700 text-white border-r-2 shadow-lg";
+    "absolute w-auto bg-gray-700 text-white border-r-2 shadow-lg";
   let navClass = "p-5 text-xl";
   let navDivClass = "pb-10 ";
   let sideBarListClass =

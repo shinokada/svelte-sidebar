@@ -24,7 +24,7 @@ The default values are:
 siteName="Demo"
 headerClass="text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none"
 hamburgerClass="text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none"
-asideClass="absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg"
+asideClass="absolute w-auto bg-gray-200 border-r-2 shadow-lg"
 navClass="p-12 text-xl"
 sideBarListClass = "border-b border-gray-100 mb-2 px-4";
 lists=[
@@ -73,7 +73,7 @@ lists=[
     "text-blue-500 hover:text-blue-700 cursor-pointer mr-4 border-none focus:outline-none";
   let headerClass =
     "bg-red-200 py-3 px-10 items-center text-yellow-600 border-b-2";
-  let asideClass = "absolute w-auto h-full bg-purple-200 border-r-2 shadow-lg";
+  let asideClass = "absolute w-auto bg-purple-200 border-r-2 shadow-lg";
   let navClass = "p-5 text-xl";
   let navDivClass = "pb-10";
   let sideBarListClass = "border-b border-gray-500 mb-2 px-4";
@@ -102,7 +102,7 @@ See the demo2.
 You can set `asideClass` in the `Aside` module. The default values is:
 
 ```js
-asideClass="absolute w-auto h-full bg-gray-200 border-r-2 shadow-lg"
+asideClass="absolute w-auto bg-gray-200 border-r-2 shadow-lg"
 ```
 
 ### Navbar
@@ -187,7 +187,7 @@ sideBarListClass = "border-b border-gray-400 mb-2 px-4";
   let headerClass = 'bg-red-200 py-3 px-10 items-center text-yellow-600 border-b-2';
   let hamburgerClass =
     'text-red-500 hover:text-red-700 cursor-pointer mr-4 border-none focus:outline-none';
-  let asideClass = 'absolute w-auto h-full bg-purple-200 border-r-2 shadow-lg';
+  let asideClass = 'absolute w-auto bg-purple-200 border-r-2 shadow-lg';
   let navClass = 'pt-6 px-12 text-xl';
   let navDivClass = 'pb-7';
   let sideBarListClass = "border-b border-gray-600 mb-2 px-4";
