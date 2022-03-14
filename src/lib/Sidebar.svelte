@@ -1,41 +1,40 @@
-<script>
-  import { open } from "./store";
-  import SidebarList from "./SidebarList.svelte";
-  import Navbar from "./Navbar.svelte";
-  export let siteName = "Demo";
-  export let lists = [
-    { url: "item1", name: "Item 1", rel: "external" },
-    { url: "item2", name: "Item 2", rel: "external" },
-  ];
-  export let headerClass;
-  export let navClass = "p-8 text-xl";
-  export let hamburgerClass;
-  export let asideClass =
-    "absolute w-auto bg-gray-200 border-r-2 shadow-lg z-50";
-  export let navDivClass = "pb-10";
-  export let topMenus;
-  export let topul;
-  export let topli;
+<script lang="ts">
+	import { open } from './store';
+	import { SidebarList, Navbar } from '$lib/index';
+	import type { MenuType } from './types';
+	export let siteName = 'Demo';
+	export let lists: MenuType[];
+	export let headerClass: string = '';
+	export let navClass = 'p-8 text-xl';
+	// export let hamburgerClass: string;
+	export let asideClass = 'absolute w-auto bg-gray-200 border-r-2 shadow-lg z-50';
+	export let navDivClass = 'pb-10';
+	// export let topMenus: TopMenuType[];
+	// export let topul: string;
+	// export let topli: string;
+	// export let siteText: string;
 </script>
 
-<Navbar {siteName} {headerClass} {hamburgerClass} {topMenus} {topul} {topli} />
+<Navbar {siteName} {headerClass}>
+	<slot />
+</Navbar>
 <aside class={asideClass} class:open={$open}>
-  <nav class={navClass}>
-    <div class={navDivClass}>
-      {#each lists as { url, name, rel }}
-        <SidebarList {url} {name} {rel} />
-      {/each}
-    </div>
-  </nav>
+	<nav class={navClass}>
+		<div class={navDivClass}>
+			{#each lists as { href, name, rel }}
+				<SidebarList {href} {name} {rel} />
+			{/each}
+		</div>
+	</nav>
 </aside>
 
 <style>
-  aside {
-    left: -100%;
-    transition: left 0.3s ease-in-out;
-  }
+	aside {
+		left: -100%;
+		transition: left 0.3s ease-in-out;
+	}
 
-  .open {
-    left: 0;
-  }
+	.open {
+		left: 0;
+	}
 </style>

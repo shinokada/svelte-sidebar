@@ -1,83 +1,69 @@
-export let menuList = [
-  { url: "", name: "Home" },
-  { url: "sidebar-default", name: "Sidebar Default" },
-  { url: "sidebar-custom", name: "Sidebar Custom Style" },
-  { url: "sidebar-multi-default", name: "Multiple-menu Default" },
-  { url: "sidebar-multi-custom", name: "Multiple-menu Custom Style" },
-  { url: "fixed-menu", name: "Fixed Menu" },
-  { url: "topmenu", name: "Top Menu" },
-  { url: "scroll-sidebar", name: "Scroll Sidebar"},
+import type { Menu, TopMenu } from '$lib/types'
+
+export const menuList: Menu[] = [
+  { href: "sidebar-default", name: "Sidebar Default" },
+  { href: "sidebar-custom", name: "Sidebar Custom Style" },
+  { href: "sidebar-multi-default", name: "Multiple-menu Default" },
+  { href: "sidebar-multi-custom", name: "Multiple-menu Custom Style" },
+  { href: "fixed-menu", name: "Fixed Menu" },
+  { href: "topmenu", name: "Top Menu" },
+  { href: "scroll-sidebar", name: "Scroll Sidebar"},
 ];
 
-export let topMenus = [
+export const topMenus: TopMenu[] = [
   {
     id: 1,
-    name: "Home",
-    link: "/",
-    rel: undefined,
+    name: "Menu",
+    href: "/"
   },
   {
     id: 2,
-    name: "Menu",
-    link: "/alerts",
-    rel: undefined,
-  },
-  {
-    id: 3,
     name: "Dropdown",
-    link: "/",
-    rel: undefined,
+    href: "/",
     child: [
       {
-        id: 4,
+        id: 3,
         name: "Dropdown 1-1",
-        link: "/",
-        rel: undefined,
+        href: "/"
+      },
+      {
+        id: 4,
+        name: "Dropdown 1-2",
+        href: "/"
       },
       {
         id: 5,
-        name: "Dropdown 1-2",
-        link: "/",
-        rel: undefined,
-      },
-      {
-        id: 6,
         name: "Dropdown 1-3",
-        link: "/",
-        rel: undefined,
+        href: "/"
       },
     ],
   },
   {
-    id: 7,
+    id: 6,
     name: "Dropdown",
-    link: "/",
-    rel: undefined,
+    href: "/",
     child: [
       {
-        id: 8,
+        id: 7,
         name: "Dropdown 2-1",
-        link: "/",
-        rel: undefined,
+        href: "/"
+      },
+      {
+        id: 8,
+        name: "Dropdown 2-2",
+        href: "/",
       },
       {
         id: 9,
-        name: "Dropdown 2-2",
-        link: "/",
-        rel: undefined,
-      },
-      {
-        id: 10,
         name: "Dropdown 2-3",
-        link: "/",
-        rel: undefined,
+        href: "/",
       },
     ],
   }
 ];;
 
 
-export let lorem =`Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio
+export const lorem =`Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio
 autem aperiam hic quis animi magnam alias voluptas voluptatibus doloremque
 nisi sapiente tempore quidem, exercitationem pariatur natus a dignissimos
 consequuntur. Ea soluta voluptate voluptates dolore vel dolorum doloribus

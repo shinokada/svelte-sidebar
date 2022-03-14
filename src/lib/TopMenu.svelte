@@ -1,15 +1,21 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
-
-	export let activeDropdownDiv;
-	export let activeChildLi;
-	export let buttonClass;
-	export let childLi;
-	export let dropdownLi;
-	export let topMenus;
-	export let topMenuDiv;
-	export let topul;
-	export let topli;
+	import type { TopMenuType } from './types';
+	export let activeDropdownDiv =
+		'z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow';
+	export let buttonClass =
+		'inline-flex items-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200';
+	export let activeChildLi = 'block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100';
+	export let childLi =
+		'block py-2 pr-4 pl-3  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-sm';
+	export let dropdownLi =
+		'flex justify-between items-center py-2 pr-4 pl-3 w-full text-sm font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto';
+	export let topMenuDiv = 'container flex flex-wrap justify-end mx-auto';
+	export let topMenus: TopMenuType[];
+	export let topul =
+		'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1';
+	export let topli =
+		'block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0';
 
 	let hidden = true;
 	let block = false;
@@ -59,10 +65,10 @@
 	</button>
 	<div class:hidden={barHidden} class="w-full md:block md:w-auto" id="mobile-menu">
 		<ul class={topul}>
-			{#each topMenus as { id, name, link, rel, child }}
+			{#each topMenus as { id, name, href, rel, child }}
 				{#if child}
 					<li>
-						<button on:click={handleDropdown({ id })} class={dropdownLi}
+						<button on:click={() => handleDropdown({ id })} class={dropdownLi}
 							>{name}
 							<svg
 								class="ml-1 w-4 h-4"
@@ -87,7 +93,7 @@
 								<ul class="py-1" aria-labelledby="dropdownLargeButton">
 									{#each child as item}
 										<li>
-											<a href={item.link} {rel} class={activeChildLi}>{item.name}</a>
+											<a href={item.href} {rel} class={activeChildLi}>{item.name}</a>
 										</li>
 									{/each}
 								</ul>
@@ -96,9 +102,7 @@
 					</li>
 				{:else}
 					<li class={topli}>
-						<a class:active={$page.url.pathname === link} href={link} {rel} class={childLi}
-							>{name}</a
-						>
+						<a class:active={$page.url.pathname === href} {href} {rel} class={childLi}>{name}</a>
 					</li>
 				{/if}
 			{/each}

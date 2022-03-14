@@ -25,7 +25,7 @@ npm i -D @codewithshin/svelte-sidebar@latest
   let siteName = "Svelte-sidebar";
 </script>
 
-<Sidebar lists={menuList} {siteName} {topMenus} />
+<Sidebar lists={menuList} {siteName} />
 ```
 
 ## Custom default sidebar example
@@ -55,7 +55,6 @@ npm i -D @codewithshin/svelte-sidebar@latest
   {headerClass}
   {asideClass}
   {navClass}
-  {topMenus}
 />
 ```
 
@@ -81,7 +80,7 @@ npm i -D @codewithshin/svelte-sidebar@latest
   let siteName = "Svelte-sidebar";
 </script>
 
-<Navbar {siteName} {topMenus} />
+<Navbar {siteName} />
 <Aside>
   <Nav>
     <h3>Menu 1</h3>
@@ -128,7 +127,7 @@ npm i -D @codewithshin/svelte-sidebar@latest
   let headerClass = "bg-gray-700 py-3 px-10 items-center text-white border-b-2";
 </script>
 
-<Navbar {siteName} {hamburgerClass} {headerClass} {topMenus} />
+<Navbar {siteName} {hamburgerClass} {headerClass} />
 <Aside {asideClass}>
   <Nav {navClass} {navDivClass}>
     <h3>Menu 1</h3>
@@ -149,6 +148,33 @@ npm i -D @codewithshin/svelte-sidebar@latest
 
 [Demo](https://svelte-sidebar.vercel.app/topmenu)
 
+```html
+<script>
+  import Aside from "$lib/Aside.svelte";
+  import Nav from "$lib/Nav.svelte";
+  import SidebarList from "$lib/SidebarList.svelte";
+  import Navbar from "$lib/Navbar.svelte";
+  import { menuList, lorem, topMenus } from "./menus";
+  let siteName = "Svelte-sidebar";
+</script>
+
+<Navbar {siteName} {topMenus} />
+<Aside>
+  <Nav>
+    <h3>Menu 1</h3>
+    {#each menuList as { url, name, rel }}
+      <SidebarList {url} {name} {rel} />
+    {/each}
+  </Nav>
+  <Nav>
+    <h3>Menu 2</h3>
+    {#each menuList as { url, name, rel }}
+      <SidebarList {url} {name} {rel} />
+    {/each}
+  </Nav>
+</Aside>
+```
+
 ## Fixed menu example
 
 [Demo](https://svelte-sidebar.vercel.app/fixed-menu)
@@ -167,7 +193,7 @@ npm i -D @codewithshin/svelte-sidebar@latest
   { url: "sidebar-multi-custom", name: "Multip-menu Custom Style" },
   { url: "fixed-menu", name: "Fixed Menu" },
 ];
-  let topMenus = [
+  let Menus = [
   { route: "/", name: "Home", rel: "external" },
   { route: "about", name: "About", rel: "external" },
   { route: "https://github.com/shinokada/svelte-sidebar", name: "GitHub", rel: "external" },
@@ -183,7 +209,7 @@ npm i -D @codewithshin/svelte-sidebar@latest
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
-  <Navbar {siteName} {headerClass} {topMenus} />
+  <Navbar {siteName} {headerClass} {Menus} />
   <Aside {asideClass}>
     <Nav {navClass} {navDivClass}>
       <h3>Menu 1</h3>
