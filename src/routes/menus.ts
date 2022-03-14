@@ -1,6 +1,6 @@
-import type { Menu, TopMenu } from '$lib/types'
+import type { MenuType, TopMenuType } from '$lib/types'
 
-export const menuList: Menu[] = [
+export const menuList: MenuType[] = [
   { href: "sidebar-default", name: "Sidebar Default" },
   { href: "sidebar-custom", name: "Sidebar Custom Style" },
   { href: "sidebar-multi-default", name: "Multiple-menu Default" },
@@ -10,7 +10,7 @@ export const menuList: Menu[] = [
   { href: "scroll-sidebar", name: "Scroll Sidebar"},
 ];
 
-export const topMenus: TopMenu[] = [
+export const topMenus: TopMenuType[] = [
   {
     id: 1,
     name: "Menu",
