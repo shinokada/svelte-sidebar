@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { open } from './store';
-	// export let lists;
 	export let asideClass = 'absolute w-auto bg-gray-200 border-r-2 shadow-lg';
 </script>
 

@@ -6,13 +6,8 @@
 	export let lists: MenuType[];
 	export let headerClass: string = '';
 	export let navClass = 'p-8 text-xl';
-	// export let hamburgerClass: string;
 	export let asideClass = 'absolute w-auto bg-gray-200 border-r-2 shadow-lg z-50';
 	export let navDivClass = 'pb-10';
-	// export let topMenus: TopMenuType[];
-	// export let topul: string;
-	// export let topli: string;
-	// export let siteText: string;
 </script>
 
 <Navbar {siteName} {headerClass}>
