@@ -7,7 +7,7 @@
 	let sideBarListClass = 'mb-2 px-4 hover:text-gray-500';
 	let hamburgerClass =
 		'text-white hover:text-gray-500 cursor-pointer mr-4 border-none focus:outline-none';
-	let asideClass = 'absolute w-auto bg-gray-700 text-white border-r-2 shadow-lg';
+	let asideClass = 'absolute w-auto h-screen bg-gray-700 text-white border-r-2 shadow-lg';
 	let headerClass = 'bg-gray-700 py-3 px-10 items-center text-white border-b-2';
 </script>
 

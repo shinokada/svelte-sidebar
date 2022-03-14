@@ -6,7 +6,7 @@
 	export let lists: MenuType[];
 	export let headerClass: string = 'bg-gray-200 py-3 px-10 items-center text-gray-600';
 	export let navClass = 'p-8 text-xl';
-	export let asideClass = 'absolute w-auto bg-gray-200 border-r-2 shadow-lg z-50';
+	export let asideClass = 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg z-50';
 	export let navDivClass = 'pb-10';
 </script>
 

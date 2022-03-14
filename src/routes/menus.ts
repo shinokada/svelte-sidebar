@@ -60,7 +60,7 @@ export const topMenus: TopMenuType[] = [
       },
     ],
   }
-];;
+];
 
 
 export const lorem =`Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio

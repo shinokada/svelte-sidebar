@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { open } from './store';
-	export let asideClass = 'absolute w-auto bg-gray-200 border-r-2 shadow-lg';
+	export let asideClass = 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg';
 </script>
 
 <aside class={asideClass} class:open={$open}>
