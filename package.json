@@ -1,15 +1,15 @@
 {
 	"name": "@codewithshin/svelte-sidebar",
-  "version": "0.2.5",
-  "description": "A Svelte package for sidebar",
-  "author": {
-    "name": "Shinichi Okada",
-    "email": "connect@codewithshin.com",
-    "url": "https://blog.codewithshin.com"
-  },
-  "bugs": "https://github.com/shinokada/svelte-sidebar/issues",
-  "homepage": "https://github.com/shinokada/svelte-sidebar",
-  "license": "MIT",
+	"version": "0.2.5",
+	"description": "A Svelte package for sidebar",
+	"author": {
+		"name": "Shinichi Okada",
+		"email": "connect@codewithshin.com",
+		"url": "https://blog.codewithshin.com"
+	},
+	"bugs": "https://github.com/shinokada/svelte-sidebar/issues",
+	"homepage": "https://github.com/shinokada/svelte-sidebar",
+	"license": "MIT",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
@@ -28,29 +28,30 @@
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^5.10.1",
 		"@typescript-eslint/parser": "^5.10.1",
+		"autoprefixer": "^10.4.2",
 		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.2.1",
+		"postcss": "^8.4.5",
+		"postcss-load-config": "^3.1.1",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.0",
 		"svelte": "^3.44.0",
 		"svelte-check": "^2.2.6",
 		"svelte-preprocess": "^4.10.1",
+		"svelte2tsx": "^0.5.5",
+		"tailwindcss": "^3.0.12",
 		"tslib": "^2.3.1",
-		"typescript": "~4.6.2",
-		"postcss": "^8.4.5",
-		"postcss-load-config": "^3.1.1",
-		"autoprefixer": "^10.4.2",
-		"tailwindcss": "^3.0.12"
+		"typescript": "~4.6.2"
 	},
 	"type": "module",
-  "keywords": [
-    "svelte",
-    "sveltekit",
-    "sidebar"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shinokada/svelte-sidebar"
-  }
+	"keywords": [
+		"svelte",
+		"sveltekit",
+		"sidebar"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shinokada/svelte-sidebar"
+	}
 }
