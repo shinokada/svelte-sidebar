@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Aside, Nav, SidebarList, Navbar } from '$lib/index';
 	import { menuList, lorem } from './menus';
-	let siteName = 'Svelte-sidebar';
+	let siteName = 'Default Styled Multi-menu Sidebar';
 </script>
 
 <Navbar {siteName} />
