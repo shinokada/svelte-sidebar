@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.1](https://github.com/shinokada/svelte-sidebar/compare/v0.4.0...v0.4.1) (2022-03-15)
+
+
+### Bug Fixes
+
+* index.js for export ([eb3b67c](https://github.com/shinokada/svelte-sidebar/commit/eb3b67c60b912bccfe8120b614ac678c94e0c92d))
+
 ## [0.4.0](https://github.com/shinokada/svelte-sidebar/compare/v0.2.7...v0.4.0) (2022-03-15)
 
 
