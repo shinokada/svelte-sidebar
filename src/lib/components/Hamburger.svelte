@@ -4,7 +4,7 @@
 		open.update((n) => (n = !n));
 	}
 
-	const closeSidebar = () => open.update((n) => (n = false));
+	export const closeSidebar = () => open.update((n) => (n = false));
 	export let hamburgerClass: string;
 </script>
 

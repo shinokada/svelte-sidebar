@@ -9,7 +9,9 @@
 	<h1 class="text-3xl">
 		{siteName}
 	</h1>
+	<h2 class="text-2xl w-full"><a href="/sidebar-custom-style">Custom Style</a></h2>
 	<p class="pt-4">
+		<a href="/sidebar-custom-style">Custom Style</a>
 		{lorem}
 	</p>
 	<p class="pt-4">
