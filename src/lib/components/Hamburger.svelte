@@ -3,6 +3,8 @@
 	function toggleSide() {
 		open.update((n) => (n = !n));
 	}
+
+	const closeSidebar = () => open.update((n) => (n = false));
 	export let hamburgerClass: string;
 </script>
 
@@ -19,6 +21,8 @@
 		<line id="bottom" x1="0" y1="22" x2="32" y2="22" />
 	</svg>
 </button>
+
+<div on:click={closeSidebar} class="fixed inset-0 w-full h-full" />
 
 <style>
 	svg {
