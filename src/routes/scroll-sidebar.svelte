@@ -6,7 +6,7 @@
 		'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg z-50  h-screen overflow-scroll';
 </script>
 
-<Navbar {siteName} />
+<Navbar {siteName} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" />
 
 <Aside {asideClass}>
 	<Nav>

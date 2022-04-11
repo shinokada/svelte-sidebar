@@ -11,7 +11,13 @@
 	let headerClass = 'bg-gray-700 py-3 px-10 items-center text-white border-b-2';
 </script>
 
-<Navbar {siteName} {hamburgerClass} {headerClass} />
+<Navbar
+	{siteName}
+	{hamburgerClass}
+	{headerClass}
+	logo="/images/svelte-sidebar-logo.png"
+	alt="Svelte Sidebar"
+/>
 <Aside {asideClass}>
 	<Nav {navClass} {navDivClass}>
 		<h3>Menu 1</h3>

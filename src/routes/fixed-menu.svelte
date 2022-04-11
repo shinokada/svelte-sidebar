@@ -12,7 +12,7 @@
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
-	<Navbar {siteName} {headerClass}>
+	<Navbar {siteName} {headerClass} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar">
 		<TopMenu {topMenus} />
 	</Navbar>
 	<Aside {asideClass}>

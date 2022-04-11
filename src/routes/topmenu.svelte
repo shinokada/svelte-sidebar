@@ -4,7 +4,7 @@
 	let siteName = 'Svelte-sidebar';
 </script>
 
-<Navbar {siteName}>
+<Navbar {siteName} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar">
 	<TopMenu {topMenus} />
 </Navbar>
 <Aside>
