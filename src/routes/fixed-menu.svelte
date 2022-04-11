@@ -3,6 +3,12 @@
 	import { menuList, lorem } from './menus';
 	import { topMenus } from './menus';
 
+	// let clickHook;
+	// const handleSidebar = () => {
+	// 	console.log('clicked');
+	// 	clickHook.closeSidebar();
+	// };
+
 	let siteName = 'Fixed Top Menu';
 	let asideClass =
 		'fixed w-auto bg-white overflow-scroll h-screen py-8 shadow-lg z-50 px-4 min-h-screen';
@@ -35,6 +41,10 @@
 	<h1 class="text-3xl">
 		{siteName}
 	</h1>
+	<h2 class="text-2xl w-full">
+		<a href="/">Go home long sentence bla bla bla bla bal bal adkjkld</a>
+		<span class="text-2xl w-full">Click me here and there and here and there.</span>
+	</h2>
 	<p class="pt-4">
 		{lorem}
 	</p>

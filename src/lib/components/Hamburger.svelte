@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { open } from '../store';
-	function toggleSide() {
+
+	const toggleSide = () => {
 		open.update((n) => (n = !n));
-	}
+	};
 
 	export const closeSidebar = () => open.update((n) => (n = false));
 	export let hamburgerClass: string;
@@ -21,6 +22,10 @@
 		<line id="bottom" x1="0" y1="22" x2="32" y2="22" />
 	</svg>
 </button>
+
+{#if $open}
+	<div on:click={closeSidebar} class="fixed w-full h-full" />
+{/if}
 
 <style>
 	svg {
