@@ -22,8 +22,6 @@
 	</svg>
 </button>
 
-<div on:click={closeSidebar} class="fixed inset-0 w-full h-full" />
-
 <style>
 	svg {
 		min-height: 24px;
