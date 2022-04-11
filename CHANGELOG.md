@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.7](https://github.com/shinokada/svelte-sidebar/compare/v0.4.4...v0.4.7) (2022-04-11)
+
+
+### Bug Fixes
+
+* add if statement to add fixed full window so that clicking it close the sidebar ([1aef821](https://github.com/shinokada/svelte-sidebar/commit/1aef82157ee400bc771934ea37e7444d91ffe148))
+* add if statement to add fixed full window so that clicking it close the sidebar ([a3acc21](https://github.com/shinokada/svelte-sidebar/commit/a3acc21d678ac18aa9186780216250872368bb4d))
+* removed div ([b30373e](https://github.com/shinokada/svelte-sidebar/commit/b30373eaf1cf80fea1634bcf1bf4a8ca102b812c))
+* revert Hamburger component due to not able to click any thing ([b1c5fc6](https://github.com/shinokada/svelte-sidebar/commit/b1c5fc699b6e8ad15f6ac76eb09d1c06e404a4b6))
+
 ### [0.4.6](https://github.com/shinokada/svelte-sidebar/compare/v0.4.4...v0.4.6) (2022-04-11)
 
 
