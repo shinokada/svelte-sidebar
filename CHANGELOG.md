@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.4](https://github.com/shinokada/svelte-sidebar/compare/v0.4.1...v0.4.4) (2022-04-11)
+
+
+### Features
+
+* add closing sidebar by clicking anywhere ([68a8e7e](https://github.com/shinokada/svelte-sidebar/commit/68a8e7eece984f58d55ab9d4a2f211779194cfda))
+* add logo and alt ([23f2d83](https://github.com/shinokada/svelte-sidebar/commit/23f2d8388a17011bdbf6401f816c45e0f3c6b5dd))
+
+
+### Bug Fixes
+
+* version 0.4.2 ([0175f91](https://github.com/shinokada/svelte-sidebar/commit/0175f914f7fe9834b6ec984947cc4610aa66fa94))
+
 ### [0.4.1](https://github.com/shinokada/svelte-sidebar/compare/v0.4.0...v0.4.1) (2022-03-15)
 
 
