@@ -5,7 +5,7 @@
 
 	let siteName = 'Fixed Top Menu';
 	let asideClass =
-		'absolute w-auto bg-white overflow-scroll h-screen py-8 shadow-lg z-50 px-4 min-h-screen';
+		'fixed w-auto bg-white overflow-scroll h-screen py-8 shadow-lg z-50 px-4 min-h-screen';
 	let headerClass = 'bg-white py-3 px-8 items-center text-gray-600 border-b-2 p-8';
 	let navClass = 'p-8 bg-white text-xl ';
 	let navDivClass = 'pb-10';
