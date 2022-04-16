@@ -10,6 +10,7 @@
 	export let siteClass = 'w-full h-9 text-lg pt-1 pl-12';
 	export let spanClass: string =
 		'pl-2 self-center text-lg font-semibold text-gray-900 whitespace-nowrap dark:text-white';
+	export let logoClass: string;
 	// export let siteText: string | undefined = '';
 </script>
 
@@ -18,7 +19,7 @@
 		<Hamburger {hamburgerClass} />
 		<div class={siteClass}>
 			<a href="/" class="flex">
-				<img src={logo} {alt} />
+				<img src={logo} {alt} class={logoClass} />
 				<span class={spanClass}>{siteName}</span>
 			</a>
 		</div>
