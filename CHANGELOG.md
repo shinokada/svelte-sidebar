@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.8](https://github.com/shinokada/svelte-sidebar/compare/v0.4.7...v0.4.8) (2022-04-16)
+
+
+### Bug Fixes
+
+* add logoClass to logo img ([a5dd44a](https://github.com/shinokada/svelte-sidebar/commit/a5dd44a6bba8cff836c2c1262104f7a72032108f))
+
 ### [0.4.7](https://github.com/shinokada/svelte-sidebar/compare/v0.4.4...v0.4.7) (2022-04-11)
 
 
