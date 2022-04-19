@@ -24,7 +24,7 @@
 </button>
 
 {#if $open}
-	<div on:click={closeSidebar} class="fixed w-full h-full" />
+	<div on:click={closeSidebar} class="fixed w-full h-full inset-0" />
 {/if}
 
 <style>
