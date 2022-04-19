@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.9](https://github.com/shinokada/svelte-sidebar/compare/v0.4.8...v0.4.9) (2022-04-19)
+
+
+### Bug Fixes
+
+* add inset-0 to backdrop ([c0e0000](https://github.com/shinokada/svelte-sidebar/commit/c0e0000fcb8f85c183a19cc7a8969a4b0a0fb853))
+
 ### [0.4.8](https://github.com/shinokada/svelte-sidebar/compare/v0.4.7...v0.4.8) (2022-04-16)
 
 
