@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Sidebar } from '$lib/index';
 	import { lorem, menuList } from './menus';
-	let siteName = 'Default Sidebar';
+	let siteName = 'Svelte-Sidebar';
 </script>
 
 <Sidebar lists={menuList} {siteName} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" />
@@ -11,12 +11,16 @@
 	</h1>
 	<h2 class="text-2xl w-full"><a href="/sidebar-custom-style">Custom Style</a></h2>
 	<p class="pt-4">
-		<a href="/sidebar-custom-style">Custom Style</a>
+		Svelte-Sidevar implemented <a
+			href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inert">`inert`</a
+		>
+		attribute.
+		<a href="/sidebar-custom-style">Link to Sidebar custom style</a>
 		{lorem}
 	</p>
+	<h1 class="text-3xl">Inert paragraph</h1>
+	<p>Below is inert div.</p>
 	<div inert>
-		<h1 class="text-3xl">Inert paragraph</h1>
-
 		<input
 			type="text"
 			class="

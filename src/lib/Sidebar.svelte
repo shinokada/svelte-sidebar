@@ -11,7 +11,7 @@
 	export let asideClass = 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg z-50';
 	export let navDivClass = 'pb-10';
 	export let logoClass = '';
-	export let hamburgerClass: string;
+	export let hamburgerClass: string = '';
 	let inert = null;
 	$: inert = $isInert ? 'inert' : null;
 	$: console.log('isInert', $isInert);

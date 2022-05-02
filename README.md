@@ -6,9 +6,12 @@
 npm i -D @codewithshin/svelte-sidebar@latest
 ```
 
-## A11y
+## Features
 
-
+- [Inert](https://svelte-sidebar.vercel.app/inert)
+- [Responsive menu](https://svelte-sidebar.vercel.app/responsive)
+- [Slide in/out](https://svelte-sidebar.vercel.app/)
+- 
 
 ## Sidebar default
 

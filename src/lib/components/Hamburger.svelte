@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { open, isInert, responsive } from '../store';
+	import '../inert.min.js';
 
 	const toggleSide = () => {
 		open.update((n) => (n = !n));
@@ -10,7 +11,7 @@
 		open.update((n) => (n = false));
 		isInert.update((n) => (n = true));
 	};
-	export let hamburgerClass: string;
+	export let hamburgerClass: string = '';
 </script>
 
 <button
@@ -30,10 +31,6 @@
 {#if $open && !$responsive}
 	<div on:click={closeSidebar} class="fixed w-full h-full inset-0" />
 {/if}
-
-<svelte:head>
-	<script src="/node_modules/wicg-inert/dist/inert.min.js"></script>
-</svelte:head>
 
 <style>
 	svg {
