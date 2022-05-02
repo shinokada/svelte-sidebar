@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let navClass = 'p-8 text-xl';
+	export let navClass = 'py-8 px-4 text-xl';
 	export let navDivClass = 'pb-8';
 </script>
 

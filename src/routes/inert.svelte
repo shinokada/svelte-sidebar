@@ -5,13 +5,25 @@
 </script>
 
 <Sidebar lists={menuList} {siteName} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" />
-<main class="container mx-auto p-24">
-	<h1 class="text-3xl">
-		{siteName}
-	</h1>
-	<h2 class="text-2xl w-full"><a href="/sidebar-custom-style">Custom Style</a></h2>
+<main class="container mx-auto p-24 pl-80">
+	<h1 class="text-3xl">Inert Demo</h1>
+	<p class="text-xl font-bold">
+		Svelte-Sidebar uses inert polyfill. Press a tab without opening the sidebar. This will go
+		through the link without the sidebar. When you open the side bar then it will go through the
+		sidebar menu link.
+	</p>
+	<h2 class="text-2xl w-full">
+		<a href="/sidebar-custom-style" class="text-blue-700 hover:underline">Link 1</a>
+	</h2>
+
 	<p class="pt-4">
-		<a href="/sidebar-custom-style">Custom Style</a>
+		<a href="/sidebar-custom-style" class="text-blue-700 hover:underline">Link 2</a>
+		<input
+			type="text"
+			class="border border-solid border-gray-300 h-12	w-full"
+			id="exampleFormControlInput"
+			placeholder="Example Input Field 1"
+		/>
 		{lorem}
 	</p>
 	<div inert>
@@ -23,12 +35,13 @@
 			form-control
 			block
 			w-full
+			p-4
 			font-normal
 			text-gray-700
 			bg-white bg-clip-padding
 			border border-solid border-gray-300		"
 			id="exampleFormControlInput1"
-			placeholder="Example label"
+			placeholder="Example Input Field 2"
 		/>
 		<p class="pt-4">
 			{lorem}

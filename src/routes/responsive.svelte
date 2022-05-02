@@ -1,11 +1,32 @@
 <script lang="ts">
-	import { Sidebar } from '$lib/index';
+	import { Sidebar, open, isInert, responsive } from '$lib/index';
 	import { lorem, menuList } from './menus';
 	let siteName = 'Default Sidebar';
+	// $: paddingLeft = $open ? 'pl-80' : 'pl-0';
+	// $: console.log('paddingLeft', paddingLeft);
+	$: console.log('open', $open);
+	let width: number;
+	// $: console.log('width', width);
+	$: if (width > 1024) {
+		open.update((n) => (n = true));
+		isInert.update((n) => (n = false));
+		responsive.update((n) => (n = true));
+	} else {
+		open.update((n) => (n = false));
+		isInert.update((n) => (n = true));
+	}
 </script>
 
-<Sidebar lists={menuList} {siteName} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" />
-<main class="container mx-auto p-24">
+<svelte:window bind:innerWidth={width} />
+<Sidebar
+	lists={menuList}
+	{siteName}
+	hamburgerClass=" lg:hidden"
+	asideClass="absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg lg:fixed lg:w-64"
+	logo="/images/svelte-sidebar-logo.png"
+	alt="Svelte Sidebar"
+/>
+<main class="container mx-auto pt-24 p-8 lg:pl-64">
 	<h1 class="text-3xl">
 		{siteName}
 	</h1>
