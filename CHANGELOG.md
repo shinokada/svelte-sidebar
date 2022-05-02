@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.1](https://github.com/shinokada/svelte-sidebar/compare/v0.5.0...v0.5.1) (2022-05-02)
+
+
+### Features
+
+* add responsive and its page ([97e1ac9](https://github.com/shinokada/svelte-sidebar/commit/97e1ac970b647caddf5311cf3711a9da32c9a8d6))
+
 ## [0.5.0](https://github.com/shinokada/svelte-sidebar/compare/v0.4.9...v0.5.0) (2022-05-02)
 
 ### [0.4.9](https://github.com/shinokada/svelte-sidebar/compare/v0.4.8...v0.4.9) (2022-04-19)
