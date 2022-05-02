@@ -11,7 +11,51 @@ npm i -D @codewithshin/svelte-sidebar@latest
 - [Inert](https://svelte-sidebar.vercel.app/inert)
 - [Responsive menu](https://svelte-sidebar.vercel.app/responsive)
 - [Slide in/out](https://svelte-sidebar.vercel.app/)
-- 
+- [Sidebar style](https://svelte-sidebar.vercel.app/sidebar-custom-style)
+- [Sidebar style 2](https://svelte-sidebar.vercel.app/multi-custom-style)
+- [Top menu](https://svelte-sidebar.vercel.app/sidebar-topmenu)
+- [Fixed top menu](https://svelte-sidebar.vercel.app/fixed-menu)
+- [Scroll sidebar](https://svelte-sidebar.vercel.app/scroll-sidebar)
+
+## Inert
+
+[HTMLElement.inert](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inert) makes the browser to ignore user input events for the element. For example, when a user press a tab key, it cycles down links and input fields.
+
+Go to [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert), and press tab when the sidebar closed and opened. When the sidebar is closed, the tab ignores the sidebar links and when it is open the tab goes throught the menu links.
+
+## Responsive Sidebar
+
+[The demo](https://svelte-sidebar.vercel.app/responsive) set the breaking point at 1024. When the window is greater than 1024px, the sidebar is kept open. When the winddow is less than 1024px, the sidebar is open by the bars at top-left.
+
+```
+<script lang="ts">
+	import { Sidebar, open, isInert, responsive } from '$lib/index';
+	import { lorem, menuList } from './menus';
+	let siteName = 'Default Sidebar';
+	let width: number;
+	$: if (width > 1024) {
+		open.update((n) => (n = true));
+		isInert.update((n) => (n = false));
+		responsive.update((n) => (n = true));
+	} else {
+		open.update((n) => (n = false));
+		isInert.update((n) => (n = true));
+	}
+</script>
+
+<svelte:window bind:innerWidth={width} />
+<Sidebar
+	lists={menuList}
+	{siteName}
+	hamburgerClass=" lg:hidden"
+	asideClass="absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg lg:fixed lg:w-64"
+	logo="/images/svelte-sidebar-logo.png"
+	alt="Svelte Sidebar"
+/>
+<main class="container mx-auto pt-24 p-8 lg:pl-64">
+...
+</main>
+```
 
 ## Sidebar default
 
