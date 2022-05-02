@@ -1,9 +1,12 @@
 <script lang="ts">
-	import { open } from './store';
+	import { open, isInert } from './store';
 	export let asideClass = 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg';
+	let inert = null;
+	$: inert = $isInert ? 'inert' : null;
+	$: console.log('isInert', $isInert);
 </script>
 
-<aside class={asideClass} class:open={$open}>
+<aside class={asideClass} class:open={$open} aria-hidden={$isInert} {inert}>
 	<slot />
 </aside>
 
@@ -15,5 +18,18 @@
 
 	.open {
 		left: 0;
+	}
+
+	[inert] {
+		pointer-events: none;
+		cursor: default;
+	}
+
+	[inert],
+	[inert] * {
+		opacity: 0.5;
+		pointer-events: none;
+		cursor: default;
+		user-select: none;
 	}
 </style>

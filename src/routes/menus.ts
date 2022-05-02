@@ -2,12 +2,14 @@ import type { MenuType, TopMenuType } from '$lib/types'
 
 export const menuList: MenuType[] = [
   { href: "/", name: "Sidebar Default" },
+  { href: "/responsive", name: "Responsive" },
   { href: "sidebar-custom-style", name: "Sidebar Custom Style" },
   { href: "sidebar-topmenu", name: "Sidebar Top Menu" },
   { href: "multi-default", name: "Multiple-menu Default" },
   { href: "multi-custom-style", name: "Multiple-menu Custom Style" },
   { href: "fixed-menu", name: "Fixed Top Menu" },
-  { href: "scroll-sidebar", name: "Scroll Sidebar"},
+  { href: "scroll-sidebar", name: "Scroll Sidebar" },
+  { href: "inert", name: "Inert"},
 ];
 
 export const longMenuList: MenuType[] = [
@@ -141,17 +143,6 @@ veniam quibusdam? Quis.
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio
 autem aperiam hic quis animi magnam alias voluptas voluptatibus doloremque
-nisi sapiente tempore quidem, exercitationem pariatur natus a dignissimos
-consequuntur. Ea soluta voluptate voluptates dolore vel dolorum doloribus
-aut pariatur. Itaque, quam molestiae adipisci vel libero aspernatur, ea quae
-voluptatibus, ullam dignissimos iusto doloremque voluptatem saepe iste
-expedita perferendis quasi! Atque necessitatibus vel distinctio, voluptatum
-culpa tempora error quas illo eum impedit. Necessitatibus vitae eos tenetur,
-ipsa, modi odio architecto rerum ipsum incidunt eligendi asperiores.
-Deserunt saepe dolor neque dolorum! Animi eveniet cupiditate cum sint, quam,
-praesentium illum optio ipsum neque deserunt magni, sed vitae minima eius
-quis laudantium quisquam accusamus sapiente necessitatibus et quidem! Ipsum
-inventore nemo nam deserunt. Beatae deleniti quod aspernatur labore natus
-iusto odit, quaerat modi culpa repudiandae, voluptatum eum, recusandae
+ipsa, iusto odit, quaerat modi culpa repudiandae, voluptatum eum, recusandae
 voluptas corrupti cum soluta quos facere a in animi laudantium vel esse
 veniam quibusdam? Quis.`

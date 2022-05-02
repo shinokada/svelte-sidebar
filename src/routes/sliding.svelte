@@ -1,11 +1,14 @@
 <script lang="ts">
-	import { Sidebar } from '$lib/index';
+	import { Sidebar, open } from '$lib/index';
 	import { lorem, menuList } from './menus';
 	let siteName = 'Default Sidebar';
+	$: paddingLeft = $open ? 'pl-80' : 'pl-0';
+	// $: console.log('paddingLeft', paddingLeft);
+	// $: console.log('open', $open);
 </script>
 
 <Sidebar lists={menuList} {siteName} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" />
-<main class="container mx-auto p-24">
+<main class="container mx-auto p-24 {paddingLeft}">
 	<h1 class="text-3xl">
 		{siteName}
 	</h1>

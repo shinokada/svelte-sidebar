@@ -6,6 +6,10 @@
 npm i -D @codewithshin/svelte-sidebar@latest
 ```
 
+## A11y
+
+
+
 ## Sidebar default
 
 [Demo](https://svelte-sidebar.vercel.app/)
