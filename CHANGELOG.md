@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.6](https://github.com/shinokada/svelte-sidebar/compare/v0.5.5...v0.5.6) (2022-05-03)
+
+
+### Bug Fixes
+
+* remove ts from store ([c791bdb](https://github.com/shinokada/svelte-sidebar/commit/c791bdbf0b68fc92f8cf2ce052769b573d53d278))
+
 ### [0.5.5](https://github.com/shinokada/svelte-sidebar/compare/v0.5.4...v0.5.5) (2022-05-03)
 
 
