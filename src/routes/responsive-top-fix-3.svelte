@@ -7,7 +7,7 @@
 		TopMenu,
 		sidebarOpen,
 		sidebarIsInert,
-		sidebarResponsive
+		sidebarStayOpen
 	} from '$lib/index';
 	import { lorem, menuList } from './menus';
 	$: console.log('open', $sidebarOpen);
@@ -15,11 +15,11 @@
 	$: if (width > 1024) {
 		sidebarOpen.update((n) => (n = true));
 		sidebarIsInert.update((n) => (n = false));
-		sidebarResponsive.update((n) => (n = true));
+		sidebarStayOpen.update((n) => (n = true));
 	} else {
 		sidebarOpen.update((n) => (n = false));
 		sidebarIsInert.update((n) => (n = true));
-		sidebarResponsive.update((n) => (n = false)); // when open a sidebar clicking outside closes it
+		sidebarStayOpen.update((n) => (n = false)); // when open a sidebar clicking outside closes it
 	}
 	const topMenus = [
 		{

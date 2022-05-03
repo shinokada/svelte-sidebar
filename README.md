@@ -29,7 +29,7 @@ Test [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert) by pressing 
 
 ```html
 <script lang="ts">
-	import { Aside, Nav, SidebarList, Navbar, TopMenu, sidebarOpen, sidebarIsInert, sidebarResponsive } from '@codewithshin/svelte-sidebar';
+	import { Aside, Nav, SidebarList, Navbar, TopMenu, sidebarOpen, sidebarIsInert, sidebarStayOpen } from '@codewithshin/svelte-sidebar';
   const menuList = [
     { href: "/", name: "Sidebar Default" },
     //  ...
@@ -92,7 +92,7 @@ Test [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert) by pressing 
 
 ```html
 <script lang="ts">
-	import { Sidebar, sidebarOpen, sidebarIsInert, sidebarResponsive } from '@codewithshin/svelte-sidebar';
+	import { Sidebar, sidebarOpen, sidebarIsInert, sidebarStayOpen } from '@codewithshin/svelte-sidebar';
 	const menuList = [
     { href: "/", name: "Sidebar Default" },
   // ...

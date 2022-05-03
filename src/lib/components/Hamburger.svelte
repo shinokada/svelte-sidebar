@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { sidebarOpen, sidebarIsInert, sidebarResponsive } from '../store';
+	import { sidebarOpen, sidebarIsInert, sidebarStayOpen } from '../store';
 	import '../inert.min.js';
 
 	const toggleSide = () => {
@@ -28,7 +28,7 @@
 	</svg>
 </button>
 
-{#if $sidebarOpen && !$sidebarResponsive}
+{#if $sidebarOpen && !$sidebarStayOpen}
 	<div on:click={closeSidebar} class="fixed w-full h-full inset-0" />
 {/if}
 

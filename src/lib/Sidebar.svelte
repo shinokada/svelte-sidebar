@@ -15,12 +15,25 @@
 	let inert = null;
 	$: inert = $sidebarIsInert ? 'inert' : null;
 	// $: console.log('isInert', $isInert);
+	let sidebarStatus: boolean;
+	let ariaHidden: boolean;
+
+	sidebarOpen.subscribe((value) => {
+		if (value === true) {
+			sidebarStatus = true;
+			ariaHidden = true;
+		} else {
+			sidebarStatus = false;
+			ariaHidden = false;
+		}
+	});
+	// console.log('sidebarStatus', sidebarStatus);
 </script>
 
 <Navbar {siteName} {headerClass} {logo} {alt} {logoClass} {hamburgerClass}>
 	<slot />
 </Navbar>
-<aside class={asideClass} class:open={$sidebarOpen} aria-hidden={$sidebarIsInert} {inert}>
+<aside class={asideClass} class:open={sidebarStatus} aria-hidden={ariaHidden} {inert}>
 	<nav class={navClass}>
 		<div class={navDivClass}>
 			{#each lists as { href, name, rel }}

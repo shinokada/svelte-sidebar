@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { Sidebar, sidebarOpen, sidebarIsInert, sidebarResponsive } from '$lib/index';
+	import { Sidebar, sidebarOpen, sidebarIsInert, sidebarStayOpen } from '$lib/index';
 	import { lorem, menuList } from './menus';
 	let siteName = 'Responsive Sidebar';
 	let width: number;
 	$: if (width > 1024) {
 		sidebarOpen.update((n) => (n = true));
 		sidebarIsInert.update((n) => (n = false));
-		sidebarResponsive.update((n) => (n = true));
+		sidebarStayOpen.update((n) => (n = true));
 	} else {
 		sidebarOpen.update((n) => (n = false));
 		sidebarIsInert.update((n) => (n = true));
