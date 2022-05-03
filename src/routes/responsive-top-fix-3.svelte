@@ -1,16 +1,25 @@
 <script lang="ts">
-	import { Aside, Nav, SidebarList, Navbar, TopMenu, open, isInert, responsive } from '$lib/index';
+	import {
+		Aside,
+		Nav,
+		SidebarList,
+		Navbar,
+		TopMenu,
+		sidebarOpen,
+		sidebarIsInert,
+		sidebarResponsive
+	} from '$lib/index';
 	import { lorem, menuList } from './menus';
-	$: console.log('open', $open);
+	$: console.log('open', $sidebarOpen);
 	let width: number;
 	$: if (width > 1024) {
-		open.update((n) => (n = true));
-		isInert.update((n) => (n = false));
-		responsive.update((n) => (n = true));
+		sidebarOpen.update((n) => (n = true));
+		sidebarIsInert.update((n) => (n = false));
+		sidebarResponsive.update((n) => (n = true));
 	} else {
-		open.update((n) => (n = false));
-		isInert.update((n) => (n = true));
-		responsive.update((n) => (n = false)); // when open a sidebar clicking outside closes it
+		sidebarOpen.update((n) => (n = false));
+		sidebarIsInert.update((n) => (n = true));
+		sidebarResponsive.update((n) => (n = false)); // when open a sidebar clicking outside closes it
 	}
 	const topMenus = [
 		{

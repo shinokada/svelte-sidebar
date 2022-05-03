@@ -29,7 +29,7 @@ Test [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert) by pressing 
 
 ```html
 <script lang="ts">
-	import { Aside, Nav, SidebarList, Navbar, TopMenu, open, isInert, responsive } from '@codewithshin/svelte-sidebar';
+	import { Aside, Nav, SidebarList, Navbar, TopMenu, sidebarOpen, sidebarIsInert, sidebarResponsive } from '@codewithshin/svelte-sidebar';
   const menuList = [
     { href: "/", name: "Sidebar Default" },
     //  ...
@@ -37,11 +37,11 @@ Test [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert) by pressing 
 	$: console.log('open', $open);
 	let width: number;
 	$: if (width > 1024) {
-		open.update((n) => (n = true));
+		sidebarOpen.update((n) => (n = true));
 		isInert.update((n) => (n = false));
 		responsive.update((n) => (n = true));
 	} else {
-		open.update((n) => (n = false));
+		sidebarOpen.update((n) => (n = false));
 		isInert.update((n) => (n = true));
 		responsive.update((n) => (n = false)); // when open a sidebar clicking outside closes it
 	}
@@ -92,7 +92,7 @@ Test [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert) by pressing 
 
 ```html
 <script lang="ts">
-	import { Sidebar, open, isInert, responsive } from '@codewithshin/svelte-sidebar';
+	import { Sidebar, sidebarOpen, sidebarIsInert, sidebarResponsive } from '@codewithshin/svelte-sidebar';
 	const menuList = [
     { href: "/", name: "Sidebar Default" },
   // ...
@@ -100,11 +100,11 @@ Test [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert) by pressing 
 	let siteName = 'Responsive Sidebar';
 	let width: number;
 	$: if (width > 1024) {
-		open.update((n) => (n = true));
+		sidebarOpen.update((n) => (n = true));
 		isInert.update((n) => (n = false));
 		responsive.update((n) => (n = true));
 	} else {
-		open.update((n) => (n = false));
+		sidebarOpen.update((n) => (n = false));
 		isInert.update((n) => (n = true));
 	}
 </script>

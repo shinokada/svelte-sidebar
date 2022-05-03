@@ -1,15 +1,15 @@
 <script lang="ts">
-	import { open, isInert, responsive } from '../store';
+	import { sidebarOpen, sidebarIsInert, sidebarResponsive } from '../store';
 	import '../inert.min.js';
 
 	const toggleSide = () => {
-		open.update((n) => (n = !n));
-		isInert.update((n) => (n = !n));
+		sidebarOpen.update((n) => (n = !n));
+		sidebarIsInert.update((n) => (n = !n));
 	};
 
 	export const closeSidebar = () => {
-		open.update((n) => (n = false));
-		isInert.update((n) => (n = true));
+		sidebarOpen.update((n) => (n = false));
+		sidebarIsInert.update((n) => (n = true));
 	};
 	export let hamburgerClass: string = '';
 </script>
@@ -17,7 +17,7 @@
 <button
 	id="hamburgerBtn"
 	class={hamburgerClass}
-	class:open={$open}
+	class:open={$sidebarOpen}
 	on:click={toggleSide}
 	aria-label="Sidebar"
 >
@@ -28,7 +28,7 @@
 	</svg>
 </button>
 
-{#if $open && !$responsive}
+{#if $sidebarOpen && !$sidebarResponsive}
 	<div on:click={closeSidebar} class="fixed w-full h-full inset-0" />
 {/if}
 
