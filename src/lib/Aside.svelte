@@ -3,7 +3,7 @@
 	export let asideClass = 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg';
 	let inert = null;
 	$: inert = $isInert ? 'inert' : null;
-	$: console.log('isInert', $isInert);
+	// $: console.log('isInert', $isInert);
 </script>
 
 <aside class={asideClass} class:open={$open} aria-hidden={$isInert} {inert}>

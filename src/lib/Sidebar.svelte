@@ -14,7 +14,7 @@
 	export let hamburgerClass: string = '';
 	let inert = null;
 	$: inert = $isInert ? 'inert' : null;
-	$: console.log('isInert', $isInert);
+	// $: console.log('isInert', $isInert);
 </script>
 
 <Navbar {siteName} {headerClass} {logo} {alt} {logoClass} {hamburgerClass}>
