@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.7](https://github.com/shinokada/svelte-sidebar/compare/v0.5.6...v0.5.7) (2022-05-03)
+
+
+### Features
+
+* add store.subscribe for sidebarStatus and ariaHidden ([0f2d5dd](https://github.com/shinokada/svelte-sidebar/commit/0f2d5dd688a4f21d136e0d6bd36af808a7b1c716))
+
 ### [0.5.6](https://github.com/shinokada/svelte-sidebar/compare/v0.5.5...v0.5.6) (2022-05-03)
 
 
