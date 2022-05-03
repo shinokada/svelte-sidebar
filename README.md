@@ -27,15 +27,16 @@ Test [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert) by pressing 
 
 [The demo](https://svelte-sidebar.vercel.app/responsive) set the breaking point at 1024. When the window is greater than 1024px, the sidebar is kept open. When the winddow is less than 1024px, the sidebar is open by the bars at top-left.
 
+To make the sidebar responsive, add the following to all `__layout.svelte`:
+
 ```html
-<script lang="ts">
+<script>
 	import { Aside, Nav, SidebarList, Navbar, TopMenu, sidebarOpen, sidebarIsInert, sidebarStayOpen } from '@codewithshin/svelte-sidebar';
   const menuList = [
     { href: "/", name: "Sidebar Default" },
     //  ...
   ];
-	$: console.log('open', $open);
-	let width: number;
+	let width;
 	$: if (width > 1024) {
 		sidebarOpen.update((n) => (n = true));
 		isInert.update((n) => (n = false));
