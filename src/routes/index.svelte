@@ -1,7 +1,8 @@
 <script lang="ts">
-	import { Sidebar } from '$lib/index';
+	import { Sidebar, responsive } from '$lib/index';
 	import { lorem, menuList } from './menus';
-	let siteName = 'Svelte-Sidebar';
+	let siteName = 'Default Demo';
+	responsive.set(false);
 </script>
 
 <Sidebar lists={menuList} {siteName} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" />

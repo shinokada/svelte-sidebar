@@ -3,17 +3,11 @@
 	import { menuList, lorem } from './menus';
 	import { topMenus } from './menus';
 
-	// let clickHook;
-	// const handleSidebar = () => {
-	// 	console.log('clicked');
-	// 	clickHook.closeSidebar();
-	// };
-
-	let siteName = 'Fixed Top Menu';
+	let siteName = 'Fixed Top Demo';
 	let asideClass =
 		'fixed w-auto bg-white overflow-scroll h-screen py-8 shadow-lg z-50 px-4 min-h-screen';
 	let headerClass = 'bg-white py-3 px-8 items-center text-gray-600 border-b-2 p-8';
-	let navClass = 'p-8 bg-white text-xl ';
+	let navClass = 'px-4 bg-white text-base ';
 	let navDivClass = 'pb-10';
 </script>
 

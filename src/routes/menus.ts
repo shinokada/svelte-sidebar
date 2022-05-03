@@ -2,6 +2,7 @@ import type { MenuType, TopMenuType } from '$lib/types'
 
 export const menuList: MenuType[] = [
   { href: "/", name: "Sidebar Default" },
+  { href: "/responsive-top-fix", name: "Responsive Top Fixed" },
   { href: "/responsive", name: "Responsive" },
   { href: "sidebar-custom-style", name: "Sidebar Custom Style" },
   { href: "sidebar-topmenu", name: "Sidebar Top Menu" },

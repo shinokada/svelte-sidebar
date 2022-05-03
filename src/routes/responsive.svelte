@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Sidebar, open, isInert, responsive } from '$lib/index';
 	import { lorem, menuList } from './menus';
-	let siteName = 'Default Sidebar';
+	let siteName = 'Responsive Sidebar';
 	// $: paddingLeft = $open ? 'pl-80' : 'pl-0';
 	// $: console.log('paddingLeft', paddingLeft);
 	$: console.log('open', $open);
@@ -22,7 +22,7 @@
 	lists={menuList}
 	{siteName}
 	hamburgerClass=" lg:hidden"
-	asideClass="absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg lg:fixed lg:w-64"
+	asideClass="absolute w-auto h-screen bg-white lg:fixed lg:w-64"
 	logo="/images/svelte-sidebar-logo.png"
 	alt="Svelte Sidebar"
 />

@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { Sidebar } from '$lib/index';
 	import { lorem, menuList } from './menus';
-	let siteName = 'Default Sidebar';
+	let siteName = 'Inert Demo';
 </script>
 
 <Sidebar lists={menuList} {siteName} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" />
 <main class="container mx-auto p-24 pl-80">
 	<h1 class="text-3xl">Inert Demo</h1>
-	<p class="text-xl font-bold">
+	<p class="text-xl font-bold text-red-600">
 		Svelte-Sidebar uses inert polyfill. Press a tab without opening the sidebar. This will go
 		through the link without the sidebar. When you open the side bar then it will go through the
 		sidebar menu link.
