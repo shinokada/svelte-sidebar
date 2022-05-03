@@ -2,11 +2,7 @@
 	import { Sidebar, open, isInert, responsive } from '$lib/index';
 	import { lorem, menuList } from './menus';
 	let siteName = 'Responsive Sidebar';
-	// $: paddingLeft = $open ? 'pl-80' : 'pl-0';
-	// $: console.log('paddingLeft', paddingLeft);
-	$: console.log('open', $open);
 	let width: number;
-	// $: console.log('width', width);
 	$: if (width > 1024) {
 		open.update((n) => (n = true));
 		isInert.update((n) => (n = false));

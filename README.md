@@ -21,17 +21,83 @@ npm i -D @codewithshin/svelte-sidebar@latest
 
 [HTMLElement.inert](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inert) makes the browser to ignore user input events for the element. For example, when a user press a tab key, it cycles down links and input fields.
 
-Go to [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert), and press tab when the sidebar closed and opened. When the sidebar is closed, the tab ignores the sidebar links and when it is open the tab goes throught the menu links.
+Test [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert) by pressing the tab keyboard when the sidebar closed and opened. When the sidebar is closed, the tab ignores the sidebar links and when it is open the tab goes throught the menu links.
+
+## Responsive Top Menu Fixed
+
+[The demo](https://svelte-sidebar.vercel.app/responsive) set the breaking point at 1024. When the window is greater than 1024px, the sidebar is kept open. When the winddow is less than 1024px, the sidebar is open by the bars at top-left.
+
+```html
+<script lang="ts">
+	import { Aside, Nav, SidebarList, Navbar, TopMenu, open, isInert, responsive } from '@codewithshin/svelte-sidebar';
+  const menuList = [
+    { href: "/", name: "Sidebar Default" },
+    //  ...
+  ];
+	$: console.log('open', $open);
+	let width: number;
+	$: if (width > 1024) {
+		open.update((n) => (n = true));
+		isInert.update((n) => (n = false));
+		responsive.update((n) => (n = true));
+	} else {
+		open.update((n) => (n = false));
+		isInert.update((n) => (n = true));
+		responsive.update((n) => (n = false)); // when open a sidebar clicking outside closes it
+	}
+	const topMenus = [
+		{
+			id: 1,
+			name: 'Menu',
+			href: '/'
+		},
+		//... more
+	];
+	let siteName = 'Responsive with fixed top menu';
+	let headerClass = 'bg-white py-3 px-8 items-center text-gray-600 border-b-2 px-4';
+	let navClass = 'py-8 px-4 bg-white text-base ';
+	let navDivClass = 'pb-10';
+	let asideClass =
+		'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg z-50  h-screen overflow-scroll';
+</script>
+
+<svelte:window bind:innerWidth={width} />
+<div class="fixed z-50 top-0 left-0 w-full">
+	<Navbar {siteName} {headerClass} hamburgerClass="lg:hidden">
+		<TopMenu {topMenus} />
+	</Navbar>
+	<Aside {asideClass}>
+		<Nav {navClass} {navDivClass}>
+			<h3>Menu 1</h3>
+			{#each menuList as { href, name, rel }}
+				<SidebarList {href} {name} {rel} />
+			{/each}
+		</Nav>
+		<Nav {navClass} {navDivClass}>
+			<h3>Menu 2</h3>
+			{#each menuList as { href, name, rel }}
+				<SidebarList {href} {name} {rel} />
+			{/each}
+		</Nav>
+	</Aside>
+</div>
+<main class="container mx-auto pt-24 p-8 lg:pl-80">
+  Your contente
+</main>
+```
 
 ## Responsive Sidebar
 
 [The demo](https://svelte-sidebar.vercel.app/responsive) set the breaking point at 1024. When the window is greater than 1024px, the sidebar is kept open. When the winddow is less than 1024px, the sidebar is open by the bars at top-left.
 
-```
+```html
 <script lang="ts">
-	import { Sidebar, open, isInert, responsive } from '$lib/index';
-	import { lorem, menuList } from './menus';
-	let siteName = 'Default Sidebar';
+	import { Sidebar, open, isInert, responsive } from '@codewithshin/svelte-sidebar';
+	const menuList = [
+    { href: "/", name: "Sidebar Default" },
+  // ...
+  ];
+	let siteName = 'Responsive Sidebar';
 	let width: number;
 	$: if (width > 1024) {
 		open.update((n) => (n = true));
@@ -48,7 +114,7 @@ Go to [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert), and press 
 	lists={menuList}
 	{siteName}
 	hamburgerClass=" lg:hidden"
-	asideClass="absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg lg:fixed lg:w-64"
+	asideClass="absolute w-auto h-screen bg-white lg:fixed lg:w-64"
 	logo="/images/svelte-sidebar-logo.png"
 	alt="Svelte Sidebar"
 />
@@ -78,6 +144,9 @@ Go to [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert), and press 
 </script>
 
 <Sidebar lists={menuList} {siteName} />
+<main class="container mx-auto p-24">
+  ...
+</main>
 ```
 
 ## Custom default sidebar example
