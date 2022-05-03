@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.2](https://github.com/shinokada/svelte-sidebar/compare/v0.5.1...v0.5.2) (2022-05-03)
+
+
+### Features
+
+* add responsive with fixed top menu ([fdef5b9](https://github.com/shinokada/svelte-sidebar/commit/fdef5b9c119e5a7bcbd4cc38daadc0d5dd1fe3d1))
+
+
+### Bug Fixes
+
+* add inert.min.js to Hamburger component ([a8c5a15](https://github.com/shinokada/svelte-sidebar/commit/a8c5a15bf131630887cc7a8978c2751ec5c95868))
+
 ### [0.5.1](https://github.com/shinokada/svelte-sidebar/compare/v0.5.0...v0.5.1) (2022-05-02)
 
 
