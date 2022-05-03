@@ -63,7 +63,7 @@
 			]
 		}
 	];
-	let siteName = 'Responsive with fixed top 1';
+	let siteName = 'Responsive with fixed top 2';
 	let headerClass = 'bg-white py-3 px-8 items-center text-gray-600 border-b-2 px-4';
 	let navClass = 'py-8 px-4 bg-white text-base ';
 	let navDivClass = 'pb-10';

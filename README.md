@@ -58,7 +58,7 @@ Test [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert) by pressing 
 	let navClass = 'py-8 px-4 bg-white text-base ';
 	let navDivClass = 'pb-10';
 	let asideClass =
-		'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg z-50  h-screen overflow-scroll';
+		'absolute w-auto bg-gray-200 border-r-2 shadow-lg z-50  h-screen overflow-scroll';
 </script>
 
 <svelte:window bind:innerWidth={width} />
