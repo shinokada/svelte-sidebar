@@ -9,7 +9,7 @@ npm i -D @codewithshin/svelte-sidebar@latest
 ## Features
 
 - [Inert](https://svelte-sidebar.vercel.app/inert)
-- [Responsive menu](https://svelte-sidebar.vercel.app/responsive)
+- [Responsive menu](https://svelte-sidebar.vercel.app/responsive/top-fix)
 - [Slide in/out](https://svelte-sidebar.vercel.app/)
 - [Sidebar style](https://svelte-sidebar.vercel.app/sidebar-custom-style)
 - [Sidebar style 2](https://svelte-sidebar.vercel.app/multi-custom-style)
@@ -25,27 +25,17 @@ Test [Svelte-Sidebar demo](https://svelte-sidebar.vercel.app/inert) by pressing 
 
 ## Responsive Top Menu Fixed
 
-[The demo](https://svelte-sidebar.vercel.app/responsive) set the breaking point at 1024. When the window is greater than 1024px, the sidebar is kept open. When the winddow is less than 1024px, the sidebar is open by the bars at top-left.
+[The demo](https://svelte-sidebar.vercel.app/responsive/top-fix) set the breaking point at 1024. When the window is greater than 1024px, the sidebar is kept open. When the winddow is less than 1024px, the sidebar is open by the bars at top-left.
 
-To make the sidebar responsive, add the following to all `__layout.svelte`:
+To make the sidebar responsive, add the following to all files:
 
 ```html
 <script>
-	import { Aside, Nav, SidebarList, Navbar, TopMenu, sidebarOpen, sidebarIsInert, sidebarStayOpen } from '@codewithshin/svelte-sidebar';
+	import { Aside, Nav, SidebarList, Navbar, TopMenu, Responsive } from '@codewithshin/svelte-sidebar';
   const menuList = [
     { href: "/", name: "Sidebar Default" },
     //  ...
   ];
-	let width;
-	$: if (width > 1024) {
-		sidebarOpen.update((n) => (n = true));
-		isInert.update((n) => (n = false));
-		responsive.update((n) => (n = true));
-	} else {
-		sidebarOpen.update((n) => (n = false));
-		isInert.update((n) => (n = true));
-		responsive.update((n) => (n = false)); // when open a sidebar clicking outside closes it
-	}
 	const topMenus = [
 		{
 			id: 1,
@@ -62,7 +52,7 @@ To make the sidebar responsive, add the following to all `__layout.svelte`:
 		'absolute w-auto bg-gray-200 border-r-2 shadow-lg z-50  h-screen overflow-scroll';
 </script>
 
-<svelte:window bind:innerWidth={width} />
+<Responsive />
 <div class="fixed z-50 top-0 left-0 w-full">
 	<Navbar {siteName} {headerClass} hamburgerClass="lg:hidden">
 		<TopMenu {topMenus} />
@@ -83,34 +73,25 @@ To make the sidebar responsive, add the following to all `__layout.svelte`:
 	</Aside>
 </div>
 <main class="container mx-auto pt-24 p-8 lg:pl-80">
-  Your contente
+  Content
 </main>
 ```
 
-## Responsive Sidebar
+## Responsive Sidebar without top menu
 
 [The demo](https://svelte-sidebar.vercel.app/responsive) set the breaking point at 1024. When the window is greater than 1024px, the sidebar is kept open. When the winddow is less than 1024px, the sidebar is open by the bars at top-left.
 
 ```html
 <script lang="ts">
-	import { Sidebar, sidebarOpen, sidebarIsInert, sidebarStayOpen } from '@codewithshin/svelte-sidebar';
+	import { Sidebar, Responsive } from '@codewithshin/svelte-sidebar';
 	const menuList = [
     { href: "/", name: "Sidebar Default" },
   // ...
   ];
 	let siteName = 'Responsive Sidebar';
-	let width: number;
-	$: if (width > 1024) {
-		sidebarOpen.update((n) => (n = true));
-		isInert.update((n) => (n = false));
-		responsive.update((n) => (n = true));
-	} else {
-		sidebarOpen.update((n) => (n = false));
-		isInert.update((n) => (n = true));
-	}
 </script>
 
-<svelte:window bind:innerWidth={width} />
+<Responsive />
 <Sidebar
 	lists={menuList}
 	{siteName}

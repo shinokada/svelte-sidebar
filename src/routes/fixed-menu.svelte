@@ -3,7 +3,7 @@
 	import { menuList, lorem } from './menus';
 	import { topMenus } from './menus';
 
-	let siteName = 'Fixed Top Demo';
+	let siteName = 'Fixed Top Menu Demo';
 	let asideClass =
 		'fixed w-auto bg-white overflow-scroll h-screen py-8 shadow-lg z-50 px-4 min-h-screen';
 	let headerClass = 'bg-white py-3 px-8 items-center text-gray-600 border-b-2 p-8';
