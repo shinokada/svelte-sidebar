@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.3](https://github.com/shinokada/svelte-sidebar/compare/v0.6.2...v0.6.3) (2022-05-05)
+
+
+### Bug Fixes
+
+* add >=breakpoint to Responsive component ([744dcd0](https://github.com/shinokada/svelte-sidebar/commit/744dcd009f1c7e0b09058342199d895022a97638))
+
 ### [0.6.2](https://github.com/shinokada/svelte-sidebar/compare/v0.6.1...v0.6.2) (2022-05-04)
 
 ### [0.6.1](https://github.com/shinokada/svelte-sidebar/compare/v0.6.0...v0.6.1) (2022-05-04)
