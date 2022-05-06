@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.9](https://github.com/shinokada/svelte-sidebar/compare/v0.6.8...v0.6.9) (2022-05-06)
+
+
+### Bug Fixes
+
+* add type to string ([1288b80](https://github.com/shinokada/svelte-sidebar/commit/1288b8043c18708f6054fe455f4a4df21cade6c8))
+
 ### [0.6.8](https://github.com/shinokada/svelte-sidebar/compare/v0.6.7...v0.6.8) (2022-05-06)
 
 ### [0.6.7](https://github.com/shinokada/svelte-sidebar/compare/v0.6.6...v0.6.7) (2022-05-06)
