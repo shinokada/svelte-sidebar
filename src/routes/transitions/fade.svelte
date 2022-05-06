@@ -1,19 +1,21 @@
 <script lang="ts">
 	import { Sidebar, sidebarStayOpen } from '$lib/index';
-	import { lorem, menuList } from './menus';
+	import { lorem, menuList } from '../menus';
 	import { sineIn } from 'svelte/easing';
 	let siteName = 'Default Demo';
 	sidebarStayOpen.set(false);
+	// fade has delay, duration, and easing prameters
 	let transitionParams = {
-		duration: 400,
-		x: -200,
-		delay: 100
+		duration: 500,
+		delay: 200,
+		easing: sineIn
 	};
 </script>
 
 <Sidebar
 	lists={menuList}
 	{siteName}
+	transitionType="fade"
 	{transitionParams}
 	logo="/images/svelte-sidebar-logo.png"
 	alt="Svelte Sidebar"

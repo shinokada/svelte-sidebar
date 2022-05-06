@@ -58,13 +58,14 @@
 	let navClass = 'py-8 px-4 bg-white text-base ';
 	let navDivClass = 'pb-10';
 	let asideClass = 'absolute w-auto border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll';
+	let doTransition = false;
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
 	<Navbar {siteName} {headerClass} hamburgerClass="lg:hidden">
 		<TopMenu {topMenus} />
 	</Navbar>
-	<Aside {asideClass}>
+	<Aside {asideClass} {doTransition}>
 		<Nav {navClass} {navDivClass}>
 			{#each menuList as { href, name, rel }}
 				<SidebarList {href} {name} {rel} />

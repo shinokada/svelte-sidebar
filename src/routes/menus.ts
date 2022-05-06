@@ -2,9 +2,18 @@ import type { MenuType, TopMenuType } from '$lib/types'
 
 export const menuList: MenuType[] = [
   { href: "/", name: "Sidebar Default" },
+  { href: "/transitions/slide", name: "Slide" },
+  { href: "/transitions/fade", name: "Fade" },
+  { href: "/transitions/fly", name: "Fly" },
+  { href: "/transitions/blur", name: "Blur" },
   { href: "/responsive/top-fix", name: "Responsive Top Fixed" },
   { href: "/responsive/top-fix-2", name: "Responsive Top Fixed 2" },
   { href: "/responsive/top-fix-3", name: "Responsive Top Fixed 3" },
+  { href: "/responsive-transition/blur", name: "Responsive blur" },
+  { href: "/responsive-transition/slide", name: "Responsive slide" },
+  { href: "/responsive-no-transition/top-fix", name: "Responsive No Transition" },
+  { href: "/responsive-no-transition/top-fix-2", name: "Responsive No Transition 2" },
+  { href: "/responsive-no-transition/top-fix-3", name: "Responsive No Transition 3" },
   { href: "/fixed-menu", name: "Fixed Top Menu" },
   { href: "/inert", name: "Inert" },
   { href: "/multi-custom-style", name: "Multiple-menu Custom Style" },

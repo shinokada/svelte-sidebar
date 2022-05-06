@@ -1,19 +1,21 @@
 <script lang="ts">
 	import { Sidebar, sidebarStayOpen } from '$lib/index';
-	import { lorem, menuList } from './menus';
-	import { sineIn } from 'svelte/easing';
+	import { lorem, menuList } from '../menus';
+	import { quartInOut } from 'svelte/easing';
 	let siteName = 'Default Demo';
 	sidebarStayOpen.set(false);
+	// blur has delay, duration, easing, opacity, and amount params
 	let transitionParams = {
-		duration: 400,
-		x: -200,
-		delay: 100
+		duration: 500,
+		amount: 100,
+		easing: quartInOut
 	};
 </script>
 
 <Sidebar
 	lists={menuList}
 	{siteName}
+	transitionType="blur"
 	{transitionParams}
 	logo="/images/svelte-sidebar-logo.png"
 	alt="Svelte Sidebar"

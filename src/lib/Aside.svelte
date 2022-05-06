@@ -1,11 +1,14 @@
 <script lang="ts">
 	import { sidebarOpen, sidebarIsInert } from './store';
+	import { fly } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 	export let asideClass = 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg';
 	let inert = null;
 	$: inert = $sidebarIsInert ? 'inert' : null;
 	// $: console.log('isInert', $isInert);
 	let sidebarStatus: boolean;
 	let ariaHidden: boolean;
+	export let doTransition: boolean = true;
 
 	sidebarOpen.subscribe((value) => {
 		if (value === true) {
@@ -19,20 +22,34 @@
 	// console.log('sidebarStatus', sidebarStatus);
 </script>
 
-<aside class={asideClass} class:open={sidebarStatus} aria-hidden={ariaHidden} {inert}>
-	<slot />
-</aside>
+{#if sidebarStatus && doTransition}
+	<aside
+		class={asideClass}
+		transition:fly={{ delay: 250, duration: 250, x: -100, easing: quintOut }}
+		aria-hidden={ariaHidden}
+		{inert}
+	>
+		<slot />
+	</aside>
+{:else}
+	<aside
+		class={asideClass}
+		class:open={sidebarStatus}
+		class:close={!sidebarStatus}
+		aria-hidden={ariaHidden}
+		{inert}
+	>
+		<slot />
+	</aside>
+{/if}
 
 <style>
-	aside {
+	.close {
 		left: -100%;
-		transition: left 0.3s ease-in-out;
 	}
-
 	.open {
 		left: 0;
 	}
-
 	[inert] {
 		pointer-events: none;
 		cursor: default;
