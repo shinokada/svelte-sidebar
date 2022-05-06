@@ -1,5 +1,7 @@
 # Svelte-sidebar
 
+Moved to Svelte-Sidebar-Menu.
+
 ## Installation
 
 ```sh
