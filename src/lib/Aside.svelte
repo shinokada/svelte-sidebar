@@ -26,6 +26,7 @@
 <style>
 	aside {
 		left: -100%;
+		transition: left 0.3s ease-in-out;
 	}
 
 	.open {

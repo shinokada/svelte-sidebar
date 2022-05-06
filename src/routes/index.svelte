@@ -26,18 +26,3 @@
 		{lorem}
 	</p>
 </main>
-
-<style>
-	[inert] {
-		pointer-events: none;
-		cursor: default;
-	}
-
-	[inert],
-	[inert] * {
-		opacity: 0.5;
-		pointer-events: none;
-		cursor: default;
-		user-select: none;
-	}
-</style>
