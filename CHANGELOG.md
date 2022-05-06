@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.5](https://github.com/shinokada/svelte-sidebar/compare/v0.6.4...v0.6.5) (2022-05-06)
+
+
+### Bug Fixes
+
+* add transition to Sidebar ([5272c2e](https://github.com/shinokada/svelte-sidebar/commit/5272c2e55816761b6f326ffc2e1710f382c335c9))
+
 ### [0.6.4](https://github.com/shinokada/svelte-sidebar/compare/v0.6.3...v0.6.4) (2022-05-06)
 
 
