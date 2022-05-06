@@ -1,11 +1,9 @@
 # Svelte-sidebar
 
-Moved to Svelte-Sidebar-Menu.
-
 ## Installation
 
 ```sh
-npm i -D @codewithshin/svelte-sidebar@latest
+npm i -D svelte-sidebar@latest
 ```
 
 ## Features
@@ -33,7 +31,7 @@ To make the sidebar responsive, add the following to all files:
 
 ```html
 <script>
-	import { Aside, Nav, SidebarList, Navbar, TopMenu, Responsive } from '@codewithshin/svelte-sidebar';
+	import { Aside, Nav, SidebarList, Navbar, TopMenu, Responsive } from 'svelte-sidebar';
   const menuList = [
     { href: "/", name: "Sidebar Default" },
     //  ...
@@ -85,7 +83,7 @@ To make the sidebar responsive, add the following to all files:
 
 ```html
 <script lang="ts">
-	import { Sidebar, Responsive } from '@codewithshin/svelte-sidebar';
+	import { Sidebar, Responsive } from 'svelte-sidebar';
 	const menuList = [
     { href: "/", name: "Sidebar Default" },
   // ...
@@ -113,7 +111,7 @@ To make the sidebar responsive, add the following to all files:
 
 ```html
 <script>
-  import Sidebar from "@codewithshin/svelte-sidebar";
+  import Sidebar from "svelte-sidebar";
   const menuList = [
     { href: "/", name: "Sidebar Default" },
     { href: "sidebar-custom-style", name: "Sidebar Custom Style" },
@@ -139,7 +137,7 @@ To make the sidebar responsive, add the following to all files:
 
 ```html
 <script>
-  import Sidebar from "@codewithshin/svelte-sidebar";
+  import Sidebar from "svelte-sidebar";
   const menuList = [
     { href: "/", name: "Sidebar Default" },
     { href: "sidebar-custom-style", name: "Sidebar Custom Style" },
@@ -164,7 +162,7 @@ To make the sidebar responsive, add the following to all files:
 
 ```html
 <script>
-  import { Aside, Nav, SidebarList, Navbar } from "@codewithshin/svelte-sidebar";
+  import { Aside, Nav, SidebarList, Navbar } from "svelte-sidebar";
   const menuList = [
     { href: "/", name: "Sidebar Default" },
     { href: "sidebar-custom-style", name: "Sidebar Custom Style" },
@@ -201,7 +199,7 @@ To make the sidebar responsive, add the following to all files:
 
 ```html
 <script>
-  import { Aside, Nav, SidebarList, Navbar } from "@codewithshin/svelte-sidebar";
+  import { Aside, Nav, SidebarList, Navbar } from "svelte-sidebar";
   const menuList = [
     { href: "/", name: "Sidebar Default" },
     { href: "sidebar-custom-style", name: "Sidebar Custom Style" },
@@ -334,7 +332,7 @@ To make the sidebar responsive, add the following to all files:
 
 ```html
 <script>
-  import { Aside, Nav, SidebarList, Navbar, TopMenu } from "@codewithshin/svelte-sidebar";
+  import { Aside, Nav, SidebarList, Navbar, TopMenu } from "svelte-sidebar";
   const menuList = [
     { href: "/", name: "Sidebar Default" },
     { href: "sidebar-custom-style", name: "Sidebar Custom Style" },
@@ -431,7 +429,7 @@ To make the sidebar responsive, add the following to all files:
 
 ```html
 <script lang="ts">
-  import { Aside, Nav, SidebarList, Navbar } from '@codewithshin/svelte-sidebar';
+  import { Aside, Nav, SidebarList, Navbar } from 'svelte-sidebar';
   const longMenuList = [
   { href: "/", name: "Sidebar Default" },
   { href: "sidebar-custom-style", name: "Sidebar Custom Style" },
