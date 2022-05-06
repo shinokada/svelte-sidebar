@@ -3,7 +3,7 @@
 	export let href: string;
 	export let rel: string = null;
 	export let name: string;
-	export let sideBarListClass = 'border-b border-gray-400 mb-2 px-4';
+	export let sideBarListClass: string = 'border-b border-gray-400 mb-2 px-4';
 	function toggleSide() {
 		sidebarOpen.update((n) => (n = !n));
 		sidebarIsInert.update((n) => (n = !n));
