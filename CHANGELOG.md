@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.4](https://github.com/shinokada/svelte-sidebar/compare/v0.6.3...v0.6.4) (2022-05-06)
+
+
+### Bug Fixes
+
+* put back css transition to Aside and add bg-white to layouts ([98f171b](https://github.com/shinokada/svelte-sidebar/commit/98f171b70eeec374de185e24bb15e544b58e4753))
+
 ### [0.6.3](https://github.com/shinokada/svelte-sidebar/compare/v0.6.2...v0.6.3) (2022-05-05)
 
 
