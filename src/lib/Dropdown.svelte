@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { TopMenuType } from './types';
-	export let id: string;
 	export let name: string;
 	export let child: TopMenuType[] | undefined;
 	export let activeDropdownDiv =
@@ -43,9 +42,9 @@
 	<!-- Dropdown menu -->
 	<div class:hidden class:block class={activeDropdownDiv} style="position: absolute; margin: 0px;">
 		<ul class="py-1" aria-label="dropdown-button">
-			{#each child as { href, name, rel }}
+			{#each child as { href, name, rel, id }}
 				<li>
-					<a {href} {rel} class={activeChildLi}>{name}</a>
+					<a {href} {id} {rel} class={activeChildLi}>{name}</a>
 				</li>
 			{/each}
 		</ul>
