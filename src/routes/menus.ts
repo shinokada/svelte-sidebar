@@ -74,125 +74,119 @@ export const allMenuList: MenuType[] = [
 
 export const topMenus: TopMenuType[] = [
   {
-    id:1,
+    id:"1",
     name: "Responsive",
-    href: "/responsive/top-fix",
-    rel:'external',
     child: [
       {
-        id: 2,
+        id: "2",
         name: "Responsive Top Fixed",
         href: "/responsive/top-fix"
       },
       {
-        id: 3,
+        id: "3",
         name: "Responsive Top Fixed 2",
         href: "/responsive/top-fix-2"
       },
       {
-        id: 4,
+        id: "4",
         name: "Responsive Top Fixed 3",
         href: "/responsive/top-fix-3"
       },
     ],
   },
   {
-    id:11,
+    id:"11",
     name: "No Transition",
-    href: "/responsive-no-transition/top-fix",
-    rel:'external',
     child: [
       {
-        id: 12,
+        id: "12",
         name: "Responsive Top Fixed 1",
         href: "/responsive-no-transition/top-fix"
       },
       {
-        id: 13,
+        id: "13",
         name: "Responsive Top Fixed 2",
         href: "/responsive-no-transition/top-fix-2"
       },
       {
-        id: 14,
+        id: "14",
         name: "Responsive Top Fixed 3",
         href: "/responsive-no-transition/top-fix-3"
       },
     ],
   },
   {
-    id: 21,
+    id: "21",
     name: "Responsive Transition",
-    href: "/responsive-transition/blur",
     child: [
       {
-        id: 22,
+        id: "22",
         name: "Blur Transition",
         href: "/responsive-transition/blur"
       },
       {
-        id: 23,
+        id: "23",
         name: "Fade Transition",
         href: "/responsive-transition/fade",
       },
       {
-        id: 24,
+        id: "24",
         name: "Fly X Transition",
         href: "/responsive-transition/fly-x",
       },
       {
-        id: 25,
+        id: "25",
         name: "Fly Y Transition",
         href: "/responsive-transition/fly-y",
       },
       {
-        id: 26,
+        id: "26",
         name: "Slide Transition",
         href: "/responsive-transition/slide",
       },
     ],
   },
   {
-    id: 31,
+    id: "31",
     name: "Others",
-    href: "/fixed-menu",
     child: [
       {
-        id: 32,
+        id: "32",
         name: "Fixed Top Menu",
         href: "/fixed-menu"
       },
       {
-        id: 33,
+        id: "33",
         name: "Inert",
         href: "/inert",
       },
       {
-        id: 34,
+        id: "34",
         name: "Multiple-menu Custom Style",
         href: "/multi-custom-style",
       },
       {
-        id: 35,
+        id: "35",
         name: "Multiple-menu Default",
         href: "/multi-default",
       },
       {
-        id: 36,
+        id: "36",
         name: "Scroll Sidebar",
         href: "/scroll-sidebar",
       },
       {
-        id: 37,
+        id: "37",
         name: "Sidebar Custom Style",
         href: "/sidebar-custom-style",
       },
       {
-        id: 38,
+        id: "38",
         name: "Sidebar Top Menu",
         href: "/sidebar-topmenu",
       },
       {
-        id: 39,
+        id: "39",
         name: "Top Menu",
         href: "/topmenu",
       },

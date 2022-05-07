@@ -2,7 +2,6 @@
 	import { sidebarOpen, sidebarIsInert, sidebarStayOpen } from './store';
 	import type { TransitionParamTypes, TransitionTypes } from './types';
 	import { fly, slide, blur, fade } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
 	export let asideClass = 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg';
 	let inert = null;
 	$: inert = $sidebarIsInert ? 'inert' : null;
@@ -23,12 +22,7 @@
 				return fade(node, params);
 		}
 	}
-	// export let doTransition: boolean = true;
-	// $: if ($sidebarStayOpen) {
-	// 	doTransition = false;
-	// } else {
-	// 	doTransition = true;
-	// }
+
 	sidebarOpen.subscribe((value) => {
 		if (value === true) {
 			sidebarStatus = true;
@@ -38,8 +32,8 @@
 			ariaHidden = false;
 		}
 	});
-	$: console.log('sidebarStayOpen', $sidebarStayOpen);
-	$: console.log('sidebarOpen', $sidebarOpen);
+	// $: console.log('sidebarStayOpen', $sidebarStayOpen);
+	// $: console.log('sidebarOpen', $sidebarOpen);
 </script>
 
 {#if sidebarStatus}

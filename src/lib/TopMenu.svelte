@@ -55,7 +55,7 @@
 		<ul class={topul}>
 			{#each topMenus as { id, name, href, rel, child }}
 				{#if child}
-					<Dropdown {id} {name} {href} {rel} {child} />
+					<Dropdown {id} {name} {child} />
 				{:else}
 					<li class={topli}>
 						<a class:active={$page.url.pathname === href} {href} {rel} class={childLi}>{name}</a>

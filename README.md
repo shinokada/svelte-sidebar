@@ -3,14 +3,15 @@
 ## Installation
 
 ```sh
-npm i -D svelte-sidebar@latest
+npm i -D svelte-sidebar-menu@latest
 ```
 
 ## Features
 
-- [Inert](https://svelte-sidebar.vercel.app/inert)
 - [Responsive menu](https://svelte-sidebar.vercel.app/responsive/top-fix)
-- [Slide in/out](https://svelte-sidebar.vercel.app/)
+- [Inert](https://svelte-sidebar.vercel.app/inert)
+- Svelte trainstions, [fly](), [fade](),[slide](), and [blur](https://svelte-sidebar.vercel.app/responsive-transition/blur).
+- [No transition]()
 - [Sidebar style](https://svelte-sidebar.vercel.app/sidebar-custom-style)
 - [Sidebar style 2](https://svelte-sidebar.vercel.app/multi-custom-style)
 - [Top menu](https://svelte-sidebar.vercel.app/sidebar-topmenu)

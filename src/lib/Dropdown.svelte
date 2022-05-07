@@ -2,9 +2,7 @@
 	import type { TopMenuType } from './types';
 	export let id: string;
 	export let name: string;
-	// export let href;
 	export let child: TopMenuType[] | undefined;
-	// export let rel;
 	export let activeDropdownDiv =
 		'z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow';
 	export let activeChildLi = 'block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100';
@@ -12,16 +10,13 @@
 		'flex justify-between items-center py-2 pr-4 pl-3 w-full text-sm font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto';
 	let hidden = true;
 	let block = false;
-	const handleDropdown = (dropdown) => {
-		console.log('dropdown.id', dropdown.id);
+	const handleDropdown = () => {
 		hidden = !hidden;
 		block = !block;
-		console.log('hidden', hidden);
-		// activeDropdown = dropdown.id;
-		// console.log('activeDropdown: ', activeDropdown);
+		// console.log('hidden', hidden);
 	};
 	const closeDropdown = () => {
-		console.log('clicked outside');
+		// console.log('clicked outside');
 		hidden = true;
 		block = false;
 	};
@@ -47,10 +42,10 @@
 	>
 	<!-- Dropdown menu -->
 	<div class:hidden class:block class={activeDropdownDiv} style="position: absolute; margin: 0px;">
-		<ul class="py-1" aria-labelledby="dropdownLargeButton">
-			{#each child as item}
+		<ul class="py-1" aria-label="dropdown-button">
+			{#each child as { href, name, rel }}
 				<li>
-					<a href={item.href} class={activeChildLi}>{item.name}</a>
+					<a {href} {rel} class={activeChildLi}>{name}</a>
 				</li>
 			{/each}
 		</ul>
