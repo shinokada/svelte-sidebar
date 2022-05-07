@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { sidebarOpen, sidebarIsInert } from './store';
 	import { fly, slide, blur, fade } from 'svelte/transition';
-	import { quintInOut } from 'svelte/easing';
 	import { SidebarList, Navbar } from '$lib/index';
 	import type { MenuType, TransitionParamTypes, TransitionTypes } from './types';
 	export let siteName: string = 'Demo';
@@ -14,13 +13,7 @@
 	export let navDivClass: string = 'pb-10';
 	export let logoClass: string = '';
 	export let hamburgerClass: string = '';
-	export let doTransition: boolean = true;
-	// export let transitionParams: TransitionParamTypes = {
-	// 	delay: 250,
-	// 	duration: 250,
-	// 	x: -100,
-	// 	easing: quintInOut
-	// };
+	export let sideBarListClass: string = 'border-b border-gray-400 mb-2 px-4';
 	export let transitionParams: TransitionParamTypes = {};
 	export let transitionType: TransitionTypes = 'fly';
 	function multiple(node: HTMLElement, params: any) {
@@ -56,7 +49,7 @@
 <Navbar {siteName} {headerClass} {logo} {alt} {logoClass} {hamburgerClass}>
 	<slot />
 </Navbar>
-{#if doTransition}
+{#if transitionType}
 	{#if sidebarStatus}
 		<aside
 			class={asideClass}
@@ -67,7 +60,7 @@
 			<nav class={navClass}>
 				<div class={navDivClass}>
 					{#each lists as { href, name, rel }}
-						<SidebarList {href} {name} {rel} />
+						<SidebarList {href} {name} {rel} {sideBarListClass} />
 					{/each}
 				</div>
 			</nav>

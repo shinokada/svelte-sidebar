@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { sidebarOpen, sidebarIsInert } from './store';
-	import { fly } from 'svelte/transition';
+	import { sidebarOpen, sidebarIsInert, sidebarStayOpen } from './store';
+	import type { TransitionParamTypes, TransitionTypes } from './types';
+	import { fly, slide, blur, fade } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	export let asideClass = 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg';
 	let inert = null;
@@ -8,8 +9,26 @@
 	// $: console.log('isInert', $isInert);
 	let sidebarStatus: boolean;
 	let ariaHidden: boolean;
-	export let doTransition: boolean = true;
-
+	export let transitionParams: TransitionParamTypes = {};
+	export let transitionType: TransitionTypes = 'fly';
+	function multiple(node: HTMLElement, params: any) {
+		switch (transitionType) {
+			case 'slide':
+				return slide(node, params);
+			case 'blur':
+				return blur(node, params);
+			case 'fly':
+				return fly(node, params);
+			case 'fade':
+				return fade(node, params);
+		}
+	}
+	// export let doTransition: boolean = true;
+	// $: if ($sidebarStayOpen) {
+	// 	doTransition = false;
+	// } else {
+	// 	doTransition = true;
+	// }
 	sidebarOpen.subscribe((value) => {
 		if (value === true) {
 			sidebarStatus = true;
@@ -19,16 +38,12 @@
 			ariaHidden = false;
 		}
 	});
-	// console.log('sidebarStatus', sidebarStatus);
+	$: console.log('sidebarStayOpen', $sidebarStayOpen);
+	$: console.log('sidebarOpen', $sidebarOpen);
 </script>
 
-{#if sidebarStatus && doTransition}
-	<aside
-		class={asideClass}
-		transition:fly={{ delay: 250, duration: 250, x: -100, easing: quintOut }}
-		aria-hidden={ariaHidden}
-		{inert}
-	>
+{#if sidebarStatus}
+	<aside class={asideClass} transition:multiple={transitionParams} aria-hidden={ariaHidden} {inert}>
 		<slot />
 	</aside>
 {:else}

@@ -1,21 +1,21 @@
 <script lang="ts">
-	import { sidebarStayOpen } from '$lib/index';
 	import { Aside, Navbar, Nav, SidebarList, TopMenu, Responsive } from '$lib/index';
 	import { lorem, menuListResponsiveTransition, topMenus } from '../menus';
-	import { sineIn } from 'svelte/easing';
+	import { quartInOut } from 'svelte/easing';
+
 	let siteName = 'Svelte-Sidebar';
-	let title = 'Slide Transition';
-	sidebarStayOpen.set(false);
-	// slide has delay, duration, and easing prameters
-	let transitionParams = {
-		duration: 800,
-		delay: 0,
-		easing: sineIn
-	};
+	let title = 'Fly X Transition';
 	let headerClass = 'bg-white py-3 px-8 items-center text-gray-600 border-b-2 px-4';
 	let navClass = 'py-8 px-4 bg-white text-base ';
 	let navDivClass = 'pb-10';
 	let asideClass = 'absolute w-auto border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll';
+	// fly has delay, duration, easing, x, y, opacity prarams
+	let transitionParams = {
+		duration: 500,
+		delay: 100,
+		easing: quartInOut,
+		x: -200
+	};
 </script>
 
 <Responsive />
@@ -23,7 +23,7 @@
 	<Navbar {siteName} {headerClass} hamburgerClass="lg:hidden">
 		<TopMenu {topMenus} />
 	</Navbar>
-	<Aside {asideClass} transitionType="slide" {transitionParams}>
+	<Aside {asideClass} transitionType="fly" {transitionParams}>
 		<Nav {navClass} {navDivClass}>
 			{#each menuListResponsiveTransition as { href, name, rel }}
 				<SidebarList {href} {name} {rel} />
@@ -31,10 +31,13 @@
 		</Nav>
 	</Aside>
 </div>
-<main class="container mx-auto p-24">
+<main class="container mx-auto pt-24 p-8 lg:pl-80">
 	<h1 class="text-4xl text-center">
 		{title}
 	</h1>
+	<p class="pt-4">
+		{lorem}
+	</p>
 	<p class="pt-4">
 		{lorem}
 	</p>

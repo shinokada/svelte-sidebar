@@ -3,11 +3,15 @@
 	export let breakPoint: number = 1024;
 	let width: number;
 	$: if (width >= breakPoint) {
-		sidebarOpen.update((n) => (n = true));
+		if (!$sidebarStayOpen) {
+			sidebarOpen.update((n) => (n = true));
+		}
 		sidebarIsInert.update((n) => (n = false));
 		sidebarStayOpen.update((n) => (n = true));
 	} else {
-		sidebarOpen.update((n) => (n = false));
+		if (!$sidebarStayOpen) {
+			sidebarOpen.update((n) => (n = false));
+		}
 		sidebarIsInert.update((n) => (n = true));
 		sidebarStayOpen.update((n) => (n = false)); // when open a sidebar clicking outside closes it
 	}

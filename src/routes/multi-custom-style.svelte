@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { Aside, Nav, SidebarList, Navbar } from '$lib/index';
 	import { menuList, lorem } from './menus';
-	let siteName = 'Custom Styled Multi-menu Sidebar';
+	let siteName = 'Svelte-Sidebar';
+	let title = 'Custom Styled Multi-menu Sidebar';
 	let navClass = 'p-5 text-lg';
 	let navDivClass = 'pb-10';
 	let sideBarListClass = 'mb-2 px-4 hover:text-gray-500';
@@ -37,8 +38,8 @@
 </Aside>
 
 <main class="container mx-auto p-24">
-	<h1 class="text-3xl">
-		{siteName}
+	<h1 class="text-4xl text-center">
+		{title}
 	</h1>
 	<p class="pt-4">
 		{lorem}

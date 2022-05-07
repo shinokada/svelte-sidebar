@@ -1,15 +1,15 @@
 <script lang="ts">
 	import { Sidebar, sidebarStayOpen } from '$lib/index';
 	import { lorem, menuListTransition } from '../menus';
-	import { quartInOut } from 'svelte/easing';
-	let title = 'Blur Demo';
+	import { sineIn } from 'svelte/easing';
 	let siteName = 'Svelte-Sidebar';
+	let title = 'Fly Demo';
 	sidebarStayOpen.set(false);
-	// blur has delay, duration, easing, opacity, and amount params
+	// fly has delay, duration, easing, x, y, opacity prarams
 	let transitionParams = {
-		duration: 500,
-		amount: 100,
-		easing: quartInOut
+		x: -200,
+		duration: 300,
+		easing: sineIn
 	};
 	let asideClass = 'absolute w-80 border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll';
 </script>
@@ -17,7 +17,7 @@
 <Sidebar
 	lists={menuListTransition}
 	{siteName}
-	transitionType="blur"
+	transitionType="fly"
 	{transitionParams}
 	logo="/images/svelte-sidebar-logo.png"
 	alt="Svelte Sidebar"

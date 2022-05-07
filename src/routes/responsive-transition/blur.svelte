@@ -1,10 +1,14 @@
 <script lang="ts">
-	import { Sidebar, sidebarStayOpen } from '$lib/index';
-	import { Responsive } from '$lib/index';
-	import { lorem, menuList } from '../menus';
+	import { Aside, Navbar, Nav, SidebarList, TopMenu, Responsive } from '$lib/index';
+	import { lorem, menuListResponsiveTransition, topMenus } from '../menus';
 	import { quartInOut } from 'svelte/easing';
-	let siteName = 'Default Demo';
-	sidebarStayOpen.set(false);
+
+	let siteName = 'Svelte-Sidebar';
+	let title = 'Blur Transition';
+	let headerClass = 'bg-white py-3 px-8 items-center text-gray-600 border-b-2 px-4';
+	let navClass = 'py-8 px-4 bg-white text-base ';
+	let navDivClass = 'pb-10';
+	let asideClass = 'absolute w-auto border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll';
 	// blur has delay, duration, easing, opacity, and amount params
 	let transitionParams = {
 		duration: 500,
@@ -14,19 +18,25 @@
 </script>
 
 <Responsive />
-
-<Sidebar
-	lists={menuList}
-	{siteName}
-	transitionType="blur"
-	{transitionParams}
-	logo="/images/svelte-sidebar-logo.png"
-	alt="Svelte Sidebar"
-/>
-<main class="container mx-auto p-24">
-	<h1 class="text-3xl">
-		{siteName}
+<div class="fixed z-50 top-0 left-0 w-full">
+	<Navbar {siteName} {headerClass} hamburgerClass="lg:hidden">
+		<TopMenu {topMenus} />
+	</Navbar>
+	<Aside {asideClass} transitionType="blur" {transitionParams}>
+		<Nav {navClass} {navDivClass}>
+			{#each menuListResponsiveTransition as { href, name, rel }}
+				<SidebarList {href} {name} {rel} />
+			{/each}
+		</Nav>
+	</Aside>
+</div>
+<main class="container mx-auto pt-24 p-8 lg:pl-80">
+	<h1 class="text-4xl text-center">
+		{title}
 	</h1>
+	<p class="pt-4">
+		{lorem}
+	</p>
 	<p class="pt-4">
 		{lorem}
 	</p>
