@@ -19,7 +19,13 @@
 	export let topli: string =
 		'block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0';
 
+	export let activeDropdownDiv =
+		'z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow';
+
 	export let activeChildLi = 'block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100';
+
+	export let dropdownLi =
+		'flex justify-between items-center py-2 pr-4 pl-3 w-full text-sm font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto';
 
 	let barHidden = true;
 	const handleClickbtn = () => {
@@ -60,7 +66,7 @@
 		<ul class={topul}>
 			{#each topMenus as { id, name, href, rel, child }}
 				{#if child}
-					<Dropdown {id} {name} {child} />
+					<Dropdown {name} {child} {activeChildLi} {activeDropdownDiv} {dropdownLi} />
 				{:else}
 					<li class={topli}>
 						<a class:active={$page.url.pathname === href} {href} {rel} class={childLi}>{name}</a>
