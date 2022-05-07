@@ -22,8 +22,8 @@
 		{/each}
 	</Nav>
 </Aside>
-<main class="container mx-auto p-24">
-	<h1 class="text-4xl text-center">
+<main class="container mx-auto p-16">
+	<h1 class="text-4xl text-center py-8">
 		{title}
 	</h1>
 	<p class="pt-4">

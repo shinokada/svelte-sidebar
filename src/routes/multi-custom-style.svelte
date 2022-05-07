@@ -14,33 +14,46 @@
 		'pl-2 self-center text-lg font-semibold text-gray-900 whitespace-nowrap text-white';
 </script>
 
-<Navbar
-	{siteName}
-	{hamburgerClass}
-	{headerClass}
-	{spanClass}
-	logo="/images/svelte-sidebar-logo.png"
-	alt="Svelte Sidebar"
-/>
-<Aside {asideClass}>
-	<Nav {navClass} {navDivClass}>
-		<h3>Menu 1</h3>
-		{#each menuList as { href, name }}
-			<SidebarList {href} {name} {sideBarListClass} />
-		{/each}
-	</Nav>
-	<Nav {navClass}>
-		<h3>Menu 2</h3>
-		{#each menuList as { href, name }}
-			<SidebarList {href} {name} {sideBarListClass} />
-		{/each}
-	</Nav>
-</Aside>
-
+<div class="fixed z-50 top-0 left-0 w-full">
+	<Navbar
+		{siteName}
+		{hamburgerClass}
+		{headerClass}
+		{spanClass}
+		logo="/images/svelte-sidebar-logo.png"
+		alt="Svelte Sidebar"
+	/>
+	<Aside {asideClass}>
+		<Nav {navClass} {navDivClass}>
+			<h3>Menu 1</h3>
+			{#each menuList as { href, name }}
+				<SidebarList {href} {name} {sideBarListClass} />
+			{/each}
+		</Nav>
+		<Nav {navClass}>
+			<h3>Menu 2</h3>
+			{#each menuList as { href, name }}
+				<SidebarList {href} {name} {sideBarListClass} />
+			{/each}
+		</Nav>
+	</Aside>
+</div>
 <main class="container mx-auto p-24">
-	<h1 class="text-4xl text-center">
+	<h1 class="text-4xl text-center py-8">
 		{title}
 	</h1>
+	<p class="pt-4">
+		{lorem}
+	</p>
+	<p class="pt-4">
+		{lorem}
+	</p>
+	<p class="pt-4">
+		{lorem}
+	</p>
+	<p class="pt-4">
+		{lorem}
+	</p>
 	<p class="pt-4">
 		{lorem}
 	</p>
