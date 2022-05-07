@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.5](https://github.com/shinokada/svelte-sidebar/compare/v0.7.4...v0.7.5) (2022-05-07)
+
+
+### Bug Fixes
+
+* update TopMenu and Dropdown component ([6be7bee](https://github.com/shinokada/svelte-sidebar/commit/6be7bee643798b199dc78d93c33cfde0250824a8))
+
 ### [0.7.4](https://github.com/shinokada/svelte-sidebar/compare/v0.7.3...v0.7.4) (2022-05-07)
 
 
