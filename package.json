@@ -1,6 +1,6 @@
 {
 	"name": "svelte-sidebar-menu",
-	"version": "0.7.2",
+	"version": "0.7.3",
 	"description": "A sidebar package for Svelte",
 	"author": {
 		"name": "Shinichi Okada",
