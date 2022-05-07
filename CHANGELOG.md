@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.6](https://github.com/shinokada/svelte-sidebar/compare/v0.7.5...v0.7.6) (2022-05-07)
+
+
+### Bug Fixes
+
+* remove sidebarStayOpen from Responsive ([471b12e](https://github.com/shinokada/svelte-sidebar/commit/471b12eabb26f103e00923a8afeb5fc0cb6f6bc6))
+
 ### [0.7.5](https://github.com/shinokada/svelte-sidebar/compare/v0.7.4...v0.7.5) (2022-05-07)
 
 
