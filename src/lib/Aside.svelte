@@ -32,8 +32,8 @@
 			ariaHidden = false;
 		}
 	});
-	// $: console.log('sidebarStayOpen', $sidebarStayOpen);
-	// $: console.log('sidebarOpen', $sidebarOpen);
+	$: console.log('sidebarStayOpen', $sidebarStayOpen);
+	$: console.log('sidebarOpen', $sidebarOpen);
 </script>
 
 {#if sidebarStatus}
