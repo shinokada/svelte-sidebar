@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.4](https://github.com/shinokada/svelte-sidebar/compare/v0.7.3...v0.7.4) (2022-05-07)
+
+
+### Bug Fixes
+
+* add activeChildLi to TopMenu ([eaaf5b9](https://github.com/shinokada/svelte-sidebar/commit/eaaf5b9b31c89b5906daa35b13fb5a26be23566f))
+
 ### [0.7.3](https://github.com/shinokada/svelte-sidebar/compare/v0.7.2...v0.7.3) (2022-05-07)
 
 
