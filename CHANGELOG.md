@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/shinokada/svelte-sidebar/compare/v0.6.9...v0.7.0) (2022-05-07)
+
+
+### Features
+
+* add svelte transitions ([4863e57](https://github.com/shinokada/svelte-sidebar/commit/4863e57ded45b9be635e33d8a24181a93572d8ef))
+
+
+### Bug Fixes
+
+* add slide, blur, fly, fade transitions ([2568000](https://github.com/shinokada/svelte-sidebar/commit/2568000a21b0092ed00dcf747e1f878e126381ea))
+
 ### [0.6.9](https://github.com/shinokada/svelte-sidebar/compare/v0.6.8...v0.6.9) (2022-05-06)
 
 
