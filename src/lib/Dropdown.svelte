@@ -26,7 +26,7 @@
 	<div on:click={closeDropdown} class="fixed w-full h-full inset-0" />
 {/if}
 <li>
-	<button on:click={() => handleDropdown({ id })} class={dropdownLi}
+	<button on:click={() => handleDropdown()} class={dropdownLi}
 		>{name}
 		<svg
 			class="ml-1 w-4 h-4"
