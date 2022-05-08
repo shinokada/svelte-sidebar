@@ -3,7 +3,7 @@
 	import { lorem, menuListTransition } from '../menus';
 	import { sineIn } from 'svelte/easing';
 	let siteName = 'Svelte-Sidebar';
-	let title = 'Fly Demo';
+	let title = 'Non-Responsive Fly Demo';
 	sidebarStayOpen.set(false);
 	// fly has delay, duration, easing, x, y, opacity prarams
 	let transitionParams = {
@@ -14,15 +14,18 @@
 	let asideClass = 'absolute w-80 border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll';
 </script>
 
-<Sidebar
-	lists={menuListTransition}
-	{siteName}
-	transitionType="fly"
-	{transitionParams}
-	logo="/images/svelte-sidebar-logo.png"
-	alt="Svelte Sidebar"
-	{asideClass}
-/>
+<div class="fixed z-50 top-0 left-0 w-full">
+	<Sidebar
+		lists={menuListTransition}
+		{siteName}
+		transitionType="fly"
+		{transitionParams}
+		logo="/images/svelte-sidebar-logo.png"
+		alt="Svelte Sidebar"
+		{asideClass}
+	/>
+</div>
+
 <main class="container mx-auto p-24">
 	<h1 class="text-4xl text-center">
 		{title}

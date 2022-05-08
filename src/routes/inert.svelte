@@ -13,6 +13,7 @@
 		alt="Svelte Sidebar"
 	/>
 </div>
+
 <main class="container mx-auto p-24 pl-80">
 	<h1 class="text-4xl text-center py-8">{title}</h1>
 	<p class="text-xl font-bold text-red-600">
@@ -54,6 +55,18 @@
 			{lorem}
 		</p>
 	</div>
+	<p class="pt-4">
+		{lorem}
+	</p>
+	<p class="pt-4">
+		{lorem}
+	</p>
+	<p class="pt-4">
+		{lorem}
+	</p>
+	<p class="pt-4">
+		{lorem}
+	</p>
 	<p class="pt-4">
 		{lorem}
 	</p>

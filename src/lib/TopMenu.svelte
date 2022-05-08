@@ -4,28 +4,28 @@
 	import type { TopMenuType } from './types';
 
 	export let buttonClass: string =
-		'inline-flex items-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200';
+		'inline-flex items-center text-base text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200';
 
 	export let childLi: string =
-		'block py-2 pr-4 pl-3  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-sm';
+		'block py-2 pr-4 pl-3  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-base';
 
 	export let topMenuDiv: string = 'container flex flex-wrap justify-end mx-auto';
 
 	export let topMenus: TopMenuType[];
 
 	export let topul: string =
-		'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1';
+		'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-white';
 
 	export let topli: string =
 		'block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0';
 
 	export let activeDropdownDiv =
-		'z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow';
+		'z-10 w-44 text-lg list-none bg-white rounded divide-y divide-gray-100 shadow';
 
-	export let activeChildLi = 'block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100';
+	export let activeChildLi = 'block py-2 px-4 text-base text-gray-700 hover:bg-gray-100';
 
 	export let dropdownLi =
-		'flex justify-between items-center py-2 pr-4 pl-3 w-full text-sm font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto';
+		'flex justify-between items-center py-2 pr-4 pl-3 w-full text-base font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto';
 
 	let barHidden = true;
 	const handleClickbtn = () => {

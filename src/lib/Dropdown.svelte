@@ -3,10 +3,10 @@
 	export let name: string;
 	export let child: TopMenuType[] | undefined;
 	export let activeDropdownDiv =
-		'z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow';
-	export let activeChildLi = 'block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100';
+		'z-10 w-44 text-lg list-none bg-white rounded divide-y divide-gray-100 shadow';
+	export let activeChildLi = 'block py-2 px-4 text-base text-gray-700 hover:bg-gray-100';
 	export let dropdownLi =
-		'flex justify-between items-center py-2 pr-4 pl-3 w-full text-sm font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto';
+		'flex justify-between items-center py-2 pr-4 pl-3 w-full text-base font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto';
 	let hidden = true;
 	let block = false;
 	const handleDropdown = () => {

@@ -8,7 +8,7 @@
 	export let logo: string = '';
 	export let alt: string = '';
 	export let headerClass: string = 'bg-gray-200 py-3 px-10 items-center text-gray-600';
-	export let navClass: string = 'py-8 px-4 text-base';
+	export let navClass: string = 'py-8 px-4 text-lg';
 	export let asideClass: string = 'absolute w-auto h-screen bg-white border-r-2 shadow-lg z-50';
 	export let navDivClass: string = 'pb-10';
 	export let logoClass: string = '';

@@ -22,6 +22,7 @@
 		alt="Svelte Sidebar"
 	/>
 </div>
+
 <main class="container mx-auto p-24">
 	<h1 class="text-4xl text-center py-8">
 		{title}

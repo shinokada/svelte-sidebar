@@ -59,4 +59,16 @@
 	<p class="pt-4">
 		{lorem}
 	</p>
+	<p class="pt-4">
+		{lorem}
+	</p>
+	<p class="pt-4">
+		{lorem}
+	</p>
+	<p class="pt-4">
+		{lorem}
+	</p>
+	<p class="pt-4">
+		{lorem}
+	</p>
 </main>

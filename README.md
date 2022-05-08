@@ -47,7 +47,7 @@ To make the sidebar responsive, add the following to all files:
 	];
 	let siteName = 'Responsive with fixed top menu';
 	let headerClass = 'bg-white py-3 px-8 items-center text-gray-600 border-b-2 px-4';
-	let navClass = 'py-8 px-4 bg-white text-base ';
+	let navClass = 'py-8 px-4 bg-white text-lg ';
 	let navDivClass = 'pb-10';
 	let asideClass =
 		'absolute w-auto bg-gray-200 border-r-2 shadow-lg z-50  h-screen overflow-scroll';
@@ -151,7 +151,7 @@ To make the sidebar responsive, add the following to all files:
   let siteName = 'Custom Styled Sidebar';
   let headerClass = 'bg-pink-700 py-3 px-10 items-center text-white border-b-2';
   let asideClass = 'absolute w-auto h-screen bg-red-50 pt-8 border-r-2 shadow-lg';
-  let navClass = 'p-5 text-base';
+  let navClass = 'p-5 text-lg';
 </script>
 
 <Sidebar lists={menuList} {siteName} {headerClass} {asideClass} {navClass} />

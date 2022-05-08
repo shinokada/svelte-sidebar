@@ -4,9 +4,9 @@
 	import { quartInOut } from 'svelte/easing';
 
 	let siteName = 'Svelte-Sidebar';
-	let title = 'Fly X Transition';
+	let title = 'Responsive Fly X Transition';
 	let headerClass = 'bg-white py-3 px-8 items-center text-gray-600 border-b-2 px-4';
-	let navClass = 'py-8 px-4 bg-white text-base ';
+	let navClass = 'py-8 px-4 bg-white text-lg ';
 	let navDivClass = 'pb-10';
 	let asideClass = 'absolute w-auto border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll';
 	// fly has delay, duration, easing, x, y, opacity prarams
