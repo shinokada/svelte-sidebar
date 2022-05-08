@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Aside, Nav, SidebarList, Navbar } from '$lib/index';
+	import { Aside, Nav, SidebarList, Navbar, OutsideClick } from '$lib/index';
 	import { menuList, lorem } from './menus';
 	let siteName = 'Svelte-Sidebar';
 	let title = 'Custom Styled Multi-menu Sidebar';
@@ -15,28 +15,30 @@
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
-	<Navbar
-		{siteName}
-		{hamburgerClass}
-		{headerClass}
-		{spanClass}
-		logo="/images/svelte-sidebar-logo.png"
-		alt="Svelte Sidebar"
-	/>
-	<Aside {asideClass}>
-		<Nav {navClass} {navDivClass}>
-			<h3>Menu 1</h3>
-			{#each menuList as { href, name }}
-				<SidebarList {href} {name} {sideBarListClass} />
-			{/each}
-		</Nav>
-		<Nav {navClass}>
-			<h3>Menu 2</h3>
-			{#each menuList as { href, name }}
-				<SidebarList {href} {name} {sideBarListClass} />
-			{/each}
-		</Nav>
-	</Aside>
+	<OutsideClick>
+		<Navbar
+			{siteName}
+			{hamburgerClass}
+			{headerClass}
+			{spanClass}
+			logo="/images/svelte-sidebar-logo.png"
+			alt="Svelte Sidebar"
+		/>
+		<Aside {asideClass}>
+			<Nav {navClass} {navDivClass}>
+				<h3>Menu 1</h3>
+				{#each menuList as { href, name }}
+					<SidebarList {href} {name} {sideBarListClass} />
+				{/each}
+			</Nav>
+			<Nav {navClass}>
+				<h3>Menu 2</h3>
+				{#each menuList as { href, name }}
+					<SidebarList {href} {name} {sideBarListClass} />
+				{/each}
+			</Nav>
+		</Aside>
+	</OutsideClick>
 </div>
 
 <main class="container mx-auto p-24">

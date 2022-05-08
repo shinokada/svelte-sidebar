@@ -5,12 +5,10 @@
 	const toggleSide = () => {
 		sidebarOpen.update((n) => (n = !n));
 		sidebarIsInert.update((n) => (n = !n));
+		console.log('Hamburger sidebarOpen', $sidebarOpen);
+		console.log('Hamburger sidebarStayOpen', $sidebarStayOpen);
 	};
 
-	export const closeSidebar = () => {
-		sidebarOpen.update((n) => (n = false));
-		sidebarIsInert.update((n) => (n = true));
-	};
 	export let hamburgerClass: string = '';
 </script>
 
@@ -27,10 +25,6 @@
 		<line id="bottom" x1="0" y1="22" x2="32" y2="22" />
 	</svg>
 </button>
-
-{#if $sidebarOpen && !$sidebarStayOpen}
-	<div on:click={closeSidebar} class="fixed w-full h-full inset-0" />
-{/if}
 
 <style>
 	svg {

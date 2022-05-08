@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Aside, Nav, SidebarList, Navbar, TopMenu } from '$lib/index';
+	import { Aside, Nav, SidebarList, Navbar, TopMenu, OutsideClick } from '$lib/index';
 	import { menuList, lorem } from './menus';
 	import { topMenus } from './menus';
 	let siteName = 'Svelte-Sidebar';
@@ -16,23 +16,25 @@
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
-	<Navbar
-		{siteName}
-		{headerClass}
-		navClass={navBarNavClass}
-		logo="/images/svelte-sidebar-logo.png"
-		alt="Svelte Sidebar"
-	>
-		<TopMenu {topMenus} {topMenuDiv} {topli} />
-	</Navbar>
-	<Aside {asideClass}>
-		<Nav {navClass} {navDivClass}>
-			<h3>Menu 1</h3>
-			{#each menuList as { href, name, rel }}
-				<SidebarList {href} {name} {rel} />
-			{/each}
-		</Nav>
-	</Aside>
+	<OutsideClick>
+		<Navbar
+			{siteName}
+			{headerClass}
+			navClass={navBarNavClass}
+			logo="/images/svelte-sidebar-logo.png"
+			alt="Svelte Sidebar"
+		>
+			<TopMenu {topMenus} {topMenuDiv} {topli} />
+		</Navbar>
+		<Aside {asideClass}>
+			<Nav {navClass} {navDivClass}>
+				<h3>Menu 1</h3>
+				{#each menuList as { href, name, rel }}
+					<SidebarList {href} {name} {rel} />
+				{/each}
+			</Nav>
+		</Aside>
+	</OutsideClick>
 </div>
 
 <main class="container mx-auto p-24">
