@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { Side, Nav, SidebarList } from '$lib/index';
-	import { sideMenu, topMenus } from '../menus';
-	import { quartInOut } from 'svelte/easing';
+	import { menuListResponsiveNoTransition, topMenus } from '../menus';
 
 	// Nav
 	// Nav navClass
@@ -16,19 +15,12 @@
 
 	let siteName = 'Svelte-Sidebar';
 	let headerClass = 'bg-white py-3 px-8 items-center text-gray-600 border-b-2 px-4';
-
-	let asideClass = 'absolute w-auto border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll';
-	let transitionParams = {
-		duration: 500,
-		delay: 100,
-		easing: quartInOut,
-		x: -200
-	};
+	let transitionType = undefined;
 </script>
 
-<Side {siteName} transitionType="" {topMenus} {headerClass}>
+<Side {siteName} {transitionType} {topMenus} {headerClass}>
 	<Nav navClass={navNavClass} {navDivClass}>
-		{#each sideMenu as { href, name, rel }}
+		{#each menuListResponsiveNoTransition as { href, name, rel }}
 			<SidebarList {href} {name} {rel} {sideBarListClass} />
 		{/each}
 	</Nav>

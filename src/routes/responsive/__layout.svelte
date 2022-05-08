@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Side, Nav, SidebarList } from '$lib/index';
-	import { sideMenu, topMenus } from '../menus';
+	import { menuListResponsive, topMenus } from '../menus';
 	import { quartInOut } from 'svelte/easing';
 
 	// Nav
@@ -27,7 +27,7 @@
 
 <Side {siteName} {transitionParams} {topMenus} {headerClass}>
 	<Nav navClass={navNavClass} {navDivClass}>
-		{#each sideMenu as { href, name, rel }}
+		{#each menuListResponsive as { href, name, rel }}
 			<SidebarList {href} {name} {rel} {sideBarListClass} />
 		{/each}
 	</Nav>

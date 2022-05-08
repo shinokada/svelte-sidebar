@@ -1,10 +1,14 @@
-# Svelte-sidebar
+# Svelte-Sidebar-Menu
 
 ## Installation
 
 ```sh
 npm i -D svelte-sidebar-menu@latest
 ```
+
+## Demo
+
+[Svelte-Sidebar-Menu](https://svelte-sidebar.vercel.app/)
 
 ## Features
 

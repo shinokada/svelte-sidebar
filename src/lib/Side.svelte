@@ -125,7 +125,7 @@
 			/>
 		</Navbar>
 		<OutsideClick>
-			<Aside {asideClass} transitionType="fly" {transitionParams}>
+			<Aside {asideClass} {transitionType} {transitionParams}>
 				<slot />
 			</Aside>
 		</OutsideClick>
