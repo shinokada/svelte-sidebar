@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/shinokada/svelte-sidebar/compare/v0.7.6...v0.8.0) (2022-05-08)
+
+
+### Features
+
+* add OutsideClick component ([be8af15](https://github.com/shinokada/svelte-sidebar/commit/be8af1575ad0c900d941e1bbe9dc300fa9901e38))
+
+
+### Bug Fixes
+
+* update topMenu ([ee8e158](https://github.com/shinokada/svelte-sidebar/commit/ee8e158e3b2f18cc82aa3f761c1b9e2e0f9ae314))
+
 ### [0.7.6](https://github.com/shinokada/svelte-sidebar/compare/v0.7.5...v0.7.6) (2022-05-07)
 
 
