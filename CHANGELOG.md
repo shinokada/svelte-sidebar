@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.5](https://github.com/shinokada/svelte-sidebar/compare/v0.8.4...v0.8.5) (2022-05-09)
+
+
+### Bug Fixes
+
+* add OutsideClick to index ([6e59988](https://github.com/shinokada/svelte-sidebar/commit/6e599882e2d396a840a4895005352d1ceb2c1514))
+
 ### [0.8.4](https://github.com/shinokada/svelte-sidebar/compare/v0.8.3...v0.8.4) (2022-05-09)
 
 ### [0.8.3](https://github.com/shinokada/svelte-sidebar/compare/v0.8.2...v0.8.3) (2022-05-09)
