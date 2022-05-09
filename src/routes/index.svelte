@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Side, Nav, SidebarList } from '$lib/index';
+	import { Side, Nav, SidebarList, OutsideClick } from '$lib/index';
 	import { mainMenuList, lorem } from './menus';
 	import { quartInOut } from 'svelte/easing';
 
@@ -38,25 +38,26 @@
 	let spanClass = 'pl-2 self-center text-lg font-semibold text-white whitespace-nowrap';
 </script>
 
-<Side
-	{siteName}
-	{siteClass}
-	{asideClass}
-	{transitionParams}
-	topMenus={mainMenuList}
-	{headerClass}
-	{hamburgerClass}
-	{topul}
-	{childLi}
-	{spanClass}
->
-	<Nav navClass={navNavClass} {navDivClass}>
-		{#each mainMenuList as { href, name, rel }}
-			<SidebarList {href} {name} {rel} {sideBarListClass} />
-		{/each}
-	</Nav>
-</Side>
-
+<OutsideClick>
+	<Side
+		{siteName}
+		{siteClass}
+		{asideClass}
+		{transitionParams}
+		topMenus={mainMenuList}
+		{headerClass}
+		{hamburgerClass}
+		{topul}
+		{childLi}
+		{spanClass}
+	>
+		<Nav navClass={navNavClass} {navDivClass}>
+			{#each mainMenuList as { href, name, rel }}
+				<SidebarList {href} {name} {rel} {sideBarListClass} />
+			{/each}
+		</Nav>
+	</Side>
+</OutsideClick>
 <main class="container mx-auto py-32 px-8">
 	<h1 class="text-4xl text-center py-8">
 		{siteName}

@@ -8,7 +8,7 @@
 		"url": "https://blog.codewithshin.com"
 	},
 	"bugs": "https://github.com/shinokada/svelte-sidebar/issues",
-	"homepage": "https://github.com/shinokada/svelte-sidebar",
+	"homepage": "https://svelte-sidebar.vercel.app/",
 	"license": "MIT",
 	"scripts": {
 		"dev": "svelte-kit dev",
