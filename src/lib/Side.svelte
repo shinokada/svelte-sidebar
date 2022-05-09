@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Aside, Navbar, TopMenu, OutsideClick } from '$lib/index';
 	import type { TopMenuType, TransitionParamTypes, TransitionTypes } from './types';
-	import { sidebarOpen } from './store';
+	import { sidebarOpen } from './sidebarStore';
 
 	// Navbar
 	export let alt: string = '';

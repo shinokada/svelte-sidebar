@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { sidebarOpen, sidebarIsInert, sidebarStayOpen } from '../store';
+	import { sidebarOpen, sidebarIsInert, sidebarStayOpen } from '../sidebarStore';
 	import '../inert.min.js';
 
 	const toggleSide = () => {

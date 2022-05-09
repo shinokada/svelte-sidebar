@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { sidebarOpen, sidebarIsInert, sidebarStayOpen } from './store';
+	import { sidebarOpen, sidebarIsInert, sidebarStayOpen } from './sidebarStore';
 	import { onMount } from 'svelte';
 	export let breakPoint: number = 1024;
 	let width: number;

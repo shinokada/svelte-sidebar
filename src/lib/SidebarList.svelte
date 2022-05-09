@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { sidebarOpen, sidebarIsInert, sidebarStayOpen } from './store';
+	import { sidebarOpen, sidebarIsInert, sidebarStayOpen } from './sidebarStore';
 	export let href: string;
 	export let name: string;
 	export let rel: string = null;

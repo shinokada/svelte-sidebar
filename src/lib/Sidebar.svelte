@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { sidebarOpen, sidebarIsInert } from './store';
+	import { sidebarOpen, sidebarIsInert } from './sidebarStore';
 	import { fly, slide, blur, fade } from 'svelte/transition';
 	import { SidebarList, Navbar, OutsideClick } from '$lib/index';
 	import type { MenuType, TransitionParamTypes, TransitionTypes } from './types';

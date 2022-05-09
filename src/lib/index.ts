@@ -9,4 +9,4 @@ export { default as Side } from './Side.svelte'
 export { clickOutside } from './click_outside.js'
 export { default as OutsideClick } from './OutsideClick.svelte'
 
-export { sidebarIsInert , sidebarOpen, sidebarStayOpen } from './store.js'
+export { sidebarIsInert , sidebarOpen, sidebarStayOpen } from './sidebarStore'
