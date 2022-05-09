@@ -6,7 +6,7 @@ export interface MenuType  {
 }
 
 export interface TopMenuType  {
-  id: string;
+  id?: string;
   href?: string;
   name: string;
   rel?: string;

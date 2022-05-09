@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Aside, Nav, SidebarList, Navbar, TopMenu, OutsideClick } from '$lib/index';
-	import { menuList, lorem, topMenus } from './menus';
+	import { menuList, lorem, mainMenuList } from './menus';
 	let siteName = 'Svelte-Sidebar';
 	let title = 'Top Menu';
 </script>
@@ -8,7 +8,7 @@
 <div class="fixed z-50 top-0 left-0 w-full">
 	<OutsideClick>
 		<Navbar {siteName} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar">
-			<TopMenu {topMenus} />
+			<TopMenu topMenus={mainMenuList} />
 		</Navbar>
 		<Aside>
 			<Nav>

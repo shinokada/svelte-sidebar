@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Side, Nav, SidebarList } from '$lib/index';
-	import { menuListResponsiveNoTransition, topMenus } from '../menus';
+	import { menuListResponsiveNoTransition, mainMenuList } from '../menus';
 
 	// Nav
 	// Nav navClass
@@ -14,17 +14,17 @@
 	// end of SidebarList
 
 	let siteName = 'Svelte-Sidebar';
-	let headerClass = 'bg-white py-3 px-8 items-center text-gray-600 border-b-2 px-4';
+	let headerClass = 'bg-white pt-4 px-10 items-center text-gray-600 border-b-2 px-4';
 	let transitionType = undefined;
 </script>
 
-<Side {siteName} {transitionType} {topMenus} {headerClass}>
+<Side {siteName} {transitionType} topMenus={mainMenuList} {headerClass}>
 	<Nav navClass={navNavClass} {navDivClass}>
 		{#each menuListResponsiveNoTransition as { href, name, rel }}
 			<SidebarList {href} {name} {rel} {sideBarListClass} />
 		{/each}
 	</Nav>
 </Side>
-<main class="container mx-auto pt-24 p-8 lg:pl-80">
+<main class="container mx-auto py-32 px-8 lg:pl-80">
 	<slot />
 </main>

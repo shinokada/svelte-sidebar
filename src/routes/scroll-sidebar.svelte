@@ -33,7 +33,7 @@
 	</OutsideClick>
 </div>
 
-<main class="container mx-auto p-24">
+<main class="container mx-auto py-32 px-8">
 	<h1 class="text-4xl text-center py-8">
 		{siteName}
 	</h1>

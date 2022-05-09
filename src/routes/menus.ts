@@ -1,7 +1,7 @@
 import type { MenuType, TopMenuType } from '$lib/types'
 
 export const mainMenuList: MenuType[] = [
-  { href: "/responsive/top-fix", rel: "external", name: "Responsive Top Fixed" },
+  { href: "/responsive/top-fix", rel: "external", name: "Responsive" },
   { href: "/responsive-no-transition/top-fix", rel:"external", name: "Responsive No Transition" },
   { href: "/responsive-transition/blur", rel:"external", name: "Responsive Transitions" },
   { href: "/transitions/blur", rel:"external", name: "Transitions" },

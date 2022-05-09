@@ -9,7 +9,7 @@
 	export let hamburgerClass: string =
 		'text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none lg:hidden';
 
-	export let headerClass: string = 'bg-gray-200 py-3 px-10 items-center text-gray-600';
+	export let headerClass: string = 'bg-gray-200 pt-4 px-10 items-center text-gray-600';
 
 	export let logo: string = '';
 
@@ -17,7 +17,7 @@
 
 	export let navClass = 'flex relative';
 
-	export let siteClass: string = 'w-full h-9 text-lg pt-1 pl-12';
+	export let siteClass: string = 'w-1/3 h-12 text-lg pt-1 pl-12';
 
 	export let siteName: string = 'Demo';
 
@@ -52,7 +52,7 @@
 	// end of TopMenu
 
 	// Aside
-	let asideClass: string =
+	export let asideClass: string =
 		'absolute w-auto border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll';
 
 	export let transitionParams: TransitionParamTypes = {};

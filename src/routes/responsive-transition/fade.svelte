@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { Aside, Navbar, Nav, SidebarList, TopMenu, Responsive } from '$lib/index';
-	import { lorem, menuListResponsiveTransition, topMenus } from '../menus';
+	import { lorem, menuListResponsiveTransition, mainMenuList } from '../menus';
 	import { quartInOut } from 'svelte/easing';
 
 	let siteName = 'Svelte-Sidebar';
 	let title = 'Responsive Fade Transition';
-	let headerClass = 'bg-white py-3 px-8 items-center text-gray-600 border-b-2 px-4';
+	let headerClass = 'bg-white pt-4 px-10 items-center text-gray-600 border-b-2 px-4';
 	let navClass = 'py-8 px-4 bg-white text-lg ';
 	let navDivClass = 'pb-10';
 	let asideClass = 'absolute w-auto border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll';
@@ -20,7 +20,7 @@
 <Responsive />
 <div class="fixed z-50 top-0 left-0 w-full">
 	<Navbar {siteName} {headerClass} hamburgerClass="lg:hidden">
-		<TopMenu {topMenus} />
+		<TopMenu topMenus={mainMenuList} />
 	</Navbar>
 	<Aside {asideClass} transitionType="fade" {transitionParams}>
 		<Nav {navClass} {navDivClass}>
@@ -30,7 +30,7 @@
 		</Nav>
 	</Aside>
 </div>
-<main class="container mx-auto pt-24 p-8 lg:pl-80">
+<main class="container mx-auto py-32 px-8 lg:pl-80">
 	<h1 class="text-4xl text-center">
 		{title}
 	</h1>

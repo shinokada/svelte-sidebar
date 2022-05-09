@@ -9,13 +9,13 @@
 	// Navbar
 	export let alt: string = '';
 	export let hamburgerClass: string = '';
-	export let headerClass: string = 'bg-gray-200 py-3 px-10 items-center text-gray-600';
+	export let headerClass: string = 'bg-gray-200 pt-4 px-10 items-center text-gray-600';
 	export let logo: string = '';
 	export let logoClass: string = '';
 	// navClass for Navbar
 	export let navBarClass = 'flex relative';
 	export let siteName: string = 'Demo';
-	export let siteClass: string = 'w-full h-9 text-lg pt-1 pl-12';
+	export let siteClass: string = 'w-1/3 h-12 text-lg pt-1 pl-12';
 	export let spanClass: string =
 		'pl-2 self-center text-lg font-semibold text-gray-900 whitespace-nowrap';
 	// end of Navbar

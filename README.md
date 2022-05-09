@@ -77,7 +77,7 @@ To make the sidebar responsive, add the following to all files:
 		</Nav>
 	</Aside>
 </div>
-<main class="container mx-auto pt-24 p-8 lg:pl-80">
+<main class="container mx-auto py-32 px-8 lg:pl-80">
   Content
 </main>
 ```
@@ -131,7 +131,7 @@ To make the sidebar responsive, add the following to all files:
 </script>
 
 <Sidebar lists={menuList} {siteName} />
-<main class="container mx-auto p-24">
+<main class="container mx-auto py-32 px-8">
   ...
 </main>
 ```
