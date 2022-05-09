@@ -28,7 +28,6 @@
 		</Navbar>
 		<Aside {asideClass}>
 			<Nav {navClass} {navDivClass}>
-				<h3>Menu 1</h3>
 				{#each menuList as { href, name, rel }}
 					<SidebarList {href} {name} {rel} />
 				{/each}

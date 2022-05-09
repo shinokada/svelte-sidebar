@@ -10,7 +10,6 @@
 		<Navbar {siteName} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" />
 		<Aside>
 			<Nav>
-				<h3>Menu 1</h3>
 				{#each menuList as { href, name, rel }}
 					<SidebarList {href} {name} {rel} />
 				{/each}

@@ -26,7 +26,6 @@
 		/>
 		<Aside {asideClass}>
 			<Nav {navClass} {navDivClass}>
-				<h3>Menu 1</h3>
 				{#each menuList as { href, name }}
 					<SidebarList {href} {name} {sideBarListClass} />
 				{/each}
