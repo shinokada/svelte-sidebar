@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.6](https://github.com/shinokada/svelte-sidebar/compare/v0.8.5...v0.8.6) (2022-05-09)
+
+
+### Bug Fixes
+
+* name change from store to sidebarStore.ts ([3929ff1](https://github.com/shinokada/svelte-sidebar/commit/3929ff12f69721a845e9f18d7cc4ec0b5510fb33))
+
 ### [0.8.5](https://github.com/shinokada/svelte-sidebar/compare/v0.8.4...v0.8.5) (2022-05-09)
 
 
