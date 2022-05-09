@@ -15,7 +15,7 @@
 	// end of SidebarList
 
 	let siteName = 'Svelte-Sidebar';
-	let siteClass = 'w-1/3 h-12 text-lg pt-1 pl-12';
+	let siteClass = 'w-1/4 h-12 text-lg pt-1 pl-12';
 	let headerClass = 'bg-white pt-4 px-10 items-center text-gray-600 border-b-2 px-4';
 
 	let transitionParams = {

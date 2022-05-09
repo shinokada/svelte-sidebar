@@ -15,12 +15,14 @@
 		amount: 100,
 		easing: quartInOut
 	};
+	let topul =
+		'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-white';
 </script>
 
 <Responsive />
 <div class="fixed z-50 top-0 left-0 w-full">
 	<Navbar {siteName} {headerClass} hamburgerClass="lg:hidden">
-		<TopMenu topMenus={mainMenuList} />
+		<TopMenu topMenus={mainMenuList} {topul} />
 	</Navbar>
 	<Aside {asideClass} transitionType="fade" {transitionParams}>
 		<Nav {navClass} {navDivClass}>

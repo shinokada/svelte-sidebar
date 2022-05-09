@@ -3,7 +3,7 @@ import type { MenuType, TopMenuType } from '$lib/types'
 export const mainMenuList: MenuType[] = [
   { href: "/responsive/top-fix", rel: "external", name: "Responsive" },
   { href: "/responsive-no-transition/top-fix", rel:"external", name: "Responsive No Transition" },
-  { href: "/responsive-transition/blur", rel:"external", name: "Responsive Transitions" },
+  // { href: "/responsive-transition/blur", rel:"external", name: "Responsive Transitions" },
   { href: "/transitions/blur", rel:"external", name: "Transitions" },
   { href: "/topmenu", rel:"external", name: "Other menus" },
 ]
@@ -43,7 +43,7 @@ export const menuList: MenuType[] = [
   { href: "/multi-default", rel:'external', name: "Multiple-menu Default" },
   { href: "/scroll-sidebar", rel:'external', name: "Scroll Sidebar" },
   { href: "/sidebar-custom-style", rel:'external', name: "Sidebar Custom Style" },
-  { href: "/topmenu", rel:'external', name: "Top Menu" },
+  { href: "/topmenu", rel:'external', name: "Non-fixed Top Menu" },
 ];
 
 export const allMenuList: MenuType[] = [

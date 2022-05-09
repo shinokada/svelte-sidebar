@@ -15,7 +15,7 @@
 	// navClass for Navbar
 	export let navBarClass = 'flex relative';
 	export let siteName: string = 'Demo';
-	export let siteClass: string = 'w-1/3 h-12 text-lg pt-1 pl-12';
+	export let siteClass: string = 'w-1/4 h-12 text-lg pt-1 pl-12';
 	export let spanClass: string =
 		'pl-2 self-center text-lg font-semibold text-gray-900 whitespace-nowrap';
 	// end of Navbar

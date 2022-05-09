@@ -7,23 +7,24 @@
 		'fixed w-auto bg-white overflow-scroll h-screen py-8 shadow-lg z-50 px-4 min-h-screen';
 	let headerClass = 'bg-white pt-4 px-10 items-center text-gray-600 border-b-2 p-8';
 	let navClass = 'px-4 bg-white text-lg ';
-	let navBarNavClass = 'relative';
+	let navBarNavClass = 'relative flex';
 	let navDivClass = 'pb-10';
-	let topMenuDiv = 'absolute top-1 right-2 container flex flex-wrap justify-end mx-auto';
-	let topli =
-		'w-full py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0';
+	let topMenuDiv = 'w-3/4 container flex flex-wrap justify-end mx-auto';
+	let topul =
+		'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-gray-200 ';
+	let childLi =
+		'block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-base';
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
 	<OutsideClick>
 		<Navbar
 			{siteName}
-			{headerClass}
 			navClass={navBarNavClass}
 			logo="/images/svelte-sidebar-logo.png"
 			alt="Svelte Sidebar"
 		>
-			<TopMenu topMenus={mainMenuList} {topMenuDiv} {topli} />
+			<TopMenu topMenus={mainMenuList} {topMenuDiv} {topul} {childLi} />
 		</Navbar>
 		<Aside {asideClass}>
 			<Nav {navClass} {navDivClass}>

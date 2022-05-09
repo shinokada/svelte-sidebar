@@ -7,7 +7,7 @@
 	export let logo: string = '';
 	export let logoClass: string = '';
 	export let navClass = 'flex relative';
-	export let siteClass: string = 'w-1/3 h-12 text-lg pt-1 pl-12';
+	export let siteClass: string = 'w-1/4 h-12 text-lg pt-1 pl-12';
 	export let siteName: string = 'Demo';
 
 	export let spanClass: string =

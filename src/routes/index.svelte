@@ -28,7 +28,7 @@
 	let asideClass = 'absolute w-auto h-screen bg-gray-700 text-white border-r-2 shadow-lg';
 	let headerClass = 'bg-gray-700 pt-4 px-10 items-center text-white border-b-2';
 
-	let siteClass = 'w-1/3 h-12 text-lg pt-1 pl-12';
+	let siteClass = 'w-1/4 h-12 text-lg pt-1 pl-12';
 
 	let topul =
 		'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-gray-700 ';
