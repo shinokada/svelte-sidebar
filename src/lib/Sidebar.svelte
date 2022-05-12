@@ -13,7 +13,7 @@
 	export let logo: string = '';
 	export let logoClass: string = '';
 	// navClass for Navbar
-	export let navBarClass = 'flex relative';
+	export let navBarClass: string = 'flex relative';
 	export let siteName: string = 'Demo';
 	export let siteClass: string = 'w-1/4 h-12 text-lg pt-1 pl-12';
 	export let spanClass: string =

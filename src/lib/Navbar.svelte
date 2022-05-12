@@ -6,7 +6,7 @@
 	export let headerClass: string = 'bg-gray-200 pt-4 px-10 items-center text-gray-600';
 	export let logo: string = '';
 	export let logoClass: string = '';
-	export let navClass = 'flex relative';
+	export let navClass: string = 'flex relative';
 	export let siteClass: string = 'w-1/4 h-12 text-lg pt-1 pl-12';
 	export let siteName: string = 'Demo';
 
