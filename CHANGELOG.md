@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.7](https://github.com/shinokada/svelte-sidebar/compare/v0.8.6...v0.8.7) (2022-05-13)
+
+
+### Bug Fixes
+
+* add : string to exported props ([8f38866](https://github.com/shinokada/svelte-sidebar/commit/8f38866f5d9dbf23f237ae88f9b419351a630a03))
+
 ### [0.8.6](https://github.com/shinokada/svelte-sidebar/compare/v0.8.5...v0.8.6) (2022-05-09)
 
 
