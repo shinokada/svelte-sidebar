@@ -16,8 +16,7 @@
 	export let navBarClass: string = 'flex relative';
 	export let siteName: string = 'Demo';
 	export let siteClass: string = 'w-1/4 h-12 text-lg pt-1 pl-12';
-	export let spanClass: string =
-		'pl-2 self-center text-lg font-semibold text-gray-900 whitespace-nowrap';
+	export let spanClass: string = 'pl-2 self-center text-lg font-semibold text-gray-900 whitespace-nowrap';
 	// end of Navbar
 
 	export let navClass: string = 'py-8 px-4 text-lg';
@@ -62,27 +61,12 @@
 </script>
 
 <OutsideClick>
-	<Navbar
-		{alt}
-		{hamburgerClass}
-		{headerClass}
-		{logo}
-		{logoClass}
-		navClass={navBarClass}
-		{siteClass}
-		{siteName}
-		{spanClass}
-	>
+	<Navbar {alt} {hamburgerClass} {headerClass} {logo} {logoClass} navClass={navBarClass} {siteClass} {siteName} {spanClass}>
 		<slot />
 	</Navbar>
 	{#if transitionType}
 		{#if sidebarStatus}
-			<aside
-				class={asideClass}
-				transition:multiple={transitionParams}
-				aria-hidden={ariaHidden}
-				{inert}
-			>
+			<aside class={asideClass} transition:multiple={transitionParams} aria-hidden={ariaHidden} {inert}>
 				<nav class={navClass}>
 					<div class={navDivClass}>
 						{#each lists as { href, name, rel }}
@@ -93,13 +77,7 @@
 			</aside>
 		{/if}
 	{:else}
-		<aside
-			class={asideClass}
-			class:open={sidebarStatus}
-			class:close={!sidebarStatus}
-			aria-hidden={ariaHidden}
-			{inert}
-		>
+		<aside class={asideClass} class:open={sidebarStatus} class:close={!sidebarStatus} aria-hidden={ariaHidden} {inert}>
 			<nav class={navClass}>
 				<div class={navDivClass}>
 					{#each lists as { href, name, rel }}

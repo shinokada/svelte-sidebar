@@ -5,7 +5,8 @@ export const mainMenuList: MenuType[] = [
   { href: "/responsive-no-transition/top-fix", rel:"external", name: "Responsive No Transition" },
   // { href: "/responsive-transition/blur", rel:"external", name: "Responsive Transitions" },
   { href: "/transitions/blur", rel:"external", name: "Transitions" },
-  { href: "/topmenu", rel:"external", name: "Other menus" },
+  { href: "/topmenu", rel: "external", name: "Other menus" },
+  { href: "/props", rel:"external", name: "Props" },
 ]
 
 export const menuListResponsive: MenuType[] = [

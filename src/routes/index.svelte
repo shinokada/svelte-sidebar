@@ -5,7 +5,7 @@
 
 	// Nav
 	// Nav navClass
-	export let navNavClass: string = 'py-8 px-4 text-lg';
+	let navNavClass: string = 'py-8 px-4 text-lg';
 	// end of Nav
 
 	// SidebarList
