@@ -28,7 +28,7 @@
 </script>
 
 {#if $sidebarOpen}
-	<aside class={asideClass} transition:multiple={transitionParams} aria-hidden={ariaHidden} {inert}>
+	<aside class="{asideClass} {$$props.class ? $$props.class : ''}" transition:multiple={transitionParams} aria-hidden={ariaHidden} {inert}>
 		<slot />
 	</aside>
 {/if}

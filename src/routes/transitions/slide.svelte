@@ -3,7 +3,7 @@
 	import { lorem, menuListTransition } from '../menus';
 	import { sineIn } from 'svelte/easing';
 	let siteName = 'Svelte-Sidebar';
-	let title = 'Non-Responsive Slide Demo';
+	let title = 'Slide Demo';
 	sidebarStayOpen.set(false);
 	// slide has delay, duration, and easing prameters
 	let transitionParams = {
@@ -15,15 +15,7 @@
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
-	<Sidebar
-		lists={menuListTransition}
-		{siteName}
-		transitionType="slide"
-		{transitionParams}
-		logo="/images/svelte-sidebar-logo.png"
-		alt="Svelte Sidebar"
-		{asideClass}
-	/>
+	<Sidebar lists={menuListTransition} {siteName} transitionType="slide" {transitionParams} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" {asideClass} />
 </div>
 
 <main class="container mx-auto py-32 px-8">

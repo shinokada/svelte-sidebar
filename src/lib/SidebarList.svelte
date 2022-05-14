@@ -14,11 +14,11 @@
 </script>
 
 {#if $sidebarStayOpen === true}
-	<div class={sideBarListClass}>
+	<div class="{sideBarListClass} {$$props.class ? $$props.class : ''}">
 		<a class="block" {href} {rel}>{name}</a>
 	</div>
 {:else}
-	<div class={sideBarListClass}>
+	<div class="{sideBarListClass} {$$props.class ? $$props.class : ''}">
 		<a class="block" {href} {rel} on:click={toggleSide}>{name}</a>
 	</div>
 {/if}

@@ -12,7 +12,7 @@
 	export let spanClass: string = 'pl-2 self-center text-lg font-semibold text-gray-900 whitespace-nowrap';
 </script>
 
-<header class={headerClass}>
+<header class="{headerClass} {$$props.class ? $$props.class : ''}">
 	<nav class={navClass}>
 		<Hamburger {hamburgerClass} />
 		<div class={siteClass}>

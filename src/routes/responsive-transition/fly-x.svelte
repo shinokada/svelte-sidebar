@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { Aside, Navbar, Nav, SidebarList, TopMenu, Responsive } from '$lib/index';
-	import { lorem, menuListResponsiveTransition, mainMenuList } from '../menus';
+	import { lorem, menuListResponsiveTransition, mainMenuList, topMenuList } from '../menus';
 	import { quartInOut } from 'svelte/easing';
 
 	let siteName = 'Svelte-Sidebar';
 	let title = 'Responsive Fly X Transition';
-	let headerClass = 'bg-white pt-4 px-10 items-center text-gray-600 border-b-2 px-4';
+	let headerClass = 'bg-white px-10 items-center text-gray-600 border-b-2 p-4';
 	let navClass = 'py-8 px-4 bg-white text-lg ';
 	let navDivClass = 'pb-10';
 	let asideClass = 'absolute w-auto border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll';
@@ -16,14 +16,13 @@
 		easing: quartInOut,
 		x: -200
 	};
-	let topul =
-		'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-white';
+	let topul = 'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-white';
 </script>
 
 <Responsive />
 <div class="fixed z-50 top-0 left-0 w-full">
 	<Navbar {siteName} {headerClass} hamburgerClass="lg:hidden">
-		<TopMenu topMenus={mainMenuList} {topul} />
+		<TopMenu topMenus={topMenuList} {topul} />
 	</Navbar>
 	<Aside {asideClass} transitionType="fly" {transitionParams}>
 		<Nav {navClass} {navDivClass}>

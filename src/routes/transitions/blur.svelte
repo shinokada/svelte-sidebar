@@ -2,7 +2,7 @@
 	import { Sidebar, sidebarStayOpen } from '$lib/index';
 	import { lorem, menuListTransition } from '../menus';
 	import { quartInOut } from 'svelte/easing';
-	let title = 'Non-Responsive Blur Demo';
+	let title = 'Blur Demo';
 	let siteName = 'Svelte-Sidebar';
 	sidebarStayOpen.set(false);
 	// blur has delay, duration, easing, opacity, and amount params
@@ -15,15 +15,7 @@
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
-	<Sidebar
-		lists={menuListTransition}
-		{siteName}
-		transitionType="blur"
-		{transitionParams}
-		logo="/images/svelte-sidebar-logo.png"
-		alt="Svelte Sidebar"
-		{asideClass}
-	/>
+	<Sidebar lists={menuListTransition} {siteName} transitionType="blur" {transitionParams} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" {asideClass} />
 </div>
 <main class="container mx-auto py-32 px-8">
 	<h1 class="text-4xl text-center">

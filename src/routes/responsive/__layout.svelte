@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Side, Nav, SidebarList } from '$lib/index';
-	import { menuListResponsive, mainMenuList } from '../menus';
+	import { menuListResponsive, mainMenuList, topMenuList } from '../menus';
 	import { quartInOut } from 'svelte/easing';
 
 	// Nav
@@ -14,9 +14,14 @@
 	export let sideBarListClass: string = 'border-b border-gray-400 mb-2 px-4';
 	// end of SidebarList
 
+	let topMenuDiv = 'container flex flex-wrap justify-end mx-auto pt-0 md:pt-2';
+
 	let siteName = 'Svelte-Sidebar';
-	let siteClass = 'w-1/4 h-12 text-lg pt-1 pl-12';
-	let headerClass = 'bg-white pt-4 px-10 items-center text-gray-600 border-b-2 px-4';
+	let siteClass = 'w-1/4 h-12 text-lg pt-3 pl-12';
+
+	let headerClass = 'bg-white px-10 items-center text-gray-600 border-b-2 p-4';
+
+	let hamburgerClass = 'hover:text-gray-500 cursor-pointer mr-4 border-none focus:outline-none pt-2';
 
 	let transitionParams = {
 		duration: 500,
@@ -26,7 +31,7 @@
 	};
 </script>
 
-<Side {siteName} {siteClass} {transitionParams} topMenus={mainMenuList} {headerClass}>
+<Side {siteName} {siteClass} {transitionParams} topMenus={topMenuList} {headerClass} {hamburgerClass} {topMenuDiv}>
 	<Nav navClass={navNavClass} {navDivClass}>
 		{#each menuListResponsive as { href, name, rel }}
 			<SidebarList {href} {name} {rel} {sideBarListClass} />

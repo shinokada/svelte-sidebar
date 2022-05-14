@@ -3,12 +3,18 @@ import type { MenuType, TopMenuType } from '$lib/types'
 export const mainMenuList: MenuType[] = [
   { href: "/responsive/top-fix", rel: "external", name: "Responsive" },
   { href: "/responsive-no-transition/top-fix", rel:"external", name: "Responsive No Transition" },
-  // { href: "/responsive-transition/blur", rel:"external", name: "Responsive Transitions" },
   { href: "/transitions/blur", rel:"external", name: "Transitions" },
   { href: "/topmenu", rel: "external", name: "Other menus" },
   { href: "/props", rel: "external", name: "Props" },
   { href: "https://www.npmjs.com/package/svelte-sidebar-menu", name: "NPM" },
   { href: "https://github.com/shinokada/svelte-sidebar", name: "GitHub" },
+]
+
+export const topMenuList: MenuType[] = [
+  { href: "/responsive/top-fix", rel: "external", name: "Responsive" },
+  { href: "/responsive-no-transition/top-fix", rel:"external", name: "Responsive No Transition" },
+  { href: "/transitions/blur", rel:"external", name: "Transitions" },
+  { href: "/topmenu", rel: "external", name: "Other menus" },
 ]
 
 export const menuListResponsive: MenuType[] = [

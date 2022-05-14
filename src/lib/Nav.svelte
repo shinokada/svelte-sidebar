@@ -3,7 +3,7 @@
 	export let navDivClass: string = 'pb-8';
 </script>
 
-<nav class={navClass}>
+<nav class="{navClass} {$$props.class ? $$props.class : ''}">
 	<div class={navDivClass}>
 		<slot />
 	</div>
