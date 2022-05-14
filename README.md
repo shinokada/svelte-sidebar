@@ -2,7 +2,7 @@
 
 [![npm version](https://badgen.net/npm/v/svelte-sidebar-menu)](https://www.npmjs.com/package/svelte-sidebar-menu)
 [![npm downloads](https://badgen.net/npm/dw/svelte-sidebar-menu)](https://www.npmjs.com/package/svelte-sidebar-menu)
-[![release](https://badgen.net/github/release/shinokada/svelte-sidebar-menu)](https://github.com/shinokada/svelte-sidebar/releases)
+[![release](https://badgen.net/github/release/shinokada/svelte-sidebar)](https://github.com/shinokada/svelte-sidebar/releases)
 [![license](https://badgen.net/npm/license/svelte-sidebar-menu)](https://github.com/shinokada/svelte-sidebar/blob/main/LICENSE)
 
 ## Installation
