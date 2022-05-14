@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.10](https://github.com/shinokada/svelte-sidebar/compare/v0.8.9...v0.8.10) (2022-05-14)
+
 ### [0.8.9](https://github.com/shinokada/svelte-sidebar/compare/v0.8.8...v0.8.9) (2022-05-14)
 
 ### [0.8.8](https://github.com/shinokada/svelte-sidebar/compare/v0.8.7...v0.8.8) (2022-05-14)
