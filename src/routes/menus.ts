@@ -6,7 +6,9 @@ export const mainMenuList: MenuType[] = [
   // { href: "/responsive-transition/blur", rel:"external", name: "Responsive Transitions" },
   { href: "/transitions/blur", rel:"external", name: "Transitions" },
   { href: "/topmenu", rel: "external", name: "Other menus" },
-  { href: "/props", rel:"external", name: "Props" },
+  { href: "/props", rel: "external", name: "Props" },
+  { href: "https://www.npmjs.com/package/svelte-sidebar-menu", name: "NPM" },
+  { href: "https://github.com/shinokada/svelte-sidebar", name: "GitHub" },
 ]
 
 export const menuListResponsive: MenuType[] = [
