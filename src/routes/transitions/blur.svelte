@@ -11,11 +11,12 @@
 		amount: 100,
 		easing: quartInOut
 	};
+	let headerClass = 'bg-gray-200 px-10 items-center text-gray-600 border-b-2 p-4';
 	let asideClass = 'absolute w-80 border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll';
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
-	<Sidebar lists={menuListTransition} {siteName} transitionType="blur" {transitionParams} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" {asideClass} />
+	<Sidebar lists={menuListTransition} {siteName} transitionType="blur" {transitionParams} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" {asideClass} {headerClass} />
 </div>
 <main class="container mx-auto py-32 px-8">
 	<h1 class="text-4xl text-center">

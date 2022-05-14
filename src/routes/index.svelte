@@ -23,7 +23,7 @@
 	let siteClass = 'w-1/4 h-12 text-lg pt-3 pl-12';
 
 	let topul = 'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-gray-700 ';
-	let childLi = 'block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-base';
+	let childLi = 'block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-lg';
 
 	let spanClass = 'pl-2 self-center text-lg font-semibold text-white whitespace-nowrap';
 

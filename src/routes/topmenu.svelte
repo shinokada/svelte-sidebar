@@ -10,7 +10,7 @@
 	let navDivClass = 'pb-10';
 	// let topMenuDiv = 'w-3/4 container flex flex-wrap justify-end mx-auto';
 	let topul = 'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-gray-200 ';
-	let childLi = 'block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-base';
+	let childLi = 'block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-lg';
 
 	let siteClass = 'w-1/4 h-12 text-lg pt-2 pl-12';
 	let headerClass = 'bg-gray-200 px-10 items-center text-gray-600 p-4';

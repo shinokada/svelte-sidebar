@@ -4,14 +4,14 @@
 	import { quartInOut } from 'svelte/easing';
 	import Table from './utils/Table.svelte';
 	import TableDefaultRow from './utils/TableDefaultRow.svelte';
-	import componentProps1 from './props/Aside.json';
-	import componentProps2 from './props/Dropdown.json';
-	import componentProps3 from './props/Hamburger.json';
-	import componentProps4 from './props/Nav.json';
-	import componentProps5 from './props/Navbar.json';
-	import componentProps6 from './props/Side.json';
-	import componentProps7 from './props/Sidebar.json';
-	import componentProps8 from './props/TopMenu.json';
+	import * as componentProps1 from './props/Aside.json';
+	import * as componentProps2 from './props/Dropdown.json';
+	import * as componentProps3 from './props/Hamburger.json';
+	import * as componentProps4 from './props/Nav.json';
+	import * as componentProps5 from './props/Navbar.json';
+	import * as componentProps6 from './props/Side.json';
+	import * as componentProps7 from './props/Sidebar.json';
+	import * as componentProps8 from './props/TopMenu.json';
 	let items1 = componentProps1.props;
 	let items2 = componentProps2.props;
 	let items3 = componentProps3.props;
@@ -47,12 +47,12 @@
 
 	let asideClass = 'absolute w-auto h-screen bg-gray-700 text-white border-r-2 shadow-lg';
 
-	let headerClass = 'bg-gray-700 px-10 items-center text-white border-b-2 py-4';
+	let headerClass = 'bg-gray-700 px-10 items-center text-white border-b-2 py-6';
 
 	let siteClass = 'w-1/4 h-12 text-lg pt-3 pl-12';
 
-	let topul = 'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-gray-700 ';
-	let childLi = 'block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-base';
+	let topul = 'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-3 bg-gray-700';
+	let childLi = 'block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-lg';
 
 	let spanClass = 'pl-2 self-center text-lg font-semibold text-white whitespace-nowrap';
 </script>
@@ -67,6 +67,7 @@
 	</Side>
 </OutsideClick>
 <main class="container mx-auto py-32 px-8">
+	<h1 class="text-3xl mb-4">Props</h1>
 	<p>The component has the following props, type, and default values.</p>
 
 	<h3>Aside</h3>

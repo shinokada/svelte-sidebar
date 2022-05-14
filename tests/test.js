@@ -98,3 +98,9 @@ test('Top menu page has expected h1', async ({ page }) => {
 	await page.goto('/topmenu');
 	expect(await page.textContent('h1')).toBe('Top Menu');
 });
+
+// Props page
+test('Props page has expected h1', async ({ page }) => {
+	await page.goto('/props');
+	expect(await page.textContent('h1')).toBe('Props');
+});

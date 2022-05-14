@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Aside, Navbar, Nav, SidebarList, TopMenu, Responsive } from '$lib/index';
-	import { lorem, menuListResponsiveTransition, mainMenuList, topMenuList } from '../menus';
+	import { lorem, menuListResponsiveTransition, topMenuList } from '../menus';
 	import { quartInOut } from 'svelte/easing';
 
 	let siteName = 'Svelte-Sidebar';

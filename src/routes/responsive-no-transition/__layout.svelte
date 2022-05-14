@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Side, Nav, SidebarList } from '$lib/index';
-	import { menuListResponsiveNoTransition, mainMenuList, topMenuList } from '../menus';
+	import { menuListResponsiveNoTransition, topMenuList } from '../menus';
 
 	// Nav
 	// Nav navClass
@@ -22,10 +22,12 @@
 
 	let hamburgerClass = 'hover:text-gray-500 cursor-pointer mr-4 border-none focus:outline-none pt-2 lg:hidden';
 
+	let childLi = 'block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-lg';
+
 	let transitionType = undefined;
 </script>
 
-<Side {siteName} {transitionType} topMenus={topMenuList} {headerClass} {topMenuDiv} {siteClass} {hamburgerClass}>
+<Side {siteName} {transitionType} topMenus={topMenuList} {headerClass} {topMenuDiv} {siteClass} {hamburgerClass} {childLi}>
 	<Nav navClass={navNavClass} {navDivClass}>
 		{#each menuListResponsiveNoTransition as { href, name, rel }}
 			<SidebarList {href} {name} {rel} {sideBarListClass} />

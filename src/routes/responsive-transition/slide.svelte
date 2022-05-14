@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { sidebarStayOpen } from '$lib/index';
 	import { Aside, Navbar, Nav, SidebarList, TopMenu, Responsive } from '$lib/index';
-	import { lorem, menuListResponsiveTransition, mainMenuList, topMenuList } from '../menus';
+	import { lorem, menuListResponsiveTransition, topMenuList } from '../menus';
 	import { sineIn } from 'svelte/easing';
 	let siteName = 'Svelte-Sidebar';
 	let title = 'Responsive Slide Transition';
