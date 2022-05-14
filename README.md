@@ -12,7 +12,8 @@ npm i -D svelte-sidebar-menu@latest
 
 ## Features
 
-- [Responsive menu](https://svelte-sidebar.vercel.app/responsive/top-fix)
+- [Responsive](https://svelte-sidebar.vercel.app/responsive/top-fix)
+- Click outside to close the sidebar.
 - [Inert](https://svelte-sidebar.vercel.app/inert)
 - Svelte trainstions, [fly-x](https://svelte-sidebar.vercel.app/transitions/fly-x), [fly-y](https://svelte-sidebar.vercel.app/transitions/fly-y), [fade](https://svelte-sidebar.vercel.app/transitions/fade),[slide](https://svelte-sidebar.vercel.app/transitions/slide), and [blur](https://svelte-sidebar.vercel.app/responsive-transition/blur).
 - [No transition](https://svelte-sidebar.vercel.app/responsive-no-transition/top-fix)
