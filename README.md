@@ -14,7 +14,7 @@ npm i -D svelte-sidebar-menu@latest
 
 - [Responsive menu](https://svelte-sidebar.vercel.app/responsive/top-fix)
 - [Inert](https://svelte-sidebar.vercel.app/inert)
-- Svelte trainstions, [fly](https://svelte-sidebar.vercel.app/transitions/fly), [fade](https://svelte-sidebar.vercel.app/transitions/fade),[slide](https://svelte-sidebar.vercel.app/transitions/slide), and [blur](https://svelte-sidebar.vercel.app/responsive-transition/blur).
+- Svelte trainstions, [fly-x](https://svelte-sidebar.vercel.app/transitions/fly-x), [fly-y](https://svelte-sidebar.vercel.app/transitions/fly-y), [fade](https://svelte-sidebar.vercel.app/transitions/fade),[slide](https://svelte-sidebar.vercel.app/transitions/slide), and [blur](https://svelte-sidebar.vercel.app/responsive-transition/blur).
 - [No transition](https://svelte-sidebar.vercel.app/responsive-no-transition/top-fix)
 - [Sidebar style](https://svelte-sidebar.vercel.app/sidebar-custom-style)
 - [Sidebar style 2](https://svelte-sidebar.vercel.app/multi-custom-style)
