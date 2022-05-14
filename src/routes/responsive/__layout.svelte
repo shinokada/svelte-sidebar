@@ -21,7 +21,7 @@
 
 	let headerClass = 'bg-white px-10 items-center text-gray-600 border-b-2 p-4';
 
-	let hamburgerClass = 'hover:text-gray-500 cursor-pointer mr-4 border-none focus:outline-none pt-2';
+	let hamburgerClass = 'hover:text-gray-500 cursor-pointer mr-4 border-none focus:outline-none pt-2 lg:hidden';
 
 	let transitionParams = {
 		duration: 500,
