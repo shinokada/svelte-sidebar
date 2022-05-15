@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.9.0](https://github.com/shinokada/svelte-sidebar/compare/v0.8.11...v0.9.0) (2022-05-15)
+
+
+### Features
+
+* add flowbite-svelte sidebar ([f4692f7](https://github.com/shinokada/svelte-sidebar/commit/f4692f7a8394437fdb13417bf8cc61405d3fa4dc))
+
 ### [0.8.11](https://github.com/shinokada/svelte-sidebar/compare/v0.8.10...v0.8.11) (2022-05-14)
 
 
