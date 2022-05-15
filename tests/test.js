@@ -99,6 +99,12 @@ test('Top menu page has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Top Menu');
 });
 
+// Flowbite-svelte sidebar page
+test('Flowbite-Svelte Sidebar page has expected h1', async ({ page }) => {
+	await page.goto('/flowbite-svelte-sidebar');
+	expect(await page.textContent('h1')).toBe('Flowbite Svelte Sidebar');
+});
+
 // Props page
 test('Props page has expected h1', async ({ page }) => {
 	await page.goto('/props');
