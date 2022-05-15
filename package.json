@@ -2,6 +2,7 @@
 	"name": "svelte-sidebar-menu",
 	"version": "0.9.1",
 	"description": "A sidebar package for Svelte",
+	"main": "index.js",
 	"author": {
 		"name": "Shinichi Okada",
 		"email": "connect@codewithshin.com",
