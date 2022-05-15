@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.1](https://github.com/shinokada/svelte-sidebar/compare/v0.9.0...v0.9.1) (2022-05-15)
+
+
+### Bug Fixes
+
+* add class to tailwind.config.cjs and flowbite-svelte-sidebar test ([a046497](https://github.com/shinokada/svelte-sidebar/commit/a046497ad6373742974b9ad648559e3e9556607b))
+
 ## [0.9.0](https://github.com/shinokada/svelte-sidebar/compare/v0.8.11...v0.9.0) (2022-05-15)
 
 
