@@ -19,6 +19,7 @@ npm i -D svelte-sidebar-menu@latest
 
 - [Responsive](https://svelte-sidebar.vercel.app/responsive/top-fix)
 - Click outside to close the sidebar.
+- [Flowbite-Svelte sidebar integration](https://flowbite-svelte.com/sidebars)
 - [Inert](https://svelte-sidebar.vercel.app/inert)
 - Svelte trainstions, [fly-x](https://svelte-sidebar.vercel.app/transitions/fly-x), [fly-y](https://svelte-sidebar.vercel.app/transitions/fly-y), [fade](https://svelte-sidebar.vercel.app/transitions/fade),[slide](https://svelte-sidebar.vercel.app/transitions/slide), and [blur](https://svelte-sidebar.vercel.app/responsive-transition/blur).
 - [No transition](https://svelte-sidebar.vercel.app/responsive-no-transition/top-fix)
@@ -45,6 +46,11 @@ To make the sidebar responsive, add the following to all files:
 ## Responsive no transition
 
 [Repo](https://github.com/shinokada/svelte-sidebar/tree/main/src/routes/responsive-no-transition)
+
+## Flowbite-Svelte Sidebar
+
+- [Demo](https://svelte-sidebar.vercel.app/flowbite-svelte-sidebar)
+- [Repo](https://github.com/shinokada/svelte-sidebar/tree/main/src/routes/flowbite-svelte-sidebar)
 
 ## Transition
 
