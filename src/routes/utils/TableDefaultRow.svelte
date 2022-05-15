@@ -5,16 +5,14 @@
 	let trClass: string;
 	let trLastClass: string;
 	if (rowState === 'striped') {
-		trClass =
-			'border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700';
-		trLastClass = 'odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700';
+		trClass = 'border-b dark:bg-gray-900 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-900 even:dark:bg-gray-700';
+		trLastClass = 'odd:bg-white even:bg-gray-50 odd:dark:bg-gray-900 even:dark:bg-gray-700';
 	} else if (rowState === 'hover') {
-		trClass =
-			'bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600';
-		trLastClass = 'bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600';
+		trClass = 'bg-white border-b dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600';
+		trLastClass = 'bg-white dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-600';
 	} else {
-		trClass = 'bg-white border-b dark:bg-gray-800 dark:border-gray-700';
-		trLastClass = 'bg-white dark:bg-gray-800';
+		trClass = 'bg-white border-b dark:bg-gray-900 dark:border-gray-700';
+		trLastClass = 'bg-white dark:bg-gray-900';
 	}
 </script>
 
@@ -23,10 +21,7 @@
 		<tr class={trLastClass}>
 			{#each item as cell, j}
 				{#if j === 0}
-					<th
-						scope="row"
-						class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
-					>
+					<th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
 						{#if html}
 							{@html cell}
 						{:else}
@@ -48,10 +43,7 @@
 		<tr class={trClass}>
 			{#each item as cell, j}
 				{#if j === 0}
-					<th
-						scope="row"
-						class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
-					>
+					<th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
 						{#if html}
 							{@html cell}
 						{:else}
