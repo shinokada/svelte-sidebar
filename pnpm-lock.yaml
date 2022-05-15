@@ -11,7 +11,7 @@ specifiers:
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^3.2.1
-  flowbite-svelte: ^0.15.32
+  flowbite-svelte: ^0.15.35
   postcss: ^8.4.5
   postcss-load-config: ^3.1.1
   prettier: ^2.5.1
@@ -35,7 +35,7 @@ devDependencies:
   eslint: 7.32.0
   eslint-config-prettier: 8.5.0_eslint@7.32.0
   eslint-plugin-svelte3: 3.4.1_6wevxxng4y4ff26nzlndg2wnpa
-  flowbite-svelte: 0.15.32
+  flowbite-svelte: 0.15.35
   postcss: 8.4.8
   postcss-load-config: 3.1.3
   prettier: 2.5.1
@@ -1891,8 +1891,8 @@ packages:
     resolution: {integrity: sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==}
     dev: true
 
-  /flowbite-svelte/0.15.32:
-    resolution: {integrity: sha512-oISU4xg4W9L4vs6AlYaMMmvyMA345VPbq0/KsO5UEaM4RFVAv86M0QjgVzSucq+cuM06/nSzLt2sJuZkEeu0Cg==}
+  /flowbite-svelte/0.15.35:
+    resolution: {integrity: sha512-kl3uPDbnf3tquQoVQ0WLCUCXuW8iFIuXqfuoY+uWNGAgZWo6n2am7ZurAEIIah78NwLp8yjKrisQEGyCTcfYeA==}
     dependencies:
       flowbite: 1.4.5
       svelte-heros: 2.0.1
