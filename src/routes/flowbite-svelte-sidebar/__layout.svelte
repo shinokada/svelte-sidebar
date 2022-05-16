@@ -25,6 +25,8 @@
 	let hamburgerClass = 'hover:text-gray-500 cursor-pointer mr-4 border-none focus:outline-none pt-2 lg:hidden';
 	let childLi = 'block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-lg dark:text-white';
 
+	let dropDownulClass = 'py-2 space-y-2 pl-9';
+
 	let transitionParams = {
 		duration: 500,
 		delay: 100,
@@ -216,7 +218,7 @@
 <Responsive />
 <Side {siteName} {siteClass} {transitionParams} topMenus={topMenuList} {headerClass} {hamburgerClass} {topMenuDiv} {childLi} {asideClass} {spanClass} {topul}>
 	<Nav navClass={navNavClass} {navDivClass}>
-		<SidebarItem links={sidebarItem1} />
+		<SidebarItem links={sidebarItem1} {dropDownulClass} />
 	</Nav>
 </Side>
 <main class="container mx-auto py-32 px-8 lg:pl-80 dark:text-white">
