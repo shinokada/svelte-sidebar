@@ -1,6 +1,6 @@
 {
 	"name": "svelte-sidebar-menu",
-	"version": "0.9.4",
+	"version": "0.9.5",
 	"description": "A sidebar package for Svelte",
 	"main": "index.js",
 	"author": {

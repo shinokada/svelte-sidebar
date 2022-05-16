@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.5](https://github.com/shinokada/svelte-sidebar/compare/v0.9.4...v0.9.5) (2022-05-16)
+
+
+### Bug Fixes
+
+* add topDiv to Side TopMenu ([f5c3de2](https://github.com/shinokada/svelte-sidebar/commit/f5c3de28fab184bb2005fd61e8d8abaf8d6ddfd4))
+
 ### [0.9.4](https://github.com/shinokada/svelte-sidebar/compare/v0.9.3...v0.9.4) (2022-05-16)
 
 
