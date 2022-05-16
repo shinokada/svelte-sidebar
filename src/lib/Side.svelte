@@ -75,7 +75,7 @@
 {:else}
 	<div class={sideWrapperClass}>
 		<Navbar {alt} {hamburgerClass} {headerClass} {logo} {logoClass} {navClass} {siteClass} {siteName} {spanClass}>
-			<TopMenu {buttonClass} {childLi} {topMenuDiv} {topMenus} {topul} {topli} {activeDropdownDiv} {activeChildLi} {dropdownLi} />
+			<TopMenu {buttonClass} {childLi} {topDiv} {topMenuDiv} {topMenus} {topul} {topli} {activeDropdownDiv} {activeChildLi} {dropdownLi} />
 		</Navbar>
 		<OutsideClick>
 			<Aside {asideClass} {transitionType} {transitionParams}>
