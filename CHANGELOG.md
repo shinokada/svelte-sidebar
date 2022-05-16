@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.3](https://github.com/shinokada/svelte-sidebar/compare/v0.9.2...v0.9.3) (2022-05-16)
+
+
+### Bug Fixes
+
+* add pl-9 to flowbite-svelte-sidebar __layout ([8fdca6c](https://github.com/shinokada/svelte-sidebar/commit/8fdca6c005db1f8a0f1d637e467934a2d74a2bc4))
+* add topDiv to TopMenu ([c2fba33](https://github.com/shinokada/svelte-sidebar/commit/c2fba339a332a9f1bc8c5bb4e5c6d74ebe596450))
+* update flowbite-svelte to 0.15.35 ([5491263](https://github.com/shinokada/svelte-sidebar/commit/5491263ee67bdcfa897e7081d799f6b105607a93))
+
 ### [0.9.2](https://github.com/shinokada/svelte-sidebar/compare/v0.9.1...v0.9.2) (2022-05-15)
 
 
