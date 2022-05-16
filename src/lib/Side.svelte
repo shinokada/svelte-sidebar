@@ -24,6 +24,8 @@
 	// end of Navbar
 
 	// TopMenu
+	export let topDiv: string = 'w-full md:block md:w-auto';
+
 	export let buttonClass: string = 'inline-flex items-center text-base text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200';
 
 	export let childLi: string = 'block py-2 pr-4 pl-3  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-base';
