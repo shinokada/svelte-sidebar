@@ -62,3 +62,7 @@
 		{lorem}
 	</p>
 </main>
+
+<svelte:head>
+	<title>Svelte-Sidebar-Menu Top Menu Example</title>
+</svelte:head>

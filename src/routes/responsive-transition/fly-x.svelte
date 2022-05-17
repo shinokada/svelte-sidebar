@@ -55,3 +55,7 @@
 		{lorem}
 	</p>
 </main>
+
+<svelte:head>
+	<title>Svelte-Sidebar-Menu Fly-x Example</title>
+</svelte:head>

@@ -73,3 +73,7 @@
 		{lorem}
 	</p>
 </main>
+
+<svelte:head>
+	<title>Svelte-Sidebar-Menu Scroll Sidebar Example</title>
+</svelte:head>

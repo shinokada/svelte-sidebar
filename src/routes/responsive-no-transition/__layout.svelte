@@ -37,3 +37,7 @@
 <main class="container mx-auto py-32 px-8 lg:pl-80">
 	<slot />
 </main>
+
+<svelte:head>
+	<title>Svelte-Sidebar-Menu Responsive Examples</title>
+</svelte:head>

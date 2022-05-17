@@ -38,3 +38,7 @@
 		{lorem}
 	</p>
 </main>
+
+<svelte:head>
+	<title>Svelte-Sidebar-Menu Blur Example</title>
+</svelte:head>

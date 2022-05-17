@@ -125,6 +125,10 @@
 	</Table>
 </main>
 
+<svelte:head>
+	<title>Svelte-Sidebar-Menu Props</title>
+</svelte:head>
+
 <style>
 	h3 {
 		font-size: 1.5rem;

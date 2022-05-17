@@ -39,3 +39,7 @@
 		{lorem}
 	</p>
 </main>
+
+<svelte:head>
+	<title>Svelte-Sidebar-Menu Slide Example</title>
+</svelte:head>

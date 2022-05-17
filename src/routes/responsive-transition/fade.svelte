@@ -54,3 +54,7 @@
 		{lorem}
 	</p>
 </main>
+
+<svelte:head>
+	<title>Svelte-Sidebar-Menu Fade Example</title>
+</svelte:head>

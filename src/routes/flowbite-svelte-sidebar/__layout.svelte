@@ -226,5 +226,6 @@
 </main>
 
 <svelte:head>
+	<title>Svelte-Sidebar-Menu with Flowbite-Svelte Sidebar Component</title>
 	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
 </svelte:head>
