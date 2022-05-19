@@ -57,5 +57,9 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/shinokada/svelte-sidebar"
-	}
+	},
+	"engines" : { 
+    "npm" : ">=7.0.0",
+    "node" : ">=16.0.0"
+  }
 }
