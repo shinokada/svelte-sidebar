@@ -5,7 +5,7 @@ test('index page has expected h1', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Svelte-Sidebar');
 });
 
-// Responsive 
+// Responsive
 test('Responsive top-fix page has expected h1', async ({ page }) => {
 	await page.goto('/responsive/top-fix');
 	expect(await page.textContent('h1')).toBe('Responsive with top menu fixed');

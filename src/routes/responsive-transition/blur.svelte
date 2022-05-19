@@ -15,7 +15,8 @@
 		amount: 100,
 		easing: quartInOut
 	};
-	let topul = 'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-white';
+	let topul =
+		'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-white';
 </script>
 
 <Responsive />

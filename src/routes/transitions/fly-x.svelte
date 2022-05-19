@@ -16,7 +16,16 @@
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
-	<Sidebar lists={menuListTransition} {siteName} transitionType="fly" {transitionParams} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" {asideClass} {headerClass} />
+	<Sidebar
+		lists={menuListTransition}
+		{siteName}
+		transitionType="fly"
+		{transitionParams}
+		logo="/images/svelte-sidebar-logo.png"
+		alt="Svelte Sidebar"
+		{asideClass}
+		{headerClass}
+	/>
 </div>
 
 <main class="container mx-auto py-32 px-8">

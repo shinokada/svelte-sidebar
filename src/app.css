@@ -3,9 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-#hamburgerBtn{
-    position: absolute;
-    top: 6px;
-    left: 0px;
+#hamburgerBtn {
+	position: absolute;
+	top: 6px;
+	left: 0px;
 }

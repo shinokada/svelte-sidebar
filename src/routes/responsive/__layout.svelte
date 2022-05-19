@@ -21,8 +21,10 @@
 
 	let headerClass = 'bg-white px-10 items-center text-gray-600 border-b-2 p-4';
 
-	let hamburgerClass = 'hover:text-gray-500 cursor-pointer mr-4 border-none focus:outline-none pt-2 lg:hidden';
-	let childLi = 'block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-lg';
+	let hamburgerClass =
+		'hover:text-gray-500 cursor-pointer mr-4 border-none focus:outline-none pt-2 lg:hidden';
+	let childLi =
+		'block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-lg';
 
 	let transitionParams = {
 		duration: 500,
@@ -32,7 +34,16 @@
 	};
 </script>
 
-<Side {siteName} {siteClass} {transitionParams} topMenus={topMenuList} {headerClass} {hamburgerClass} {topMenuDiv} {childLi}>
+<Side
+	{siteName}
+	{siteClass}
+	{transitionParams}
+	topMenus={topMenuList}
+	{headerClass}
+	{hamburgerClass}
+	{topMenuDiv}
+	{childLi}
+>
 	<Nav navClass={navNavClass} {navDivClass}>
 		{#each menuListResponsive as { href, name, rel }}
 			<SidebarList {href} {name} {rel} {sideBarListClass} />

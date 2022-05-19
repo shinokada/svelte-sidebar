@@ -9,7 +9,15 @@
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">
-	<Sidebar lists={menuList} {siteName} {headerClass} {asideClass} {navClass} logo="/images/svelte-sidebar-logo.png" alt="Svelte Sidebar" />
+	<Sidebar
+		lists={menuList}
+		{siteName}
+		{headerClass}
+		{asideClass}
+		{navClass}
+		logo="/images/svelte-sidebar-logo.png"
+		alt="Svelte Sidebar"
+	/>
 </div>
 
 <main class="container mx-auto p-16">

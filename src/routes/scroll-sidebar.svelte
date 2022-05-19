@@ -3,7 +3,8 @@
 	import { lorem, menuList, allMenuList } from './menus';
 	let siteName = 'Svelte-Sidebar';
 	let title = 'Scroll Sidebar Demo';
-	let asideClass = 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg z-50  h-screen overflow-scroll';
+	let asideClass =
+		'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg z-50  h-screen overflow-scroll';
 </script>
 
 <div class="fixed z-50 top-0 left-0 w-full">

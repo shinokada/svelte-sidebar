@@ -2,8 +2,9 @@
 	import { Side, Nav, SidebarList, OutsideClick } from '$lib/index';
 	import { mainMenuList, topMenuList } from './menus';
 	import { quartInOut } from 'svelte/easing';
-	import Table from './utils/Table.svelte';
-	import TableDefaultRow from './utils/TableDefaultRow.svelte';
+	// import Table from './utils/Table.svelte';
+	// import TableDefaultRow from './utils/TableDefaultRow.svelte';
+	import { Table, TableDefaultRow } from 'createprops';
 	import * as componentProps1 from './props/Aside.json';
 	import * as componentProps2 from './props/Dropdown.json';
 	import * as componentProps3 from './props/Hamburger.json';
@@ -43,7 +44,8 @@
 
 	let navDivClass = 'pb-10';
 	let sideBarListClass = 'mb-2 px-4 hover:text-gray-500';
-	let hamburgerClass = 'text-white hover:text-gray-500 cursor-pointer mr-4 border-none focus:outline-none pt-2';
+	let hamburgerClass =
+		'text-white hover:text-gray-500 cursor-pointer mr-4 border-none focus:outline-none pt-2';
 
 	let asideClass = 'absolute w-auto h-screen bg-gray-700 text-white border-r-2 shadow-lg';
 
@@ -51,14 +53,27 @@
 
 	let siteClass = 'w-1/4 h-12 text-lg pt-3 pl-12';
 
-	let topul = 'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-3 bg-gray-700';
-	let childLi = 'block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-lg';
+	let topul =
+		'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-3 bg-gray-700';
+	let childLi =
+		'block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-lg';
 
 	let spanClass = 'pl-2 self-center text-lg font-semibold text-white whitespace-nowrap';
 </script>
 
 <OutsideClick>
-	<Side {siteName} {siteClass} {asideClass} {transitionParams} topMenus={topMenuList} {headerClass} {hamburgerClass} {topul} {childLi} {spanClass}>
+	<Side
+		{siteName}
+		{siteClass}
+		{asideClass}
+		{transitionParams}
+		topMenus={topMenuList}
+		{headerClass}
+		{hamburgerClass}
+		{topul}
+		{childLi}
+		{spanClass}
+	>
 		<Nav navClass={navNavClass} {navDivClass}>
 			{#each mainMenuList as { href, name, rel }}
 				<SidebarList {href} {name} {rel} {sideBarListClass} />

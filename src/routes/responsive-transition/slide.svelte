@@ -16,7 +16,8 @@
 	let navClass = 'py-8 px-4 bg-white text-lg ';
 	let navDivClass = 'pb-10';
 	let asideClass = 'absolute w-auto border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll';
-	let topul = 'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-white';
+	let topul =
+		'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-white';
 </script>
 
 <Responsive />

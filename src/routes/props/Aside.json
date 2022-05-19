@@ -1,1 +1,7 @@
-{"props":[["transitionParams"," TransitionParamTypes "," {}"],["transitionType"," TransitionTypes "," 'fly'"],["asideClass"," string "," 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg'"]]}
+{
+	"props": [
+		["transitionParams", " TransitionParamTypes ", " {}"],
+		["transitionType", " TransitionTypes ", " 'fly'"],
+		["asideClass", " string ", " 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg'"]
+	]
+}
