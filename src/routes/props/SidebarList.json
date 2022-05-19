@@ -1,8 +1,1 @@
-{
-	"props": [
-		["href", " string", "-"],
-		["name", " string", "-"],
-		["rel", " string ", " null"],
-		["sideBarListClass", " string ", " 'border-b border-gray-400 mb-2 px-4'"]
-	]
-}
+{"props":[[" href"," string","-"],[" name"," string","-"],[" rel"," string "," null"],[" sideBarListClass"," string "," 'border-b border-gray-400 mb-2 px-4'"]]}

@@ -2,9 +2,8 @@
 	import { Side, Nav, SidebarList, OutsideClick } from '$lib/index';
 	import { mainMenuList, topMenuList } from './menus';
 	import { quartInOut } from 'svelte/easing';
-	// import Table from './utils/Table.svelte';
-	// import TableDefaultRow from './utils/TableDefaultRow.svelte';
-	import { Table, TableDefaultRow } from 'createprops';
+	import Table from './utils/Table.svelte';
+	import TableDefaultRow from './utils/TableDefaultRow.svelte';
 	import * as componentProps1 from './props/Aside.json';
 	import * as componentProps2 from './props/Dropdown.json';
 	import * as componentProps3 from './props/Hamburger.json';
