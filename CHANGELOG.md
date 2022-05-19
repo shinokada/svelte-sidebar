@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.7](https://github.com/shinokada/svelte-sidebar/compare/v0.9.6...v0.9.7) (2022-05-19)
+
+
+### Bug Fixes
+
+* add title to all pages ([9f36c49](https://github.com/shinokada/svelte-sidebar/commit/9f36c49710e54f53a08f7e262a480c7ce76d23c3))
+* update creatporps and props page ([e529389](https://github.com/shinokada/svelte-sidebar/commit/e529389e23c185bb7c3133e957d0312429915629))
+* update description ([2ea0efa](https://github.com/shinokada/svelte-sidebar/commit/2ea0efa5affa1450f3310948bccf78c61b1ecfe0))
+
 ### [0.9.6](https://github.com/shinokada/svelte-sidebar/compare/v0.9.5...v0.9.6) (2022-05-16)
 
 ### Bug Fixes
