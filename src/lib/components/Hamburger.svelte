@@ -9,7 +9,7 @@
 		console.log('Hamburger sidebarStayOpen', $sidebarStayOpen);
 	};
 
-	export let hamburgerClass: string = '';
+	export let hamburgerClass = '';
 </script>
 
 <button

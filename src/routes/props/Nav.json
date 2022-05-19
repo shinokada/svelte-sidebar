@@ -1,1 +1,6 @@
-{"props":[["navClass"," string "," 'py-8 px-4 text-lg'"],[" navDivClass"," string "," 'pb-8'"]]}
+{
+	"props": [
+		["navClass", "string ", "'py-8 px-4 text-lg'"],
+		["navDivClass", "string ", "'pb-8'"]
+	]
+}

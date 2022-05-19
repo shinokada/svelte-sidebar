@@ -5,7 +5,7 @@
 
 	export let transitionParams: TransitionParamTypes = {};
 	export let transitionType: TransitionTypes = 'fly';
-	export let asideClass: string = 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg';
+	export let asideClass = 'absolute w-auto h-screen bg-gray-200 border-r-2 shadow-lg';
 
 	let inert = null;
 	$: inert = $sidebarIsInert ? 'inert' : null;

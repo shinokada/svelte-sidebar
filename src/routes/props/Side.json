@@ -1,1 +1,63 @@
-{"props":[["  alt"," string "," ''"],["  hamburgerClass"," string "," 'text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none lg:hidden'"],["  headerClass"," string "," 'bg-gray-200 pt-4 px-10 items-center text-gray-600'"],["  logo"," string "," ''"],["  logoClass"," string "," ''"],["  navClass"," string "," 'flex relative'"],["  siteClass"," string "," 'w-1/4 h-12 text-lg pt-1 pl-12'"],["  siteName"," string "," 'Demo'"],["  spanClass"," string "," 'pl-2 self-center text-lg font-semibold text-gray-900 whitespace-nowrap'"],["  topDiv"," string "," 'w-full md:block md:w-auto'"],["  buttonClass"," string "," 'inline-flex items-center text-base text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200'"],["  childLi"," string "," 'block py-2 pr-4 pl-3  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-base'"],["  topMenuDiv"," string "," 'container flex flex-wrap justify-end mx-auto'"],["  topMenus"," TopMenuType[]","-"],["  topul"," string "," 'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-white'"],["  topli"," string "," 'block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0'"],["  activeDropdownDiv"," string "," 'z-10 w-44 text-lg list-none bg-white rounded divide-y divide-gray-100 shadow'"],["  activeChildLi"," string "," 'block py-2 px-4 text-base text-gray-700 hover:bg-gray-100'"],["  dropdownLi"," string "," 'flex justify-between items-center py-2 pr-4 pl-3 w-full text-base font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto'"],["  asideClass"," string "," 'absolute w-auto border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll'"],["  transitionParams"," TransitionParamTypes "," {}"],["  transitionType"," TransitionTypes "," 'fly'"],["  sideWrapperClass"," string "," 'fixed z-50 top-0 left-0 w-full'"]]}
+{
+	"props": [
+		["alt", "string ", "''"],
+		[
+			"hamburgerClass",
+			"string ",
+			"'text-gray-500 hover:text-gray-700 cursor-pointer mr-4 border-none focus:outline-none lg:hidden'"
+		],
+		["headerClass", "string ", "'bg-gray-200 pt-4 px-10 items-center text-gray-600'"],
+		["logo", "string ", "''"],
+		["logoClass", "string ", "''"],
+		["navClass", "string ", "'flex relative'"],
+		["siteClass", "string ", "'w-1/4 h-12 text-lg pt-1 pl-12'"],
+		["siteName", "string ", "'Demo'"],
+		[
+			"spanClass",
+			"string ",
+			"'pl-2 self-center text-lg font-semibold text-gray-900 whitespace-nowrap'"
+		],
+		["topDiv", "string ", "'w-full md:block md:w-auto'"],
+		[
+			"buttonClass",
+			"string ",
+			"'inline-flex items-center text-base text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200'"
+		],
+		[
+			"childLi",
+			"string ",
+			"'block py-2 pr-4 pl-3  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-base'"
+		],
+		["topMenuDiv", "string ", "'container flex flex-wrap justify-end mx-auto'"],
+		["  topMenus", " TopMenuType[]", ""],
+		[
+			"topul",
+			"string ",
+			"'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-white'"
+		],
+		[
+			"topli",
+			"string ",
+			"'block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0'"
+		],
+		[
+			"activeDropdownDiv",
+			"string ",
+			"'z-10 w-44 text-lg list-none bg-white rounded divide-y divide-gray-100 shadow'"
+		],
+		["activeChildLi", "string ", "'block py-2 px-4 text-base text-gray-700 hover:bg-gray-100'"],
+		[
+			"dropdownLi",
+			"string ",
+			"'flex justify-between items-center py-2 pr-4 pl-3 w-full text-base font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto'"
+		],
+		[
+			"asideClass",
+			"string ",
+			"'absolute w-auto border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll'"
+		],
+		["transitionParams", "TransitionParamTypes ", "{}"],
+		["transitionType", "TransitionTypes ", "'fly'"],
+		["sideWrapperClass", "string ", "'fixed z-50 top-0 left-0 w-full'"]
+	]
+}
