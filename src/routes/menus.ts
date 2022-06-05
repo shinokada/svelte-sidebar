@@ -15,6 +15,7 @@ export const topMenuList: MenuType[] = [
 	{ href: '/responsive/top-fix', rel: 'external', name: 'Responsive' },
 	{ href: '/responsive-no-transition/top-fix', rel: 'external', name: 'Responsive No Transition' },
 	{ href: '/transitions/blur', rel: 'external', name: 'Transitions' },
+	{ href: '/three-columns', rel: 'external', name: '3 Columns' },
 	{ href: '/topmenu', rel: 'external', name: 'Other menus' }
 ];
 

@@ -18,22 +18,24 @@
 	import { topMenuList } from '../menus';
 	import { quartInOut } from 'svelte/easing';
 
+	let navClass = 'flex relative w-full lg:max-w-7xl';
+
 	let navNavClass: string = 'py-8 px-4 text-lg';
 
 	let navDivClass: string = 'pb-8';
 
-	let topMenuDiv = 'container flex flex-wrap justify-end mx-auto pt-0 md:pt-2';
+	let topMenuDiv = 'flex flex-wrap justify-end mx-auto pt-0 md:pt-2 md:pr-4 hidden xl:block';
 
 	let topul =
 		'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-white dark:bg-gray-900 dark:text-white';
 
 	let asideClass =
-		'absolute w-auto border-r-2 shadow-lg z-50 bg-white h-screen overflow-scroll dark:bg-gray-900 dark:text-white';
+		'absolute mt-24 w-auto z-30 bg-white h-screen overflow-scroll dark:bg-gray-900 dark:text-white';
 	let siteName = 'Svelte-Sidebar';
 	let siteClass = 'w-1/4 h-12 text-lg pt-3 pl-12';
 
 	let headerClass =
-		'bg-white px-10 items-center text-gray-600 border-b-2 p-4 dark:bg-gray-900 dark:text-white';
+		'container fixed top-0 z-50 bg-white px-10 items-center text-gray-600 border-b-2 p-4 dark:bg-gray-900 dark:text-white';
 
 	let spanClass =
 		'pl-2 self-center text-lg font-semibold text-gray-900 whitespace-nowrap dark:text-white';
@@ -230,31 +232,50 @@
 		}
 	];
 	let btnClass =
-		'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 fixed right-2 top-24 z-50';
+		'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 absolute right-0 top-6 z-50';
+
+	let sideWrapperClass = ' z-50 top-0 left-0';
 </script>
 
-<DarkMode {btnClass} />
 <Responsive />
-<Side
-	{siteName}
-	{siteClass}
-	{transitionParams}
-	topMenus={topMenuList}
-	{headerClass}
-	{hamburgerClass}
-	{topMenuDiv}
-	{childLi}
-	{asideClass}
-	{spanClass}
-	{topul}
->
-	<Nav navClass={navNavClass} {navDivClass}>
-		<SidebarItem links={sidebarItem1} {dropDownulClass} />
-	</Nav>
-</Side>
-<main class="container mx-auto py-32 px-8 lg:pl-80 dark:text-white">
-	<slot />
-</main>
+<div class="container mx-auto relative">
+	<DarkMode {btnClass} />
+	<Side
+		{siteName}
+		{siteClass}
+		{transitionParams}
+		topMenus={topMenuList}
+		{headerClass}
+		{hamburgerClass}
+		{topMenuDiv}
+		{childLi}
+		{asideClass}
+		{spanClass}
+		{topul}
+		{sideWrapperClass}
+		{navClass}
+	>
+		<Nav navClass={navNavClass} {navDivClass}>
+			<SidebarItem links={sidebarItem1} {dropDownulClass} />
+		</Nav>
+	</Side>
+
+	<div class="flex flex-row">
+		<main class="w-full pt-32 lg:pl-60 dark:text-white">
+			<slot />
+		</main>
+		<aside class="w-64 pt-32 px-4 hidden lg:block">
+			<h1 class="text-2xl">Right side menu</h1>
+			<ul>
+				<li>Test 1</li>
+				<li>Test 2</li>
+				<li>Test 3</li>
+				<li>Test 4</li>
+				<li>Test 5</li>
+			</ul>
+		</aside>
+	</div>
+</div>
 
 <svelte:head>
 	<title>Svelte-Sidebar-Menu with Flowbite-Svelte Sidebar Component</title>
