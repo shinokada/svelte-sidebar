@@ -30,12 +30,12 @@
 		'flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium pt-1 bg-white dark:bg-gray-900 dark:text-white';
 
 	let asideClass =
-		'absolute mt-24 w-auto z-30 bg-white h-screen overflow-scroll dark:bg-gray-900 dark:text-white';
+		'fixed lg:absolute w-auto z-30 bg-white h-full  dark:bg-gray-900 dark:text-white';
 	let siteName = 'Svelte-Sidebar';
 	let siteClass = 'w-1/4 h-12 text-lg pt-3 pl-12';
-
+	let sideWrapperClass = 'fixed lg:absolute z-50 top-0 left-0 w-full';
 	let headerClass =
-		'container fixed top-0 z-50 bg-white px-10 items-center text-gray-600 border-b-2 p-4 dark:bg-gray-900 dark:text-white';
+		' z-50 bg-white px-10 items-center text-gray-600 border-b-2 p-4 dark:bg-gray-900 dark:text-white';
 
 	let spanClass =
 		'pl-2 self-center text-lg font-semibold text-gray-900 whitespace-nowrap dark:text-white';
@@ -233,8 +233,6 @@
 	];
 	let btnClass =
 		'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 absolute right-0 top-6 z-50';
-
-	let sideWrapperClass = ' z-50 top-0 left-0';
 </script>
 
 <Responsive />
