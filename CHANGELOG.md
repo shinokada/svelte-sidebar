@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.9](https://github.com/shinokada/svelte-sidebar/compare/v0.9.8...v0.9.9) (2022-08-30)
+
+
+### Features
+
+* add 3 columns ([90bd47f](https://github.com/shinokada/svelte-sidebar/commit/90bd47f75140025991be5197f8b6791503a22711))
+
+
+### Bug Fixes
+
+* add engines node version >=16.0.0 ([8c63be8](https://github.com/shinokada/svelte-sidebar/commit/8c63be8d8fadbc30055438d409f7a92796fbf399))
+* update 3-columns page ([9410d5d](https://github.com/shinokada/svelte-sidebar/commit/9410d5d33e4d348e907e6d9378bcff3321193973))
+
 ### [0.9.8](https://github.com/shinokada/svelte-sidebar/compare/v0.9.7...v0.9.8) (2022-05-19)
 
 
