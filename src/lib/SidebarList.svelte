@@ -5,7 +5,7 @@
 	export let rel: string = null;
 	export let sideBarListClass: string = 'border-b border-gray-400 mb-2 px-4';
 	function toggleSide() {
-		console.log('SidebarList', $sidebarStayOpen);
+		// console.log('SidebarList', $sidebarStayOpen);
 		if (!sidebarStayOpen) {
 			sidebarOpen.update((n) => (n = !n));
 			sidebarIsInert.update((n) => (n = !n));
