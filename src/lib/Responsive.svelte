@@ -13,15 +13,15 @@
 		sidebarIsInert.update((n) => (n = true));
 	}
 	onMount(() => {
-		console.log('innerwidth', width);
+		// console.log('innerwidth', width);
 		if (width >= breakPoint) {
 			sidebarStayOpen.update((n) => (n = true));
-			console.log('Responsive sidebarStayOpen', $sidebarStayOpen);
+			// console.log('Responsive sidebarStayOpen', $sidebarStayOpen);
 			sidebarOpen.update((n) => (n = true));
 			sidebarIsInert.update((n) => (n = false));
 		} else {
 			sidebarStayOpen.update((n) => (n = false));
-			console.log('Responsive sidebarStayOpen', $sidebarStayOpen);
+			// console.log('Responsive sidebarStayOpen', $sidebarStayOpen);
 			sidebarOpen.update((n) => (n = false));
 			sidebarIsInert.update((n) => (n = true));
 		}
