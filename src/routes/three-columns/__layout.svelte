@@ -236,7 +236,7 @@
 </script>
 
 <Responsive />
-<div class="container mx-auto relative">
+<div class="container mx-auto max-w-7xl relative">
 	<DarkMode {btnClass} />
 	<Side
 		{siteName}

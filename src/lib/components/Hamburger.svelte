@@ -5,8 +5,8 @@
 	const toggleSide = () => {
 		sidebarOpen.update((n) => (n = !n));
 		sidebarIsInert.update((n) => (n = !n));
-		console.log('Hamburger sidebarOpen', $sidebarOpen);
-		console.log('Hamburger sidebarStayOpen', $sidebarStayOpen);
+		// console.log('Hamburger sidebarOpen', $sidebarOpen);
+		// console.log('Hamburger sidebarStayOpen', $sidebarStayOpen);
 	};
 
 	export let hamburgerClass = '';
