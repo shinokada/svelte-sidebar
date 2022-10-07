@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.12](https://github.com/shinokada/svelte-sidebar/compare/v0.9.11...v0.9.12) (2022-10-07)
+
+
+### Bug Fixes
+
+* remove aria-controls=mobile-menu-2 ([1d8b58d](https://github.com/shinokada/svelte-sidebar/commit/1d8b58d2b6fbe8ba7c88cc23161d076e9869c5ca))
+
 ### [0.9.11](https://github.com/shinokada/svelte-sidebar/compare/v0.9.10...v0.9.11) (2022-08-30)
 
 ### [0.9.10](https://github.com/shinokada/svelte-sidebar/compare/v0.9.9...v0.9.10) (2022-08-30)
