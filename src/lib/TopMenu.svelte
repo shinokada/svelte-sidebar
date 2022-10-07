@@ -41,7 +41,6 @@
 		data-collapse-toggle="mobile-menu"
 		type="button"
 		class={buttonClass}
-		aria-controls="mobile-menu-2"
 		aria-expanded="false"
 	>
 		<span class="sr-only">Open main menu</span>
